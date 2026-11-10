@@ -1,0 +1,202 @@
+[
+  {
+    "id": "dka-1",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "highlight",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-dka",
+    "caseStudyPart": 1,
+    "questionText": "The nurse reviews the 14:00 assessment. Click to highlight the findings that require immediate follow-up.",
+    "highlightLayout": "table",
+    "highlightTableHeadings": ["Body system", "Findings"],
+    "highlightItems": [
+      { "id": "wt", "group": "General", "text": "Weight 54 kg; usual weight 56 kg" },
+      { "id": "temp", "group": "General", "text": "Temperature 37.4 °C (99.3 °F)" },
+      { "id": "resp", "group": "Respiratory", "text": "Deep, rapid respirations, 32/min" },
+      { "id": "bs", "group": "Respiratory", "text": "Breath sounds clear bilaterally" },
+      { "id": "hr", "group": "Cardiovascular", "text": "Heart rate 122/min" },
+      { "id": "bp", "group": "Cardiovascular", "text": "Blood pressure 102/60 mm Hg" },
+      { "id": "vom", "group": "Gastrointestinal", "text": "Vomited 4 times since last evening" },
+      { "id": "abd", "group": "Gastrointestinal", "text": "Abdomen soft" },
+      { "id": "mm", "group": "Integumentary", "text": "Mucous membranes dry and sticky" },
+      { "id": "skin", "group": "Integumentary", "text": "Skin warm" }
+    ],
+    "answerKey": { "type": "highlight", "itemIds": ["wt", "resp", "hr", "vom", "mm"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Deep, rapid (Kussmaul) respirations are respiratory compensation for metabolic acidosis. Acute weight loss of 2 kg, repeated vomiting, tachycardia and dry, sticky mucous membranes indicate significant fluid loss from osmotic diuresis and vomiting.\n\nA temperature of 37.4 °C, clear breath sounds, a soft abdomen and warm skin are within expected limits. A blood pressure of 102/60 mm Hg is acceptable for an adolescent at present, although it should be trended.",
+    "references": ["ISPAD Clinical Practice Consensus Guidelines 2022: Diabetic ketoacidosis and hyperglycemic hyperosmolar state"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "dka-2",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "matrix-multiple",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-dka",
+    "caseStudyPart": 2,
+    "questionText": "The nurse reviews the 14:10 laboratory results. For each result, specify the condition or conditions it supports. Each result may support more than one condition.",
+    "matrixRowHeading": "Laboratory result",
+    "matrixRows": [
+      { "id": "glu", "text": "Blood glucose 486 mg/dL" },
+      { "id": "ph", "text": "Arterial pH 7.16" },
+      { "id": "hco3", "text": "HCO₃⁻ 11 mEq/L" },
+      { "id": "bhb", "text": "Beta-hydroxybutyrate 5.8 mmol/L" },
+      { "id": "bun", "text": "BUN 28 mg/dL" }
+    ],
+    "matrixColumns": [
+      { "id": "acid", "label": "Metabolic acidosis" },
+      { "id": "dehyd", "label": "Dehydration" },
+      { "id": "insulin", "label": "Insulin deficiency" }
+    ],
+    "answerKey": {
+      "type": "matrix-multiple",
+      "selections": { "glu": ["insulin"], "ph": ["acid"], "hco3": ["acid"], "bhb": ["acid", "insulin"], "bun": ["dehyd"] }
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Without insulin, glucose cannot enter cells (hyperglycaemia), and fat is broken down into ketone bodies such as beta-hydroxybutyrate. The ketoacids consume bicarbonate, lowering the pH and HCO₃⁻ (metabolic acidosis), so an elevated beta-hydroxybutyrate reflects both insulin deficiency and the cause of the acidosis.\n\nAn elevated BUN with fluid loss reflects haemoconcentration and reduced renal perfusion from dehydration.",
+    "references": ["ISPAD Clinical Practice Consensus Guidelines 2022: Diabetic ketoacidosis and hyperglycemic hyperosmolar state"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "dka-3",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "dropdown",
+    "clinicalCategory": "Management of Care",
+    "caseStudyId": "case-dka",
+    "caseStudyPart": 3,
+    "questionText": "Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "The nurse should first address the client's {{f1}} because the client is at risk for {{f2}}.",
+    "dropdownFields": [
+      {
+        "id": "f1",
+        "options": [
+          { "id": "fvd", "text": "fluid volume deficit" },
+          { "id": "glu", "text": "blood glucose level" },
+          { "id": "k", "text": "serum potassium level" },
+          { "id": "pain", "text": "abdominal pain" }
+        ]
+      },
+      {
+        "id": "f2",
+        "options": [
+          { "id": "shock", "text": "hypovolaemic shock" },
+          { "id": "hypo", "text": "hypoglycaemia" },
+          { "id": "asp", "text": "aspiration pneumonia" },
+          { "id": "pancreat", "text": "acute pancreatitis" }
+        ]
+      }
+    ],
+    "answerKey": { "type": "dropdown", "values": { "f1": "fvd", "f2": "shock" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "Initial DKA management restores circulating volume with isotonic fluid before insulin. Volume depletion threatens perfusion (tachycardia, weight loss, dry mucous membranes) and can progress to hypovolaemic shock. Fluids also lower glucose by dilution and by improving renal clearance.\n\nInsulin is started after initial fluid therapy. Potassium is currently elevated but total body potassium is depleted, so it is monitored rather than treated first.",
+    "references": ["ISPAD Clinical Practice Consensus Guidelines 2022: Diabetic ketoacidosis and hyperglycemic hyperosmolar state"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "dka-4",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "matrix-single",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-dka",
+    "caseStudyPart": 4,
+    "questionText": "For each potential intervention, specify whether it is indicated or contraindicated for the client at this time.",
+    "matrixRowHeading": "Intervention",
+    "matrixRows": [
+      { "id": "ns", "text": "Begin the 0.9% sodium chloride bolus as prescribed" },
+      { "id": "kcl", "text": "Add potassium chloride to the IV fluid now" },
+      { "id": "neuro", "text": "Assess neurological status for headache or decreasing level of consciousness" },
+      { "id": "rapid", "text": "Aim to bring the blood glucose to the normal range within the first hour" },
+      { "id": "cardiac", "text": "Maintain continuous cardiac monitoring" },
+      { "id": "fluids", "text": "Encourage the client to drink as much water as possible" }
+    ],
+    "matrixColumns": [
+      { "id": "ind", "label": "Indicated" },
+      { "id": "contra", "label": "Contraindicated" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "ns": "ind", "kcl": "contra", "neuro": "ind", "rapid": "contra", "cardiac": "ind", "fluids": "contra" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Isotonic fluid resuscitation is the first treatment. Cerebral oedema is a serious complication of paediatric DKA, so neurological checks are essential. Potassium shifts are expected, so cardiac monitoring is indicated.\n\nPotassium is not added while the serum potassium is above 5.0 mEq/L (here 5.6 mEq/L) and before adequate urine output is confirmed. Glucose and osmolality are lowered gradually, because rapid correction is associated with cerebral oedema. The client is vomiting and prescribed NPO, so oral fluids are contraindicated.",
+    "references": ["ISPAD Clinical Practice Consensus Guidelines 2022: Diabetic ketoacidosis and hyperglycemic hyperosmolar state"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "dka-5",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "multiple",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-dka",
+    "caseStudyPart": 5,
+    "questionText": "The nurse reviews the 18:00 nurses' note, laboratory results and prescriptions. Which actions should the nurse take? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "Change the IV fluid to dextrose 5% in 0.45% sodium chloride." },
+      { "id": "b", "text": "Add potassium chloride 20 mEq/L to the IV fluid." },
+      { "id": "c", "text": "Stop the insulin infusion because the blood glucose is falling." },
+      { "id": "d", "text": "Continue hourly blood glucose monitoring." },
+      { "id": "e", "text": "Give potassium chloride by IV push to raise the level quickly." },
+      { "id": "f", "text": "Discontinue IV fluids and start a regular diet." }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "d"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Glucose is 268 mg/dL, which meets the prescribed trigger (300 mg/dL or less) for adding dextrose. Dextrose allows the insulin infusion to continue clearing ketones without causing hypoglycaemia. Potassium is 3.9 mEq/L (below 5.0) and urine output is 1.2 mL/kg/hour, so the prescribed potassium replacement criteria are met. Hourly glucose monitoring continues while insulin is infused.\n\nThe acidosis has not resolved (pH 7.24, HCO₃⁻ 14 mEq/L), so insulin must not be stopped and the client is not ready for a regular diet. Potassium chloride is never given by IV push because it can cause fatal dysrhythmias.",
+    "references": ["ISPAD Clinical Practice Consensus Guidelines 2022: Diabetic ketoacidosis and hyperglycemic hyperosmolar state"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "dka-6",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "matrix-single",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-dka",
+    "caseStudyPart": 6,
+    "questionText": "The nurse reviews the Day 2, 06:00 findings. For each finding, specify whether it indicates improvement, no change or a decline in the client's condition.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      { "id": "ph", "text": "Arterial pH 7.36" },
+      { "id": "resp", "text": "Respirations regular and unlaboured, 18/min" },
+      { "id": "wt", "text": "Weight 55.5 kg" },
+      { "id": "abd", "text": "Abdominal pain 3/10" },
+      { "id": "ha", "text": "Severe headache beginning about 05:10" }
+    ],
+    "matrixColumns": [
+      { "id": "imp", "label": "Improved" },
+      { "id": "same", "label": "No change" },
+      { "id": "dec", "label": "Declined" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "ph": "imp", "resp": "imp", "wt": "imp", "abd": "same", "ha": "dec" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "The pH has normalised, Kussmaul breathing has resolved and the weight is approaching baseline, all of which indicate correction of the acidosis and the fluid deficit. Abdominal pain is unchanged at 3/10.\n\nA new severe headache during DKA treatment is a warning sign of cerebral oedema and represents a decline. The nurse should assess neurological status and notify the provider immediately.",
+    "references": ["ISPAD Clinical Practice Consensus Guidelines 2022: Diabetic ketoacidosis and hyperglycemic hyperosmolar state"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  }
+]

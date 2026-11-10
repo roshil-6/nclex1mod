@@ -1,0 +1,878 @@
+[
+  {
+    "id": "case-vte",
+    "title": "Postoperative hip arthroplasty — venous thromboembolism",
+    "clinicalCategory": "Physiological Adaptation",
+    "origin": "original",
+    "scenario": "The nurse is caring for a 68-year-old client on an orthopaedic unit on postoperative day 2 after an elective right total hip arthroplasty.",
+    "totalParts": 6,
+    "records": [
+      {
+        "id": "hp",
+        "label": "History and Physical",
+        "blocks": [
+          {
+            "kind": "text",
+            "heading": "History",
+            "paragraphs": [
+              "Right hip osteoarthritis with progressive pain. Hypertension treated with amlodipine. Body mass index 34 kg/m². Former smoker (quit 6 years ago). No previous venous thromboembolism.",
+              "Allergies: no known drug allergies."
+            ]
+          },
+          {
+            "kind": "text",
+            "heading": "Surgery",
+            "paragraphs": [
+              "Day 0: right total hip arthroplasty under spinal anaesthesia. Estimated blood loss 350 mL. No intraoperative complications."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "notes",
+        "label": "Nurses' Notes",
+        "blocks": [
+          {
+            "kind": "entries",
+            "entries": [
+              {
+                "time": "Day 2, 08:00",
+                "text": "Client walked 10 metres with physical therapy using a walker. Reports the right calf feels \"tight and aching\" when walking. Right calf circumference 3 cm larger than left; right calf warm and tender to touch. Pedal pulses 2+ bilaterally; capillary refill less than 3 seconds in both feet. Hip incision edges approximated, no drainage. Hip pain 4/10 one hour after oxycodone. Lungs clear bilaterally. Client states he declined the enoxaparin injection last evening because \"the shots leave bruises.\""
+              },
+              {
+                "time": "Day 2, 10:30",
+                "fromPart": 3,
+                "text": "Client called out, stating \"I suddenly can't catch my breath.\" Reports sharp right-sided chest pain, 8/10, worse on inspiration. Restless and anxious, skin diaphoretic. Respirations rapid and shallow. Lungs clear bilaterally. Oxygen saturation 88% on room air."
+              },
+              {
+                "time": "Day 2, 11:30",
+                "fromPart": 6,
+                "text": "Oxygen at 4 L/min by nasal cannula. Heparin infusion running per protocol. Client states \"breathing is much easier.\" Pain on inspiration 2/10. Calmer, skin dry. Right calf circumference unchanged from 08:00 measurement; calf remains warm and tender."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vitals",
+        "label": "Vital Signs",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": [
+              "Time",
+              "Temperature",
+              "Heart rate",
+              "Respirations",
+              "Blood pressure",
+              "SpO₂"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Day 1, 20:00",
+                  "37.2 °C (99.0 °F)",
+                  "82/min",
+                  "16/min",
+                  "136/78 mm Hg",
+                  "96% room air"
+                ]
+              },
+              {
+                "cells": [
+                  "Day 2, 08:00",
+                  "37.6 °C (99.7 °F)",
+                  "94/min",
+                  "18/min",
+                  "132/80 mm Hg",
+                  "95% room air"
+                ]
+              },
+              {
+                "fromPart": 3,
+                "cells": [
+                  "Day 2, 10:30",
+                  "37.8 °C (100.0 °F)",
+                  "124/min",
+                  "30/min",
+                  "108/66 mm Hg",
+                  "88% room air"
+                ]
+              },
+              {
+                "fromPart": 6,
+                "cells": [
+                  "Day 2, 11:30",
+                  "37.6 °C (99.7 °F)",
+                  "96/min",
+                  "20/min",
+                  "124/74 mm Hg",
+                  "95% on 4 L/min nasal cannula"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "labs",
+        "label": "Laboratory Results",
+        "blocks": [
+          {
+            "kind": "table",
+            "heading": "Day 1, 06:00",
+            "columns": [
+              "Test",
+              "Result",
+              "Reference range"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Hemoglobin",
+                  "11.8 g/dL",
+                  "13.5–17.5 g/dL"
+                ]
+              },
+              {
+                "cells": [
+                  "Platelet count",
+                  "210,000/mm³",
+                  "150,000–400,000/mm³"
+                ]
+              },
+              {
+                "cells": [
+                  "aPTT",
+                  "30 seconds",
+                  "25–35 seconds"
+                ]
+              },
+              {
+                "cells": [
+                  "Creatinine",
+                  "0.9 mg/dL",
+                  "0.7–1.3 mg/dL"
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "table",
+            "heading": "Day 2, 10:45",
+            "fromPart": 4,
+            "columns": [
+              "Test",
+              "Result",
+              "Reference range"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "D-dimer",
+                  "1,850 ng/mL FEU",
+                  "less than 500 ng/mL FEU"
+                ]
+              },
+              {
+                "cells": [
+                  "Arterial pH",
+                  "7.48",
+                  "7.35–7.45"
+                ]
+              },
+              {
+                "cells": [
+                  "PaCO₂",
+                  "31 mm Hg",
+                  "35–45 mm Hg"
+                ]
+              },
+              {
+                "cells": [
+                  "PaO₂",
+                  "58 mm Hg",
+                  "80–100 mm Hg"
+                ]
+              },
+              {
+                "cells": [
+                  "HCO₃⁻",
+                  "24 mEq/L",
+                  "22–26 mEq/L"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rx",
+        "label": "Prescriptions",
+        "blocks": [
+          {
+            "kind": "table",
+            "heading": "Active prescriptions",
+            "columns": [
+              "Prescription",
+              "Status"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Enoxaparin 40 mg subcutaneously every 24 hours (21:00)",
+                  "Day 1 21:00 dose: refused by client"
+                ]
+              },
+              {
+                "cells": [
+                  "Oxycodone 5 mg orally every 4 hours as needed for pain 4–7/10",
+                  "Last given Day 2, 07:00"
+                ]
+              },
+              {
+                "cells": [
+                  "Acetaminophen 1,000 mg orally every 8 hours",
+                  "Active"
+                ]
+              },
+              {
+                "cells": [
+                  "Amlodipine 5 mg orally daily",
+                  "Active"
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "table",
+            "heading": "New prescriptions, Day 2, 11:00",
+            "fromPart": 5,
+            "columns": [
+              "Prescription",
+              "Status"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Heparin IV per weight-based protocol: bolus 80 units/kg, then infusion 18 units/kg/hour",
+                  "New"
+                ]
+              },
+              {
+                "cells": [
+                  "aPTT 6 hours after start of infusion, then per protocol",
+                  "New"
+                ]
+              },
+              {
+                "cells": [
+                  "Discontinue enoxaparin",
+                  "New"
+                ]
+              },
+              {
+                "cells": [
+                  "Oxygen by nasal cannula, titrate to SpO₂ 92% or higher",
+                  "New"
+                ]
+              },
+              {
+                "cells": [
+                  "CT pulmonary angiography",
+                  "New"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "case-dka",
+    "title": "Adolescent with type 1 diabetes — diabetic ketoacidosis",
+    "clinicalCategory": "Physiological Adaptation",
+    "origin": "original",
+    "scenario": "The nurse is caring for a 15-year-old client with type 1 diabetes mellitus who was brought to the emergency department by a parent.",
+    "totalParts": 6,
+    "records": [
+      {
+        "id": "notes",
+        "label": "Nurses' Notes",
+        "blocks": [
+          {
+            "kind": "entries",
+            "entries": [
+              {
+                "time": "14:00",
+                "text": "Parent reports the client's insulin pump tubing became dislodged at some point yesterday and the client has vomited 4 times since last evening. Client is drowsy but answers questions appropriately. Respirations deep and rapid with a fruity odour to the breath. Mucous membranes dry and sticky. Skin warm. Abdomen soft, generalised tenderness, pain 3/10. Breath sounds clear bilaterally. Weight 54 kg; usual weight 56 kg."
+              },
+              {
+                "time": "18:00",
+                "fromPart": 5,
+                "text": "Received 0.9% sodium chloride bolus and maintenance fluids; IV regular insulin infusion running since 15:30. Client more alert. Urine output last 4 hours 260 mL (1.2 mL/kg/hour). Respirations less deep. No vomiting since arrival."
+              },
+              {
+                "time": "Day 2, 06:00",
+                "fromPart": 6,
+                "text": "Client alert and asking for breakfast. Respirations regular and unlaboured. Weight 55.5 kg. Abdominal pain 3/10, unchanged. At 05:40 the client reported a severe headache that began about 30 minutes earlier."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vitals",
+        "label": "Vital Signs",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": [
+              "Time",
+              "Temperature",
+              "Heart rate",
+              "Respirations",
+              "Blood pressure",
+              "SpO₂"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "14:00",
+                  "37.4 °C (99.3 °F)",
+                  "122/min",
+                  "32/min, deep",
+                  "102/60 mm Hg",
+                  "99% room air"
+                ]
+              },
+              {
+                "fromPart": 5,
+                "cells": [
+                  "18:00",
+                  "37.1 °C (98.8 °F)",
+                  "104/min",
+                  "24/min",
+                  "108/64 mm Hg",
+                  "99% room air"
+                ]
+              },
+              {
+                "fromPart": 6,
+                "cells": [
+                  "Day 2, 06:00",
+                  "36.9 °C (98.4 °F)",
+                  "92/min",
+                  "18/min",
+                  "114/70 mm Hg",
+                  "99% room air"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "labs",
+        "label": "Laboratory Results",
+        "blocks": [
+          {
+            "kind": "table",
+            "heading": "14:10",
+            "columns": [
+              "Test",
+              "Result",
+              "Reference range"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Blood glucose",
+                  "486 mg/dL",
+                  "70–110 mg/dL"
+                ]
+              },
+              {
+                "cells": [
+                  "Arterial pH",
+                  "7.16",
+                  "7.35–7.45"
+                ]
+              },
+              {
+                "cells": [
+                  "HCO₃⁻",
+                  "11 mEq/L",
+                  "22–26 mEq/L"
+                ]
+              },
+              {
+                "cells": [
+                  "PaCO₂",
+                  "24 mm Hg",
+                  "35–45 mm Hg"
+                ]
+              },
+              {
+                "cells": [
+                  "Potassium",
+                  "5.6 mEq/L",
+                  "3.5–5.0 mEq/L"
+                ]
+              },
+              {
+                "cells": [
+                  "Sodium",
+                  "131 mEq/L",
+                  "135–145 mEq/L"
+                ]
+              },
+              {
+                "cells": [
+                  "BUN",
+                  "28 mg/dL",
+                  "7–20 mg/dL"
+                ]
+              },
+              {
+                "cells": [
+                  "Beta-hydroxybutyrate",
+                  "5.8 mmol/L",
+                  "less than 0.6 mmol/L"
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "table",
+            "heading": "18:00",
+            "columns": [
+              "Test",
+              "Result",
+              "Reference range"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Blood glucose",
+                  "268 mg/dL",
+                  "70–110 mg/dL"
+                ]
+              },
+              {
+                "cells": [
+                  "Arterial pH",
+                  "7.24",
+                  "7.35–7.45"
+                ]
+              },
+              {
+                "cells": [
+                  "HCO₃⁻",
+                  "14 mEq/L",
+                  "22–26 mEq/L"
+                ]
+              },
+              {
+                "cells": [
+                  "PaCO₂",
+                  "28 mm Hg",
+                  "35–45 mm Hg"
+                ]
+              },
+              {
+                "cells": [
+                  "Potassium",
+                  "3.9 mEq/L",
+                  "3.5–5.0 mEq/L"
+                ]
+              },
+              {
+                "cells": [
+                  "Sodium",
+                  "134 mEq/L",
+                  "135–145 mEq/L"
+                ]
+              },
+              {
+                "cells": [
+                  "BUN",
+                  "22 mg/dL",
+                  "7–20 mg/dL"
+                ]
+              },
+              {
+                "cells": [
+                  "Beta-hydroxybutyrate",
+                  "3.1 mmol/L",
+                  "less than 0.6 mmol/L"
+                ]
+              }
+            ],
+            "fromPart": 5
+          },
+          {
+            "kind": "table",
+            "heading": "Day 2, 06:00",
+            "columns": [
+              "Test",
+              "Result",
+              "Reference range"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Blood glucose",
+                  "182 mg/dL",
+                  "70–110 mg/dL"
+                ]
+              },
+              {
+                "cells": [
+                  "Arterial pH",
+                  "7.36",
+                  "7.35–7.45"
+                ]
+              },
+              {
+                "cells": [
+                  "HCO₃⁻",
+                  "20 mEq/L",
+                  "22–26 mEq/L"
+                ]
+              },
+              {
+                "cells": [
+                  "PaCO₂",
+                  "36 mm Hg",
+                  "35–45 mm Hg"
+                ]
+              },
+              {
+                "cells": [
+                  "Potassium",
+                  "4.1 mEq/L",
+                  "3.5–5.0 mEq/L"
+                ]
+              },
+              {
+                "cells": [
+                  "Sodium",
+                  "137 mEq/L",
+                  "135–145 mEq/L"
+                ]
+              },
+              {
+                "cells": [
+                  "BUN",
+                  "14 mg/dL",
+                  "7–20 mg/dL"
+                ]
+              },
+              {
+                "cells": [
+                  "Beta-hydroxybutyrate",
+                  "0.9 mmol/L",
+                  "less than 0.6 mmol/L"
+                ]
+              }
+            ],
+            "fromPart": 6
+          }
+        ]
+      },
+      {
+        "id": "rx",
+        "label": "Prescriptions",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": [
+              "Prescription"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "0.9% sodium chloride 10 mL/kg IV bolus over 1 hour, then maintenance fluids per DKA protocol"
+                ]
+              },
+              {
+                "cells": [
+                  "Regular insulin IV infusion 0.1 units/kg/hour, start after first hour of fluid therapy"
+                ]
+              },
+              {
+                "cells": [
+                  "Point-of-care blood glucose every hour"
+                ]
+              },
+              {
+                "cells": [
+                  "Electrolytes and venous blood gas every 2–4 hours"
+                ]
+              },
+              {
+                "cells": [
+                  "NPO except ice chips"
+                ]
+              },
+              {
+                "cells": [
+                  "Continuous cardiac monitoring"
+                ]
+              },
+              {
+                "fromPart": 5,
+                "cells": [
+                  "When blood glucose is 300 mg/dL or less, change IV fluid to dextrose 5% in 0.45% sodium chloride"
+                ]
+              },
+              {
+                "fromPart": 5,
+                "cells": [
+                  "Add potassium chloride 20 mEq/L to IV fluids when serum potassium is less than 5.0 mEq/L and urine output is at least 1 mL/kg/hour"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "case-hf-dig",
+    "title": "Older adult with heart failure — digoxin toxicity",
+    "clinicalCategory": "Pharmacological Therapies",
+    "origin": "original",
+    "scenario": "The nurse is caring for a 78-year-old client admitted to the medical unit from the emergency department.",
+    "totalParts": 6,
+    "records": [
+      {
+        "id": "hp",
+        "label": "History and Physical",
+        "blocks": [
+          {
+            "kind": "text",
+            "heading": "History",
+            "paragraphs": [
+              "Heart failure with reduced ejection fraction (ejection fraction 30%). Permanent atrial fibrillation. Chronic kidney disease stage 3. Lives alone; daughter visits daily.",
+              "Home medications: digoxin 0.25 mg orally daily, furosemide 40 mg orally twice daily, metoprolol succinate 25 mg orally daily, lisinopril 5 mg orally daily."
+            ]
+          },
+          {
+            "kind": "text",
+            "heading": "Presenting problem",
+            "paragraphs": [
+              "Four days of nausea, poor appetite and fatigue. Daughter reports the client has been \"seeing yellow-green rings around lights\" since yesterday."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "notes",
+        "label": "Nurses' Notes",
+        "blocks": [
+          {
+            "kind": "entries",
+            "entries": [
+              {
+                "time": "Day 1, 12:00",
+                "text": "Admitted to unit. Alert and oriented, fatigued. Reports nausea and has eaten very little for 4 days. States lights in the room \"have yellow halos.\" Apical pulse 52/min, irregular. Fine crackles in both lung bases. 1+ pitting oedema of both ankles. Weight 61.2 kg (dry weight per clinic record 61.0 kg)."
+              },
+              {
+                "time": "Day 1, 14:20",
+                "fromPart": 4,
+                "text": "Client reports feeling \"very dizzy\" when sitting up. Telemetry: atrial fibrillation with ventricular rate 40–44/min. Blood pressure 86/50 mm Hg. Skin cool. Client returned to bed; rapid response team called."
+              },
+              {
+                "time": "Day 3, 08:00",
+                "fromPart": 6,
+                "text": "Nausea resolved; ate 75% of breakfast. Denies visual changes. Apical pulse 68/min, irregular. Crackles now present to mid-lung fields bilaterally; client reports needing 3 pillows to sleep last night. Weight 63.3 kg."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vitals",
+        "label": "Vital Signs",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": [
+              "Time",
+              "Heart rate",
+              "Blood pressure",
+              "Respirations",
+              "SpO₂"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Day 1, 12:00",
+                  "52/min, irregular",
+                  "118/70 mm Hg",
+                  "18/min",
+                  "95% room air"
+                ]
+              },
+              {
+                "fromPart": 4,
+                "cells": [
+                  "Day 1, 14:20",
+                  "42/min, irregular",
+                  "86/50 mm Hg",
+                  "20/min",
+                  "94% room air"
+                ]
+              },
+              {
+                "fromPart": 6,
+                "cells": [
+                  "Day 3, 08:00",
+                  "68/min, irregular",
+                  "124/76 mm Hg",
+                  "24/min",
+                  "91% room air"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "labs",
+        "label": "Laboratory Results",
+        "blocks": [
+          {
+            "kind": "table",
+            "heading": "Day 1, 11:00",
+            "columns": [
+              "Test",
+              "Result",
+              "Reference range"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Digoxin level",
+                  "2.8 ng/mL",
+                  "0.5–2.0 ng/mL"
+                ]
+              },
+              {
+                "cells": [
+                  "Potassium",
+                  "3.1 mEq/L",
+                  "3.5–5.0 mEq/L"
+                ]
+              },
+              {
+                "cells": [
+                  "Magnesium",
+                  "1.5 mg/dL",
+                  "1.6–2.4 mg/dL"
+                ]
+              },
+              {
+                "cells": [
+                  "Creatinine",
+                  "1.6 mg/dL",
+                  "0.6–1.1 mg/dL"
+                ]
+              },
+              {
+                "cells": [
+                  "BUN",
+                  "32 mg/dL",
+                  "7–20 mg/dL"
+                ]
+              },
+              {
+                "cells": [
+                  "BNP",
+                  "860 pg/mL",
+                  "less than 100 pg/mL"
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "table",
+            "heading": "Day 3, 06:00",
+            "fromPart": 6,
+            "columns": [
+              "Test",
+              "Result",
+              "Reference range"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Digoxin level",
+                  "0.8 ng/mL",
+                  "0.5–2.0 ng/mL"
+                ]
+              },
+              {
+                "cells": [
+                  "Potassium",
+                  "4.0 mEq/L",
+                  "3.5–5.0 mEq/L"
+                ]
+              },
+              {
+                "cells": [
+                  "Magnesium",
+                  "2.0 mg/dL",
+                  "1.6–2.4 mg/dL"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mar",
+        "label": "Medication Administration Record",
+        "blocks": [
+          {
+            "kind": "table",
+            "heading": "Scheduled for Day 1",
+            "columns": [
+              "Medication",
+              "Time due"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Digoxin 0.25 mg orally daily",
+                  "13:00"
+                ]
+              },
+              {
+                "cells": [
+                  "Metoprolol succinate 25 mg orally daily",
+                  "13:00"
+                ]
+              },
+              {
+                "cells": [
+                  "Lisinopril 5 mg orally daily",
+                  "13:00"
+                ]
+              },
+              {
+                "cells": [
+                  "Potassium chloride extended-release 20 mEq orally twice daily",
+                  "13:00"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

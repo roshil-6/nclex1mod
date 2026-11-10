@@ -1,0 +1,560 @@
+[
+  {
+    "id": "sb-hip-precautions",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "multiple",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "scenario": "A client is being discharged after a posterior-approach total hip arthroplasty.",
+    "questionText": "Which statements by the client indicate understanding of hip precautions? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "\"I will use a raised toilet seat.\"" },
+      { "id": "b", "text": "\"I will keep a pillow between my knees when I lie on my side.\"" },
+      { "id": "c", "text": "\"I can cross my legs when I sit if it is comfortable.\"" },
+      { "id": "d", "text": "\"I will use a long-handled reacher to pick things up from the floor.\"" },
+      { "id": "e", "text": "\"I will sit in a low, soft armchair so I can relax.\"" }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "d"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "After a posterior approach, flexing the hip beyond 90°, adducting it past the midline and internally rotating it increase the risk of dislocation. A raised toilet seat, an abduction pillow between the knees and a reacher help avoid these positions. Crossing the legs causes adduction, and low soft chairs cause excessive hip flexion.",
+    "references": ["Total hip arthroplasty postoperative care — standard orthopaedic nursing content"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed",
+    "reviewNotes": "Hip precautions vary by surgeon and approach; keyed for a posterior approach as stated in the stem."
+  },
+  {
+    "id": "sb-falls",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "multiple",
+    "clinicalCategory": "Safety and Infection Control",
+    "scenario": "An 82-year-old client with mild cognitive impairment is admitted with a urinary tract infection and has a high fall-risk score.",
+    "questionText": "Which interventions should the nurse implement? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "Keep the bed in the lowest position with the brakes locked." },
+      { "id": "b", "text": "Offer toileting assistance on a regular schedule." },
+      { "id": "c", "text": "Raise all four side rails at night." },
+      { "id": "d", "text": "Place the call light and personal items within reach." },
+      { "id": "e", "text": "Provide non-slip footwear." },
+      { "id": "f", "text": "Apply a vest restraint while the client is in bed." }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "d", "e"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "A low, locked bed, scheduled toileting (a UTI increases urgency), items within reach and non-slip footwear are evidence-based fall-prevention measures. Four raised side rails are considered a restraint and increase injury when confused clients climb over them. A vest restraint is not a fall-prevention intervention and requires a prescription and least-restrictive justification.",
+    "references": ["AHRQ Preventing Falls in Hospitals toolkit"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sb-hf-sides",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "matrix-multiple",
+    "clinicalCategory": "Physiological Adaptation",
+    "questionText": "The nurse is reviewing assessment findings for clients with heart failure. For each finding, specify whether it is associated with left-sided heart failure, right-sided heart failure or both.",
+    "instructions": "Each finding may have more than one answer.",
+    "matrixRowHeading": "Assessment finding",
+    "matrixRows": [
+      { "id": "crackles", "text": "Crackles in the lung bases" },
+      { "id": "jvd", "text": "Jugular venous distension" },
+      { "id": "orthopnoea", "text": "Orthopnoea" },
+      { "id": "oedema", "text": "Dependent peripheral oedema" },
+      { "id": "liver", "text": "Hepatomegaly" },
+      { "id": "fatigue", "text": "Fatigue" }
+    ],
+    "matrixColumns": [
+      { "id": "left", "label": "Left-sided heart failure" },
+      { "id": "right", "label": "Right-sided heart failure" }
+    ],
+    "answerKey": {
+      "type": "matrix-multiple",
+      "selections": {
+        "crackles": ["left"],
+        "jvd": ["right"],
+        "orthopnoea": ["left"],
+        "oedema": ["right"],
+        "liver": ["right"],
+        "fatigue": ["left", "right"]
+      }
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Left-sided failure causes back-up into the pulmonary circulation, producing crackles and orthopnoea. Right-sided failure causes systemic venous congestion, producing jugular venous distension, dependent oedema and hepatomegaly. Reduced cardiac output causes fatigue in both.",
+    "references": ["Heart failure clinical manifestations — standard medical-surgical nursing content"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sb-drug-labs",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "matrix-multiple",
+    "clinicalCategory": "Pharmacological Therapies",
+    "questionText": "For each medication, specify the laboratory value or values the nurse should monitor to evaluate safety or effectiveness.",
+    "instructions": "Each medication may have more than one answer.",
+    "matrixRowHeading": "Medication",
+    "matrixRows": [
+      { "id": "warfarin", "text": "Warfarin" },
+      { "id": "heparin", "text": "Unfractionated heparin infusion" },
+      { "id": "furosemide", "text": "Furosemide" },
+      { "id": "spironolactone", "text": "Spironolactone" }
+    ],
+    "matrixColumns": [
+      { "id": "inr", "label": "INR" },
+      { "id": "aptt", "label": "aPTT" },
+      { "id": "plt", "label": "Platelet count" },
+      { "id": "k", "label": "Serum potassium" }
+    ],
+    "answerKey": {
+      "type": "matrix-multiple",
+      "selections": {
+        "warfarin": ["inr"],
+        "heparin": ["aptt", "plt"],
+        "furosemide": ["k"],
+        "spironolactone": ["k"]
+      }
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "The INR guides warfarin dosing. The aPTT (or anti-Xa level) guides an unfractionated heparin infusion, and the platelet count screens for heparin-induced thrombocytopenia. Furosemide, a loop diuretic, can cause hypokalaemia, and spironolactone, a potassium-sparing diuretic, can cause hyperkalaemia; both require potassium monitoring.",
+    "references": ["Anticoagulant and diuretic monitoring — standard pharmacology nursing content"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sb-precautions",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "matrix-single",
+    "clinicalCategory": "Safety and Infection Control",
+    "questionText": "For each client condition, specify the transmission-based precaution the nurse should implement in addition to standard precautions.",
+    "matrixRowHeading": "Client condition",
+    "matrixRows": [
+      { "id": "tb", "text": "Suspected pulmonary tuberculosis" },
+      { "id": "flu", "text": "Influenza" },
+      { "id": "mrsa", "text": "MRSA-infected wound with uncontained drainage" },
+      { "id": "measles", "text": "Measles (rubeola)" },
+      { "id": "pertussis", "text": "Pertussis" },
+      { "id": "cdiff", "text": "Clostridioides difficile diarrhoea" }
+    ],
+    "matrixColumns": [
+      { "id": "contact", "label": "Contact" },
+      { "id": "droplet", "label": "Droplet" },
+      { "id": "airborne", "label": "Airborne" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "tb": "airborne", "flu": "droplet", "mrsa": "contact", "measles": "airborne", "pertussis": "droplet", "cdiff": "contact" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Tuberculosis and measles are spread by small airborne particles, which require an airborne infection isolation room and an N95 respirator. Influenza and pertussis are spread by large respiratory droplets, which require a mask within close range. MRSA in uncontained drainage and C. difficile are spread by direct and indirect contact, which requires a gown and gloves.",
+    "references": ["CDC 2007 Guideline for Isolation Precautions, Appendix A"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sb-newborn",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "matrix-single",
+    "clinicalCategory": "Health Promotion and Maintenance",
+    "scenario": "The nurse is assessing a term newborn.",
+    "questionText": "For each finding, specify whether it is expected or unexpected.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      { "id": "acro", "text": "Bluish hands and feet at 1 hour of age" },
+      { "id": "hr", "text": "Apical heart rate 148/min at rest" },
+      { "id": "rr", "text": "Respiratory rate 74/min with nasal flaring" },
+      { "id": "temp", "text": "Axillary temperature 36.0 °C (96.8 °F)" },
+      { "id": "molding", "text": "Elongated head shape after vaginal birth" },
+      { "id": "jaundice", "text": "Yellow skin colour at 12 hours of age" }
+    ],
+    "matrixColumns": [
+      { "id": "exp", "label": "Expected" },
+      { "id": "unexp", "label": "Unexpected" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "acro": "exp", "hr": "exp", "rr": "unexp", "temp": "unexp", "molding": "exp", "jaundice": "unexp" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Acrocyanosis in the first hours, a heart rate of about 110–160/min and moulding after vaginal birth are expected.\n\nA respiratory rate above 60/min with nasal flaring indicates respiratory distress. An axillary temperature below about 36.5 °C is hypothermia. Jaundice appearing within the first 24 hours is pathological and needs evaluation.",
+    "references": ["Newborn assessment — standard maternal–newborn nursing content"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sb-pancreatitis",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "matrix-single",
+    "clinicalCategory": "Basic Care and Comfort",
+    "scenario": "A client is admitted with acute pancreatitis. Serum lipase is 3 times the upper limit of normal, and the client reports severe epigastric pain radiating to the back.",
+    "questionText": "For each nursing intervention, specify whether it is indicated or contraindicated.",
+    "matrixRowHeading": "Intervention",
+    "matrixRows": [
+      { "id": "analgesia", "text": "Administer IV opioid analgesia as prescribed" },
+      { "id": "fluids", "text": "Maintain IV fluid therapy as prescribed" },
+      { "id": "meal", "text": "Offer a high-fat meal to stimulate appetite" },
+      { "id": "position", "text": "Assist the client to sit up and lean forward for comfort" },
+      { "id": "glucose", "text": "Monitor blood glucose" },
+      { "id": "alcohol", "text": "Allow a small amount of alcohol to prevent withdrawal" }
+    ],
+    "matrixColumns": [
+      { "id": "ind", "label": "Indicated" },
+      { "id": "contra", "label": "Contraindicated" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "analgesia": "ind", "fluids": "ind", "meal": "contra", "position": "ind", "glucose": "ind", "alcohol": "contra" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Pain control, aggressive IV fluids (to counter fluid shifts) and an upright, forward-leaning position are core measures. Glucose is monitored because pancreatic damage can impair insulin secretion.\n\nFat stimulates pancreatic enzyme secretion and worsens pain. Alcohol directly injures the pancreas; withdrawal is managed pharmacologically, not with alcohol.",
+    "references": ["Acute pancreatitis — standard medical-surgical nursing content"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sb-cath",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "matrix-single",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "scenario": "A client returned from cardiac catheterisation through the right femoral artery 2 hours ago.",
+    "questionText": "For each finding, specify whether it is expected or unexpected.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      { "id": "pulse", "text": "Right pedal pulse 2+, equal to the left" },
+      { "id": "bruise", "text": "Small, flat bruise around the puncture site" },
+      { "id": "hematoma", "text": "Firm, enlarging swelling at the puncture site" },
+      { "id": "foot", "text": "Right foot cool and pale compared with the left" },
+      { "id": "back", "text": "New back pain with blood pressure falling from 132/80 to 98/60 mm Hg" },
+      { "id": "flat", "text": "Client reports discomfort from lying flat" }
+    ],
+    "matrixColumns": [
+      { "id": "exp", "label": "Expected" },
+      { "id": "unexp", "label": "Unexpected" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "pulse": "exp", "bruise": "exp", "hematoma": "unexp", "foot": "unexp", "back": "unexp", "flat": "exp" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Equal distal pulses, a small flat bruise and discomfort from prescribed bed rest are expected.\n\nAn enlarging haematoma indicates bleeding at the site. A cool, pale foot suggests arterial occlusion. Back or flank pain with hypotension suggests retroperitoneal bleeding, an emergency.",
+    "references": ["Care after cardiac catheterisation — standard cardiovascular nursing content"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sb-copd-o2",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "dropdown",
+    "clinicalCategory": "Physiological Adaptation",
+    "scenario": "A client with chronic obstructive pulmonary disease and a documented history of chronic hypercapnia (baseline PaCO₂ 58 mm Hg) is admitted with an exacerbation. Oxygen is prescribed.",
+    "questionText": "Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "The nurse should titrate oxygen to maintain an SpO₂ of {{target}} because excessive oxygen may cause {{risk}}.",
+    "dropdownFields": [
+      {
+        "id": "target",
+        "options": [
+          { "id": "8892", "text": "88–92%" },
+          { "id": "95100", "text": "95–100%" },
+          { "id": "8084", "text": "80–84%" },
+          { "id": "9296", "text": "92–96%" }
+        ]
+      },
+      {
+        "id": "risk",
+        "options": [
+          { "id": "co2", "text": "worsening carbon dioxide retention" },
+          { "id": "alk", "text": "metabolic alkalosis" },
+          { "id": "pneumo", "text": "spontaneous pneumothorax" },
+          { "id": "dry", "text": "drying of the nasal mucosa only" }
+        ]
+      }
+    ],
+    "answerKey": { "type": "dropdown", "values": { "target": "8892", "risk": "co2" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "In clients at risk of hypercapnic respiratory failure, a target SpO₂ of 88–92% avoids hypoxaemia while limiting oxygen-induced hypercapnia. That hypercapnia arises from worsened ventilation–perfusion matching and the Haldane effect, with a smaller contribution from reduced respiratory drive.",
+    "references": ["British Thoracic Society guideline for oxygen use in healthcare and emergency settings (2017)"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sb-transfusion",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "dropdown",
+    "clinicalCategory": "Pharmacological Therapies",
+    "scenario": "Fifteen minutes after starting a unit of packed red blood cells, the client reports chills and low back pain. Temperature has risen from 37.0 °C (98.6 °F) to 38.6 °C (101.5 °F), heart rate 118/min and blood pressure 92/58 mm Hg (baseline 128/76 mm Hg).",
+    "questionText": "Complete the table by selecting the best choice for each clinical decision.",
+    "dropdownLayout": "table",
+    "dropdownTableHeadings": ["Clinical decision", "Nurse's selection"],
+    "dropdownFields": [
+      {
+        "id": "interp",
+        "label": "Interpretation of the findings",
+        "options": [
+          { "id": "ahtr", "text": "Acute haemolytic transfusion reaction" },
+          { "id": "allergic", "text": "Mild allergic reaction" },
+          { "id": "taco", "text": "Transfusion-associated circulatory overload" },
+          { "id": "expected", "text": "Expected response to transfusion" }
+        ]
+      },
+      {
+        "id": "first",
+        "label": "First action",
+        "options": [
+          { "id": "stop", "text": "Stop the transfusion" },
+          { "id": "slow", "text": "Slow the transfusion rate" },
+          { "id": "antihist", "text": "Give diphenhydramine and continue" },
+          { "id": "warm", "text": "Apply warm blankets and continue" }
+        ]
+      },
+      {
+        "id": "fluid",
+        "label": "IV fluid to infuse",
+        "options": [
+          { "id": "ns", "text": "0.9% sodium chloride through new tubing" },
+          { "id": "d5w", "text": "Dextrose 5% in water" },
+          { "id": "same", "text": "0.9% sodium chloride through the blood tubing" },
+          { "id": "none", "text": "No IV fluid" }
+        ]
+      },
+      {
+        "id": "send",
+        "label": "Items to send to the blood bank",
+        "options": [
+          { "id": "bag", "text": "Blood bag, tubing and a new blood sample" },
+          { "id": "urineonly", "text": "Urine specimen only" },
+          { "id": "nothing", "text": "Nothing; discard the blood bag" },
+          { "id": "culture", "text": "Sputum culture" }
+        ]
+      }
+    ],
+    "answerKey": { "type": "dropdown", "values": { "interp": "ahtr", "first": "stop", "fluid": "ns", "send": "bag" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "Fever, chills, flank or back pain, tachycardia and hypotension soon after starting red cells indicate an acute haemolytic reaction. The nurse stops the transfusion immediately and keeps the IV line open with 0.9% sodium chloride through new tubing, so no more donor blood enters the vein. The bag, tubing and new blood (and usually urine) samples are sent for investigation. Dextrose solutions haemolyse red cells and are never used with blood.",
+    "references": ["Transfusion reaction management — standard medical-surgical nursing content"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sb-thyroidectomy-ca",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "dropdown",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "scenario": "On the first day after total thyroidectomy, a client reports tingling around the mouth and in the fingertips. Tapping in front of the ear produces twitching of the facial muscles.",
+    "questionText": "Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "The nurse recognises that the findings suggest {{cond}} and should {{action}}.",
+    "dropdownFields": [
+      {
+        "id": "cond",
+        "options": [
+          { "id": "hypoca", "text": "hypocalcaemia" },
+          { "id": "storm", "text": "thyroid storm" },
+          { "id": "hyperca", "text": "hypercalcaemia" },
+          { "id": "hypok", "text": "hypokalaemia" }
+        ]
+      },
+      {
+        "id": "action",
+        "options": [
+          { "id": "notify", "text": "notify the provider and prepare IV calcium gluconate" },
+          { "id": "levo", "text": "give an extra dose of levothyroxine" },
+          { "id": "ice", "text": "apply an ice pack to the neck" },
+          { "id": "reassure", "text": "reassure the client that this is expected and will pass" }
+        ]
+      }
+    ],
+    "answerKey": { "type": "dropdown", "values": { "cond": "hypoca", "action": "notify" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "Perioral and fingertip paraesthesias and a positive Chvostek sign indicate hypocalcaemia from parathyroid injury or removal during thyroidectomy. It can progress to tetany and laryngospasm, so the provider is notified, and IV calcium gluconate is kept ready and given as prescribed.",
+    "references": ["Post-thyroidectomy complications — standard medical-surgical nursing content"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sb-preeclampsia-call",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "highlight",
+    "clinicalCategory": "Health Promotion and Maintenance",
+    "scenario": "A client at 32 weeks' gestation telephones the prenatal clinic. The nurse documents the call.",
+    "questionText": "Click to highlight the findings that require immediate follow-up.",
+    "highlightLayout": "text",
+    "highlightItems": [
+      { "id": "a", "text": "Client reports a headache since this morning that acetaminophen has not relieved." },
+      { "id": "b", "text": "Client reports mild ankle swelling in the evenings." },
+      { "id": "c", "text": "Client reports seeing flashing spots." },
+      { "id": "d", "text": "Client reports heartburn after large meals." },
+      { "id": "e", "text": "Client reports pain under the ribs on the right side." },
+      { "id": "f", "text": "Client reports the baby is moving as usual." },
+      { "id": "g", "text": "Client reports her face and hands became puffy over the past 2 days." },
+      { "id": "h", "text": "Client reports a dull low backache when standing for long periods." }
+    ],
+    "answerKey": { "type": "highlight", "itemIds": ["a", "c", "e", "g"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "A persistent headache unresponsive to analgesics, visual disturbances and right upper quadrant or epigastric pain are severe features of preeclampsia. New swelling of the face and hands warrants same-day blood pressure and urine protein evaluation.\n\nEvening ankle oedema, heartburn after meals, normal fetal movement and low backache are common in the third trimester.",
+    "references": ["ACOG Practice Bulletin No. 222: Gestational Hypertension and Preeclampsia (2020)"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sb-clozapine",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "highlight",
+    "clinicalCategory": "Psychosocial Integrity",
+    "scenario": "A client with schizophrenia started clozapine 6 weeks ago and attends a clinic visit.",
+    "questionText": "Click to highlight the findings that require immediate follow-up.",
+    "highlightLayout": "table",
+    "highlightTableHeadings": ["Body system", "Findings"],
+    "highlightItems": [
+      { "id": "temp", "group": "General", "text": "Temperature 38.4 °C (101.1 °F)" },
+      { "id": "wt", "group": "General", "text": "Weight gain of 2 kg since starting clozapine" },
+      { "id": "throat", "group": "Ear, nose, mouth and throat", "text": "Sore throat for 2 days" },
+      { "id": "saliva", "group": "Ear, nose, mouth and throat", "text": "Drooling on the pillow at night" },
+      { "id": "hr", "group": "Cardiovascular", "text": "Resting heart rate 122/min with new chest discomfort" },
+      { "id": "bp", "group": "Cardiovascular", "text": "Blood pressure 118/76 mm Hg" },
+      { "id": "sed", "group": "Neurological", "text": "Drowsy for the first hour after waking" },
+      { "id": "bm", "group": "Gastrointestinal", "text": "Last bowel movement yesterday" }
+    ],
+    "answerKey": { "type": "highlight", "itemIds": ["temp", "throat", "hr"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Fever and sore throat may signal infection from clozapine-induced agranulocytosis, which requires an urgent absolute neutrophil count. Resting tachycardia with chest discomfort in the first 2 months of therapy raises concern for clozapine-induced myocarditis.\n\nModest weight gain, hypersalivation and morning sedation are common adverse effects that are managed but not emergencies. A bowel movement yesterday is normal.",
+    "references": ["Clozapine prescribing information — boxed warnings (severe neutropenia, myocarditis)"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sb-bowtie-anaphylaxis",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "bowtie",
+    "clinicalCategory": "Physiological Adaptation",
+    "scenario": "Five minutes after an IV infusion of ceftriaxone is started, a client reports throat tightness and itching. The nurse observes hives on the chest, wheezing and swelling of the lips. Blood pressure has fallen from 124/78 to 84/50 mm Hg, and heart rate is 128/min.",
+    "questionText": "Complete the diagram by selecting from the choices below. Specify the condition the client is most likely experiencing, 2 actions the nurse should take and 2 parameters the nurse should monitor.",
+    "bowtie": {
+      "left": {
+        "label": "Actions to take",
+        "slots": 2,
+        "options": [
+          { "id": "stop", "text": "Stop the ceftriaxone infusion" },
+          { "id": "epi", "text": "Administer intramuscular epinephrine as prescribed" },
+          { "id": "slow", "text": "Slow the infusion rate and reassess in 15 minutes" },
+          { "id": "oralantihist", "text": "Give oral diphenhydramine as the first medication" },
+          { "id": "fowler", "text": "Sit the client upright with legs dangling" }
+        ]
+      },
+      "center": {
+        "label": "Condition most likely experiencing",
+        "slots": 1,
+        "options": [
+          { "id": "anaph", "text": "Anaphylaxis" },
+          { "id": "vasovagal", "text": "Vasovagal reaction" },
+          { "id": "asthma", "text": "Asthma exacerbation" },
+          { "id": "sepsis", "text": "Septic shock" }
+        ]
+      },
+      "right": {
+        "label": "Parameters to monitor",
+        "slots": 2,
+        "options": [
+          { "id": "bp", "text": "Blood pressure" },
+          { "id": "airway", "text": "Airway patency and respiratory status" },
+          { "id": "glucose", "text": "Blood glucose" },
+          { "id": "na", "text": "Serum sodium" },
+          { "id": "bowel", "text": "Bowel sounds" }
+        ]
+      }
+    },
+    "answerKey": { "type": "bowtie", "left": ["stop", "epi"], "center": ["anaph"], "right": ["bp", "airway"] },
+    "scoringPolicy": "zero-one",
+    "rationale": "Sudden skin and mucosal involvement with respiratory compromise and hypotension after drug exposure meets the criteria for anaphylaxis. The nurse stops the trigger and gives intramuscular epinephrine, the first-line treatment. Antihistamines are adjuncts, not first-line. A hypotensive client should lie supine with legs raised rather than sit upright. Airway, breathing and blood pressure are monitored closely, because swelling and shock can progress or recur.",
+    "references": ["World Allergy Organization Anaphylaxis Guidance 2020"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sb-bowtie-opioid",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "bowtie",
+    "clinicalCategory": "Pharmacological Therapies",
+    "scenario": "A client is 1 day after abdominal surgery and has a morphine patient-controlled analgesia (PCA) pump. The client is difficult to arouse and falls asleep mid-sentence. Respirations are 7/min and shallow, SpO₂ is 86% on room air, and pupils are pinpoint.",
+    "questionText": "Complete the diagram by selecting from the choices below. Specify the condition the client is most likely experiencing, 2 actions the nurse should take and 2 parameters the nurse should monitor.",
+    "bowtie": {
+      "left": {
+        "label": "Actions to take",
+        "slots": 2,
+        "options": [
+          { "id": "stoppca", "text": "Stop the PCA infusion" },
+          { "id": "naloxone", "text": "Administer naloxone as prescribed" },
+          { "id": "bolus", "text": "Give a PCA bolus for pain" },
+          { "id": "sleep", "text": "Dim the lights and allow the client to rest" },
+          { "id": "family", "text": "Teach the family to press the PCA button" }
+        ]
+      },
+      "center": {
+        "label": "Condition most likely experiencing",
+        "slots": 1,
+        "options": [
+          { "id": "ord", "text": "Opioid-induced respiratory depression" },
+          { "id": "hypogly", "text": "Hypoglycaemia" },
+          { "id": "stroke", "text": "Ischaemic stroke" },
+          { "id": "pe", "text": "Pulmonary embolism" }
+        ]
+      },
+      "right": {
+        "label": "Parameters to monitor",
+        "slots": 2,
+        "options": [
+          { "id": "rr", "text": "Respiratory rate and depth" },
+          { "id": "sedation", "text": "Sedation level" },
+          { "id": "uo", "text": "Urine colour" },
+          { "id": "k", "text": "Serum potassium" },
+          { "id": "temp", "text": "Temperature" }
+        ]
+      }
+    },
+    "answerKey": { "type": "bowtie", "left": ["stoppca", "naloxone"], "center": ["ord"], "right": ["rr", "sedation"] },
+    "scoringPolicy": "zero-one",
+    "rationale": "Increasing sedation, a respiratory rate below 8/min, hypoxaemia and miosis in a client receiving opioids indicate opioid-induced respiratory depression. The nurse stops the opioid and gives naloxone, titrated as prescribed. Sedation level and respiratory rate and depth are monitored closely, because naloxone's duration may be shorter than morphine's. PCA by proxy (family pressing the button) is unsafe.",
+    "references": ["ASPMN guidelines on monitoring for opioid-induced advancing sedation and respiratory depression"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  }
+]

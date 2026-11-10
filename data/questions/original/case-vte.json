@@ -1,0 +1,199 @@
+[
+  {
+    "id": "vte-1",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "highlight",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "caseStudyId": "case-vte",
+    "caseStudyPart": 1,
+    "questionText": "The nurse reviews the Day 2, 08:00 nurses' note. Click to highlight the findings that require follow-up.",
+    "instructions": "Highlight every finding that applies.",
+    "highlightLayout": "text",
+    "highlightItems": [
+      { "id": "a", "text": "Reports the right calf feels \"tight and aching\" when walking." },
+      { "id": "b", "text": "Right calf circumference 3 cm larger than left." },
+      { "id": "c", "text": "Right calf warm and tender to touch." },
+      { "id": "d", "text": "Pedal pulses 2+ bilaterally." },
+      { "id": "e", "text": "Hip incision edges approximated, no drainage." },
+      { "id": "f", "text": "Hip pain 4/10 one hour after oxycodone." },
+      { "id": "g", "text": "Lungs clear bilaterally." },
+      { "id": "h", "text": "Declined the enoxaparin injection last evening." }
+    ],
+    "answerKey": { "type": "highlight", "itemIds": ["a", "b", "c", "h"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Unilateral calf pain, calf swelling (a circumference difference of 3 cm or more is clinically significant) and localised warmth and tenderness after hip arthroplasty are classic signs of deep vein thrombosis (DVT). A refused dose of thromboprophylaxis increases the risk in a client who already has major orthopaedic surgery, obesity and reduced mobility as risk factors.\n\nPedal pulses of 2+ and brisk capillary refill indicate adequate arterial perfusion. An approximated incision without drainage, moderate pain controlled by the prescribed analgesic and clear lungs are expected on postoperative day 2.",
+    "references": ["Venous thromboembolism risk and assessment after major orthopaedic surgery — standard medical-surgical nursing content"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "vte-2",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "dropdown",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "caseStudyId": "case-vte",
+    "caseStudyPart": 2,
+    "questionText": "Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "The client is at highest risk for developing {{c1}} as evidenced by {{e1}} and {{e2}}.",
+    "dropdownFields": [
+      {
+        "id": "c1",
+        "options": [
+          { "id": "pe", "text": "pulmonary embolism" },
+          { "id": "ssi", "text": "surgical site infection" },
+          { "id": "cs", "text": "compartment syndrome" },
+          { "id": "disl", "text": "hip dislocation" }
+        ]
+      },
+      {
+        "id": "e1",
+        "options": [
+          { "id": "swell", "text": "unilateral calf swelling" },
+          { "id": "incision", "text": "an approximated incision" },
+          { "id": "pain", "text": "hip pain of 4/10" },
+          { "id": "lungs", "text": "clear breath sounds" }
+        ]
+      },
+      {
+        "id": "e2",
+        "options": [
+          { "id": "refused", "text": "the refused enoxaparin dose" },
+          { "id": "pulses", "text": "pedal pulses of 2+" },
+          { "id": "cap", "text": "capillary refill under 3 seconds" },
+          { "id": "amb", "text": "walking 10 metres with a walker" }
+        ]
+      }
+    ],
+    "answerKey": { "type": "dropdown", "values": { "c1": "pe", "e1": "swell", "e2": "refused" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "The findings indicate a probable right-leg DVT. The most serious complication of DVT is a clot fragment travelling to the pulmonary circulation (pulmonary embolism). Unilateral calf swelling is a sign of the thrombus, and the refused anticoagulant dose removed protection against clot propagation.\n\nThere are no signs of infection at the incision, compartment syndrome (pain out of proportion, pallor, paraesthesia, pulselessness) or hip dislocation (shortened, rotated leg; sudden severe hip pain).",
+    "references": ["Venous thromboembolism — standard medical-surgical nursing content"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "vte-3",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "single",
+    "clinicalCategory": "Management of Care",
+    "caseStudyId": "case-vte",
+    "caseStudyPart": 3,
+    "questionText": "The nurse reviews the 10:30 nurses' note and vital signs. Which client problem is the nurse's priority?",
+    "options": [
+      { "id": "a", "text": "Acute pain related to pleuritic chest pain" },
+      { "id": "b", "text": "Impaired gas exchange related to decreased pulmonary perfusion" },
+      { "id": "c", "text": "Anxiety related to sudden change in health status" },
+      { "id": "d", "text": "Risk for bleeding related to anticoagulant therapy" }
+    ],
+    "answerKey": { "type": "single", "optionId": "b" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Sudden dyspnoea, pleuritic chest pain, tachycardia, tachypnoea and an SpO₂ of 88% with clear lungs suggest acute pulmonary embolism. Hypoxaemia threatens oxygen delivery to vital organs, so impaired gas exchange (breathing) takes priority. Pain and anxiety are real but are partly caused by the hypoxaemia and are addressed after oxygenation. Bleeding is a potential problem, not an actual one.",
+    "references": ["Airway–breathing–circulation prioritisation framework"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "vte-4",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "matrix-single",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-vte",
+    "caseStudyPart": 4,
+    "questionText": "The provider has been notified, and the 10:45 laboratory results are now available. For each potential nursing action, specify whether it is indicated or contraindicated for the client at this time.",
+    "matrixRowHeading": "Nursing action",
+    "matrixRows": [
+      { "id": "hob", "text": "Raise the head of the bed" },
+      { "id": "o2", "text": "Apply supplemental oxygen" },
+      { "id": "massage", "text": "Massage the right calf to relieve tightness" },
+      { "id": "walk", "text": "Assist the client to walk in the hallway" },
+      { "id": "scd", "text": "Apply a sequential compression device to the right leg" },
+      { "id": "monitor", "text": "Place the client on continuous pulse oximetry and cardiac monitoring" }
+    ],
+    "matrixColumns": [
+      { "id": "ind", "label": "Indicated" },
+      { "id": "contra", "label": "Contraindicated" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "hob": "ind", "o2": "ind", "massage": "contra", "walk": "contra", "scd": "contra", "monitor": "ind" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "The ABG shows hypoxaemia (PaO₂ 58 mm Hg) with respiratory alkalosis from hyperventilation, and the D-dimer is elevated. Raising the head of the bed and giving oxygen improve ventilation and oxygenation. Continuous SpO₂ and cardiac monitoring detect deterioration such as worsening hypoxaemia or dysrhythmias.\n\nMassaging the calf, external compression with a sequential compression device, and walking could dislodge more thrombus from the affected leg. They are avoided until anticoagulation is established and the provider directs activity.",
+    "references": ["Pulmonary embolism nursing management — standard medical-surgical nursing content"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "vte-5",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "multiple",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-vte",
+    "caseStudyPart": 5,
+    "questionText": "The nurse reviews the new prescriptions. Which actions should the nurse take when starting the heparin protocol? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "Confirm a baseline aPTT and platelet count are available before starting the infusion." },
+      { "id": "b", "text": "Administer the infusion through an electronic infusion pump." },
+      { "id": "c", "text": "Have a second nurse independently verify the weight-based dose calculation." },
+      { "id": "d", "text": "Give the scheduled 21:00 enoxaparin dose in addition to the heparin infusion." },
+      { "id": "e", "text": "Ensure protamine sulfate is available on the unit." },
+      { "id": "f", "text": "Hold the infusion when the aPTT reaches the therapeutic range." }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "e"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "IV heparin is a high-alert medication. Baseline aPTT (or anti-Xa level) and platelet count are needed to titrate the dose and detect heparin-induced thrombocytopenia. A pump ensures an accurate continuous rate. An independent double check of the weight-based calculation reduces dosing errors. Protamine sulfate is the reversal agent for heparin.\n\nEnoxaparin was discontinued; giving it with heparin would duplicate anticoagulation and increase the bleeding risk. A therapeutic aPTT is the goal, so the infusion continues and is adjusted per protocol rather than held.",
+    "references": ["Institute for Safe Medication Practices — high-alert medications list (heparin)"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "vte-6",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "matrix-single",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-vte",
+    "caseStudyPart": 6,
+    "questionText": "The nurse reviews the 11:30 nurses' note and vital signs. For each finding, specify whether it indicates that the client's condition has improved or has not improved.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      { "id": "rr", "text": "Respiratory rate" },
+      { "id": "spo2", "text": "Oxygen saturation" },
+      { "id": "hr", "text": "Heart rate" },
+      { "id": "bp", "text": "Blood pressure" },
+      { "id": "pain", "text": "Pain on inspiration" },
+      { "id": "calf", "text": "Right calf circumference" }
+    ],
+    "matrixColumns": [
+      { "id": "imp", "label": "Improved" },
+      { "id": "not", "label": "Not improved" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "rr": "imp", "spo2": "imp", "hr": "imp", "bp": "imp", "pain": "imp", "calf": "not" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Compared with 10:30, the respiratory rate fell from 30 to 20/min, SpO₂ rose from 88% to 95% (on oxygen), the heart rate fell from 124 to 96/min, blood pressure rose from 108/66 to 124/74 mm Hg, and pleuritic pain fell from 8/10 to 2/10, so the cardiopulmonary response has improved.\n\nThe calf circumference is unchanged. This is expected early in anticoagulation, because heparin stops clot extension but does not dissolve an existing thrombus. It is still classed as not improved.",
+    "references": ["Pulmonary embolism nursing management — standard medical-surgical nursing content"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  }
+]

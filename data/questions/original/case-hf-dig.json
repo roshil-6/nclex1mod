@@ -1,0 +1,193 @@
+[
+  {
+    "id": "hfd-1",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "highlight",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-hf-dig",
+    "caseStudyPart": 1,
+    "questionText": "The nurse reviews the History and Physical, the Day 1, 12:00 nurses' note and the laboratory results. Click to highlight the findings that require immediate follow-up.",
+    "highlightLayout": "text",
+    "highlightItems": [
+      { "id": "nausea", "text": "Nausea and poor appetite for 4 days." },
+      { "id": "halos", "text": "Yellow halos around lights." },
+      { "id": "pulse", "text": "Apical pulse 52/min, irregular." },
+      { "id": "ankle", "text": "1+ pitting oedema of both ankles." },
+      { "id": "weight", "text": "Weight 61.2 kg (dry weight 61.0 kg)." },
+      { "id": "dig", "text": "Digoxin level 2.8 ng/mL." },
+      { "id": "k", "text": "Potassium 3.1 mEq/L." },
+      { "id": "af", "text": "History of permanent atrial fibrillation." }
+    ],
+    "answerKey": { "type": "highlight", "itemIds": ["nausea", "halos", "pulse", "dig", "k"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Anorexia, nausea and visual disturbances (yellow-green halos) are characteristic of digoxin toxicity. A slow apical pulse indicates digoxin's effect on AV conduction. The serum digoxin level is above the reference range, and hypokalaemia increases myocardial sensitivity to digoxin.\n\nMild ankle oedema and a weight 0.2 kg above dry weight are minimal and consistent with the client's chronic heart failure. Permanent atrial fibrillation is a known history explaining the irregular rhythm.",
+    "references": ["2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "hfd-2",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "dropdown",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-hf-dig",
+    "caseStudyPart": 2,
+    "questionText": "Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "The client's findings are most consistent with {{c}}, which has likely been made worse by {{f1}} and {{f2}}.",
+    "dropdownFields": [
+      {
+        "id": "c",
+        "options": [
+          { "id": "dig", "text": "digoxin toxicity" },
+          { "id": "hf", "text": "acute decompensated heart failure" },
+          { "id": "hyperk", "text": "hyperkalaemia" },
+          { "id": "gastro", "text": "viral gastroenteritis" }
+        ]
+      },
+      {
+        "id": "f1",
+        "options": [
+          { "id": "lowk", "text": "a low serum potassium" },
+          { "id": "bnp", "text": "an elevated BNP" },
+          { "id": "af", "text": "atrial fibrillation" },
+          { "id": "oedema", "text": "ankle oedema" }
+        ]
+      },
+      {
+        "id": "f2",
+        "options": [
+          { "id": "renal", "text": "reduced kidney function" },
+          { "id": "lisinopril", "text": "lisinopril therapy" },
+          { "id": "spo2", "text": "an SpO₂ of 95%" },
+          { "id": "alone", "text": "living alone" }
+        ]
+      }
+    ],
+    "answerKey": { "type": "dropdown", "values": { "c": "dig", "f1": "lowk", "f2": "renal" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "Digoxin and potassium compete for the same binding site on the Na⁺/K⁺-ATPase pump, so hypokalaemia increases digoxin's effect and the risk of toxicity. Digoxin is cleared mainly by the kidneys, so impaired kidney function (creatinine 1.6 mg/dL, BUN 32 mg/dL) lets the drug accumulate.\n\nThe BNP reflects heart failure but does not cause toxicity, and lisinopril tends to raise rather than lower potassium.",
+    "references": ["Digoxin prescribing information — warnings on electrolyte disturbance and renal impairment"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "hfd-3",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "matrix-single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-hf-dig",
+    "caseStudyPart": 3,
+    "questionText": "The nurse reviews the medication administration record before the 13:00 medications. For each medication, specify whether the nurse should administer it as prescribed or hold it and contact the provider.",
+    "matrixRowHeading": "Medication",
+    "matrixRows": [
+      { "id": "dig", "text": "Digoxin 0.25 mg orally" },
+      { "id": "meto", "text": "Metoprolol succinate 25 mg orally" },
+      { "id": "lis", "text": "Lisinopril 5 mg orally" },
+      { "id": "kcl", "text": "Potassium chloride extended-release 20 mEq orally" }
+    ],
+    "matrixColumns": [
+      { "id": "give", "label": "Administer as prescribed" },
+      { "id": "hold", "label": "Hold and contact the provider" }
+    ],
+    "answerKey": { "type": "matrix-single", "selections": { "dig": "hold", "meto": "hold", "lis": "give", "kcl": "give" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "Digoxin is held because the client has clinical and laboratory evidence of toxicity, with a pulse of 52/min. Metoprolol slows AV conduction and heart rate further and should be held with bradycardia, pending provider review.\n\nLisinopril can be given: the blood pressure is 118/70 mm Hg and the potassium is low, not high. Potassium chloride treats the hypokalaemia that is worsening digoxin toxicity.",
+    "references": ["Digoxin and beta-blocker administration parameters — standard pharmacology nursing content"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "hfd-4",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-hf-dig",
+    "caseStudyPart": 4,
+    "questionText": "The nurse reviews the 14:20 nurses' note and vital signs. Which prescription should the nurse anticipate?",
+    "options": [
+      { "id": "a", "text": "Digoxin immune Fab IV" },
+      { "id": "b", "text": "Furosemide 40 mg IV" },
+      { "id": "c", "text": "Metoprolol tartrate 5 mg IV" },
+      { "id": "d", "text": "An additional dose of digoxin 0.125 mg orally" }
+    ],
+    "answerKey": { "type": "single", "optionId": "a" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Symptomatic bradycardia with hypotension in a client with an elevated digoxin level is life-threatening digoxin toxicity. Digoxin immune Fab binds digoxin and reverses its effects. IV furosemide would worsen hypotension and hypokalaemia, metoprolol would slow the heart further, and more digoxin would worsen the toxicity.",
+    "references": ["Digoxin immune Fab prescribing information — indications"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "hfd-5",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "multiple",
+    "clinicalCategory": "Health Promotion and Maintenance",
+    "caseStudyId": "case-hf-dig",
+    "caseStudyPart": 5,
+    "questionText": "The client has stabilised, and digoxin will be resumed at 0.125 mg daily at discharge. Which instructions should the nurse include in discharge teaching? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "\"Count your pulse for 1 full minute before taking digoxin and record it.\"" },
+      { "id": "b", "text": "\"Report nausea, loss of appetite or changes in your vision to your provider.\"" },
+      { "id": "c", "text": "\"If you miss a dose, take two doses the next day.\"" },
+      { "id": "d", "text": "\"Weigh yourself every morning and report a gain of 1 kg (2 lb) in a day or 2 kg (5 lb) in a week.\"" },
+      { "id": "e", "text": "\"Keep your follow-up appointments for blood tests of your potassium and kidney function.\"" },
+      { "id": "f", "text": "\"Stop taking furosemide on days you feel thirsty.\"" }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "d", "e"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Clients taking digoxin monitor their pulse and learn the early signs of toxicity (gastrointestinal upset, visual changes). Daily weights detect fluid retention in heart failure. Potassium and kidney function influence digoxin toxicity and need regular monitoring.\n\nMissed doses must not be doubled, because of digoxin's narrow therapeutic range. Diuretics are not stopped without provider direction.",
+    "references": ["2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure — self-care education"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "hfd-6",
+    "origin": "original",
+    "enabled": true,
+    "originalQuestionNumber": null,
+    "questionType": "matrix-single",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-hf-dig",
+    "caseStudyPart": 6,
+    "questionText": "The nurse reviews the Day 3 findings. For each finding, specify whether it indicates that treatment has been effective or that a new problem needs follow-up.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      { "id": "nausea", "text": "Nausea resolved; ate 75% of breakfast" },
+      { "id": "vision", "text": "Denies visual changes" },
+      { "id": "hr", "text": "Apical pulse 68/min" },
+      { "id": "lab", "text": "Digoxin level 0.8 ng/mL; potassium 4.0 mEq/L" },
+      { "id": "lungs", "text": "Crackles to mid-lung fields; needs 3 pillows to sleep" },
+      { "id": "weight", "text": "Weight 63.3 kg" }
+    ],
+    "matrixColumns": [
+      { "id": "eff", "label": "Effective" },
+      { "id": "follow", "label": "Needs follow-up" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "nausea": "eff", "vision": "eff", "hr": "eff", "lab": "eff", "lungs": "follow", "weight": "follow" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Resolved gastrointestinal and visual symptoms, a heart rate back to 68/min, and normal digoxin and potassium levels show that the toxicity has been treated.\n\nHowever, crackles rising to mid-lung fields, new orthopnoea, a falling SpO₂ (91%) and a 2.1 kg weight gain since admission indicate worsening fluid overload from heart failure. This needs prompt provider follow-up, for example diuretic adjustment.",
+    "references": ["2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure"],
+    "sourceImages": [],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  }
+]
