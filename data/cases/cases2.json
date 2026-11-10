@@ -1,0 +1,613 @@
+[
+  {
+    "id": "case-sepsis",
+    "title": "Older adult with pneumonia — sepsis and septic shock",
+    "clinicalCategory": "Physiological Adaptation",
+    "origin": "original",
+    "scenario": "The nurse is caring for a 72-year-old client admitted to the medical unit from a long-term care facility.",
+    "totalParts": 6,
+    "records": [
+      {
+        "id": "notes",
+        "label": "Nurses' Notes",
+        "blocks": [
+          {
+            "kind": "entries",
+            "entries": [
+              {
+                "time": "08:00",
+                "text": "Facility reports the client is usually alert and oriented to person, place and time. Client is now oriented to person only and keeps pulling at the bed sheets. Productive cough with rust-coloured sputum. Crackles in the right lower lobe. Skin warm and flushed. Capillary refill 3 seconds. Has voided 150 mL in the past 8 hours. Weight 70 kg."
+              },
+              {
+                "time": "10:00",
+                "fromPart": 4,
+                "text": "0.9% sodium chloride 2,100 mL (30 mL/kg) completed. Blood cultures drawn at 08:20; ceftriaxone and azithromycin started at 08:35. Client remains confused. Skin now cool and mottled over the knees. Urine output 15 mL in the past hour via indwelling catheter."
+              },
+              {
+                "time": "16:00",
+                "fromPart": 6,
+                "text": "Norepinephrine infusing through a central venous catheter. Client oriented to person and place. Skin warm, no mottling. Urine output 40 mL/hour for the past 3 hours. Now on 4 L/min oxygen by nasal cannula; crackles heard in both lung bases, previously right lower lobe only."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vitals",
+        "label": "Vital Signs",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": ["Time", "Temperature", "Heart rate", "Respirations", "Blood pressure (MAP)", "SpO₂"],
+            "rows": [
+              { "cells": ["08:00", "39.1 °C (102.4 °F)", "118/min", "26/min", "94/56 mm Hg (69)", "90% room air"] },
+              { "fromPart": 4, "cells": ["10:00", "38.8 °C (101.8 °F)", "124/min", "28/min", "82/48 mm Hg (59)", "93% on 2 L/min"] },
+              { "fromPart": 6, "cells": ["16:00", "38.0 °C (100.4 °F)", "98/min", "22/min", "104/58 mm Hg (73)", "89% on 4 L/min"] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "labs",
+        "label": "Laboratory Results",
+        "blocks": [
+          {
+            "kind": "table",
+            "heading": "08:30",
+            "columns": ["Test", "Result", "Reference range"],
+            "rows": [
+              { "cells": ["White blood cell count", "18,600/mm³", "5,000–10,000/mm³"] },
+              { "cells": ["Lactate", "4.2 mmol/L", "0.5–2.0 mmol/L"] },
+              { "cells": ["Creatinine", "1.8 mg/dL", "0.6–1.2 mg/dL"] },
+              { "cells": ["Glucose", "156 mg/dL", "70–110 mg/dL"] },
+              { "cells": ["Blood cultures", "Pending", "—"] }
+            ]
+          },
+          {
+            "kind": "table",
+            "heading": "15:30",
+            "fromPart": 6,
+            "columns": ["Test", "Result", "Reference range"],
+            "rows": [
+              { "cells": ["Lactate", "2.1 mmol/L", "0.5–2.0 mmol/L"] },
+              { "cells": ["Creatinine", "1.5 mg/dL", "0.6–1.2 mg/dL"] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rx",
+        "label": "Prescriptions",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": ["Prescription"],
+            "rows": [
+              { "cells": ["Blood cultures × 2 sets"] },
+              { "cells": ["Ceftriaxone 1 g IV every 24 hours"] },
+              { "cells": ["Azithromycin 500 mg IV every 24 hours"] },
+              { "cells": ["0.9% sodium chloride 30 mL/kg IV over 3 hours"] },
+              { "cells": ["Oxygen to keep SpO₂ 92% or higher"] },
+              { "cells": ["Repeat lactate in 2 hours if initial lactate is greater than 2 mmol/L"] },
+              { "cells": ["Acetaminophen 650 mg orally every 6 hours as needed for temperature above 38.5 °C"] },
+              { "fromPart": 4, "cells": ["Norepinephrine IV infusion, titrate to mean arterial pressure (MAP) 65 mm Hg or higher"] },
+              { "fromPart": 4, "cells": ["Insert central venous catheter and arterial line"] }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "case-pph",
+    "title": "Postpartum client — postpartum haemorrhage",
+    "clinicalCategory": "Health Promotion and Maintenance",
+    "origin": "original",
+    "scenario": "The nurse is caring for a 31-year-old client on the postpartum unit after a vaginal birth.",
+    "totalParts": 6,
+    "records": [
+      {
+        "id": "hp",
+        "label": "History and Physical",
+        "blocks": [
+          {
+            "kind": "text",
+            "heading": "Labour and birth summary",
+            "paragraphs": [
+              "Gravida 3, para 3. Labour 18 hours, augmented with oxytocin infusion. Epidural analgesia. Spontaneous vaginal birth at 13:00 of a 4,300 g infant. Placenta delivered intact at 13:10. Second-degree perineal laceration repaired.",
+              "Medical history: asthma (uses albuterol inhaler about once a month). No hypertension. Blood type O positive. Prenatal haemoglobin 12.1 g/dL.",
+              "Breastfeeding was started at 13:20."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "notes",
+        "label": "Nurses' Notes",
+        "blocks": [
+          {
+            "kind": "entries",
+            "entries": [
+              {
+                "time": "13:30",
+                "text": "Fundus firm, at the umbilicus, midline. Lochia rubra, moderate. Perineum: repaired laceration, mild oedema. Pain 3/10. Has not voided since birth."
+              },
+              {
+                "time": "14:15",
+                "fromPart": 2,
+                "text": "Fundus soft and boggy, 2 cm above the umbilicus and deviated to the right. Saturated a perineal pad in 15 minutes with several clots. Bladder distended on palpation. Client reports feeling \"a bit dizzy.\""
+              },
+              {
+                "time": "14:25",
+                "fromPart": 3,
+                "text": "Fundal massage performed and client assisted to void 600 mL. Fundus firmed and is now at the umbilicus, but became boggy again within 5 minutes; bleeding continues. Provider notified."
+              },
+              {
+                "time": "14:50",
+                "fromPart": 4,
+                "text": "Bleeding continues despite uterotonics. Quantitative blood loss since birth 1,200 mL. Client pale and anxious. Rapid response team at bedside."
+              },
+              {
+                "time": "17:00",
+                "fromPart": 6,
+                "text": "Second unit of packed red blood cells started at 16:40. Fundus firm, 1 cm below the umbilicus. Lochia moderate, no clots. Urine output 35 mL/hour via indwelling catheter. At 16:55 the client reported itching; raised red welts noted on the chest and arms."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vitals",
+        "label": "Vital Signs",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": ["Time", "Heart rate", "Blood pressure", "Respirations", "SpO₂"],
+            "rows": [
+              { "cells": ["13:30", "84/min", "122/78 mm Hg", "18/min", "98% room air"] },
+              { "fromPart": 2, "cells": ["14:15", "108/min", "108/68 mm Hg", "20/min", "98% room air"] },
+              { "fromPart": 4, "cells": ["14:50", "126/min", "86/52 mm Hg", "24/min", "95% room air"] },
+              { "fromPart": 6, "cells": ["17:00", "92/min", "112/70 mm Hg", "18/min", "98% room air"] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "labs",
+        "label": "Laboratory Results",
+        "blocks": [
+          {
+            "kind": "table",
+            "heading": "15:00",
+            "fromPart": 5,
+            "columns": ["Test", "Result", "Reference range"],
+            "rows": [
+              { "cells": ["Hemoglobin", "7.6 g/dL", "12.0–16.0 g/dL"] },
+              { "cells": ["Platelet count", "142,000/mm³", "150,000–400,000/mm³"] },
+              { "cells": ["Type and crossmatch", "Completed; 4 units available", "—"] }
+            ]
+          },
+          {
+            "kind": "text",
+            "heading": "Prenatal",
+            "paragraphs": ["Hemoglobin 12.1 g/dL. Blood type O positive, antibody screen negative."]
+          }
+        ]
+      },
+      {
+        "id": "rx",
+        "label": "Prescriptions",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": ["Prescription"],
+            "rows": [
+              { "cells": ["Oxytocin 30 units in 500 mL lactated Ringer's IV, 125 mL/hour after birth"] },
+              { "cells": ["Ibuprofen 600 mg orally every 6 hours as needed for pain"] },
+              { "fromPart": 3, "cells": ["Increase oxytocin infusion rate per postpartum haemorrhage protocol"] },
+              { "fromPart": 3, "cells": ["Methylergonovine 0.2 mg IM once"] },
+              { "fromPart": 3, "cells": ["Carboprost tromethamine 250 mcg IM once"] },
+              { "fromPart": 3, "cells": ["Tranexamic acid 1 g IV over 10 minutes"] },
+              { "fromPart": 5, "cells": ["Transfuse 2 units packed red blood cells"] }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "case-bronch",
+    "title": "Infant with bronchiolitis",
+    "clinicalCategory": "Physiological Adaptation",
+    "origin": "original",
+    "scenario": "The nurse is caring for a 4-month-old infant admitted to the paediatric unit on day 3 of a respiratory illness. The infant was born at term and has no chronic conditions.",
+    "totalParts": 6,
+    "records": [
+      {
+        "id": "notes",
+        "label": "Nurses' Notes",
+        "blocks": [
+          {
+            "kind": "entries",
+            "entries": [
+              {
+                "time": "Day 1, 09:00",
+                "text": "Parent reports a runny nose for 3 days and a cough since yesterday. Infant has taken 2 ounces (60 mL) of formula in the past 6 hours (usually 4–5 ounces every 3 hours). One wet diaper in the past 8 hours. Nasal flaring and subcostal retractions. Copious clear nasal secretions. Wheezes and fine crackles bilaterally. Anterior fontanel slightly sunken. Alert and consolable. Capillary refill 3 seconds. Nasopharyngeal swab positive for respiratory syncytial virus (RSV)."
+              },
+              {
+                "time": "Day 1, 15:00",
+                "fromPart": 5,
+                "text": "Infant receiving oxygen 2 L/min by nasal cannula. Grunting with each breath. Difficult to rouse and does not cry with care. Severe subcostal and intercostal retractions. Copious nasal secretions persist."
+              },
+              {
+                "time": "Day 5, 10:00",
+                "fromPart": 6,
+                "text": "Room air SpO₂ 95%, feeding well, 6 wet diapers in 24 hours. Discharge teaching in progress with the parent."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vitals",
+        "label": "Vital Signs",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": ["Time", "Temperature", "Heart rate", "Respirations", "SpO₂", "Weight"],
+            "rows": [
+              { "cells": ["Day 1, 09:00", "38.3 °C (100.9 °F)", "172/min", "68/min", "89% room air", "6.2 kg"] },
+              { "fromPart": 5, "cells": ["Day 1, 15:00", "38.0 °C (100.4 °F)", "184/min", "78/min", "86% on 2 L/min", "—"] },
+              { "fromPart": 6, "cells": ["Day 5, 10:00", "36.9 °C (98.4 °F)", "128/min", "38/min", "95% room air", "6.3 kg"] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "io",
+        "label": "Intake and Output",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": ["Period", "Intake", "Output"],
+            "rows": [
+              { "cells": ["Day 1, 01:00–09:00 (home, reported)", "60 mL formula", "1 wet diaper"] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rx",
+        "label": "Prescriptions",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": ["Prescription"],
+            "rows": [
+              { "cells": ["Oxygen by nasal cannula to keep SpO₂ 90% or higher"] },
+              { "cells": ["Nasal suctioning as needed and before feeds"] },
+              { "cells": ["Acetaminophen 15 mg/kg orally every 6 hours as needed for fever"] },
+              { "cells": ["Continuous pulse oximetry"] },
+              { "cells": ["IV maintenance fluids at 100 mL/kg/day if oral intake inadequate"] }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "case-stroke",
+    "title": "Acute ischaemic stroke",
+    "clinicalCategory": "Physiological Adaptation",
+    "origin": "original",
+    "scenario": "The nurse is caring for a 66-year-old client brought to the emergency department by ambulance at 09:00.",
+    "totalParts": 6,
+    "records": [
+      {
+        "id": "hp",
+        "label": "History and Physical",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Spouse reports the client was last known well at 08:10, when the client suddenly dropped a coffee cup and could not answer questions.",
+              "History: atrial fibrillation diagnosed 1 year ago (declined anticoagulation), hypertension, hyperlipidaemia. No previous stroke, intracranial haemorrhage or recent surgery. Medications: metoprolol, atorvastatin.",
+              "Right-handed."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "notes",
+        "label": "Nurses' Notes",
+        "blocks": [
+          {
+            "kind": "entries",
+            "entries": [
+              {
+                "time": "09:00",
+                "text": "Alert, follows simple commands. Right facial droop. Right arm drifts downward within 5 seconds. Right leg weaker than left. Understands speech but has great difficulty finding words. Oriented to person and place by nodding. Point-of-care glucose 128 mg/dL. NIH Stroke Scale score 9."
+              },
+              {
+                "time": "09:40",
+                "fromPart": 3,
+                "text": "Non-contrast CT of the head: no intracranial haemorrhage. Provider discussing IV alteplase with client and spouse."
+              },
+              {
+                "time": "10:40",
+                "fromPart": 5,
+                "text": "Alteplase infusion started at 10:05. Client reports a sudden, severe headache and vomits once. Now drowsy and responds only to a loud voice. NIH Stroke Scale score 15."
+              },
+              {
+                "time": "Day 3, 08:00",
+                "fromPart": 6,
+                "text": "Neurologically stable. Bedside swallow screen: coughs and has a wet voice after sips of water. Speech-language pathologist recommends a modified diet with thickened liquids. Right-sided weakness persists."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vitals",
+        "label": "Vital Signs",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": ["Time", "Blood pressure", "Heart rate", "Respirations", "SpO₂", "Temperature"],
+            "rows": [
+              { "cells": ["09:00", "178/96 mm Hg", "104/min, irregular", "18/min", "96% room air", "36.8 °C (98.2 °F)"] },
+              { "fromPart": 3, "cells": ["09:40", "192/114 mm Hg", "98/min, irregular", "18/min", "96% room air", "36.8 °C (98.2 °F)"] },
+              { "fromPart": 4, "cells": ["10:00", "176/98 mm Hg (after labetalol)", "92/min, irregular", "18/min", "97% room air", "—"] },
+              { "fromPart": 5, "cells": ["10:40", "204/112 mm Hg", "62/min, irregular", "12/min, irregular", "95% room air", "—"] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "labs",
+        "label": "Laboratory Results",
+        "blocks": [
+          {
+            "kind": "table",
+            "heading": "09:10",
+            "columns": ["Test", "Result", "Reference range"],
+            "rows": [
+              { "cells": ["Glucose", "128 mg/dL", "70–110 mg/dL"] },
+              { "cells": ["Platelet count", "210,000/mm³", "150,000–400,000/mm³"] },
+              { "cells": ["INR", "1.0", "0.8–1.1"] },
+              { "cells": ["Creatinine", "0.9 mg/dL", "0.6–1.2 mg/dL"] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rx",
+        "label": "Prescriptions",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": ["Prescription"],
+            "rows": [
+              { "cells": ["NPO pending swallow screen"] },
+              { "cells": ["Neurological assessment and NIH Stroke Scale per stroke protocol"] },
+              { "fromPart": 3, "cells": ["Labetalol 10 mg IV now; repeat once if blood pressure remains above 185/110 mm Hg"] },
+              { "fromPart": 4, "cells": ["Alteplase 0.9 mg/kg IV: 10% as a bolus over 1 minute, remainder over 60 minutes"] },
+              { "fromPart": 4, "cells": ["Maintain blood pressure below 180/105 mm Hg for 24 hours after alteplase"] }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "case-etoh",
+    "title": "Postoperative client — alcohol withdrawal",
+    "clinicalCategory": "Psychosocial Integrity",
+    "origin": "original",
+    "scenario": "The nurse is caring for a 52-year-old client on an orthopaedic unit on postoperative day 2 after open reduction and internal fixation of a right ankle fracture sustained in a fall.",
+    "totalParts": 6,
+    "records": [
+      {
+        "id": "hp",
+        "label": "History and Physical",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Client reports drinking \"8 to 10 beers a day\" for several years. Last drink was on the evening of admission, about 54 hours ago. One previous episode of \"the shakes\" when unable to drink. No known seizure disorder.",
+              "Other history: none. Medications at home: none."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "notes",
+        "label": "Nurses' Notes",
+        "blocks": [
+          {
+            "kind": "entries",
+            "entries": [
+              {
+                "time": "Day 2, 06:00",
+                "text": "Client awake most of the night, restless and anxious. Fine tremor of both hands when arms extended. Skin diaphoretic. Reports nausea, no vomiting. States \"there are bugs crawling on the wall.\" Oriented to person and place, not to date. Right ankle pain 4/10. Splint dry and intact; toes pink and warm, capillary refill less than 3 seconds, can wiggle toes. CIWA-Ar score 22."
+              },
+              {
+                "time": "Day 4, 08:00",
+                "fromPart": 6,
+                "text": "Slept 6 hours overnight. No tremor. Oriented to person, place and time. CIWA-Ar score 6. Reports seeing \"two of everything\" since this morning and is unsteady when standing with the walker; eye movements are jerky on lateral gaze."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vitals",
+        "label": "Vital Signs",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": ["Time", "Temperature", "Heart rate", "Blood pressure", "Respirations", "SpO₂"],
+            "rows": [
+              { "cells": ["Day 2, 06:00", "37.9 °C (100.2 °F)", "112/min", "162/98 mm Hg", "22/min", "97% room air"] },
+              { "fromPart": 6, "cells": ["Day 4, 08:00", "36.8 °C (98.2 °F)", "88/min", "134/82 mm Hg", "16/min", "98% room air"] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "labs",
+        "label": "Laboratory Results",
+        "blocks": [
+          {
+            "kind": "table",
+            "heading": "Day 2, 05:00",
+            "columns": ["Test", "Result", "Reference range"],
+            "rows": [
+              { "cells": ["Magnesium", "1.4 mg/dL", "1.6–2.4 mg/dL"] },
+              { "cells": ["Potassium", "3.3 mEq/L", "3.5–5.0 mEq/L"] },
+              { "cells": ["Glucose", "84 mg/dL", "70–110 mg/dL"] },
+              { "cells": ["AST", "98 units/L", "10–40 units/L"] },
+              { "cells": ["Mean corpuscular volume (MCV)", "104 fL", "80–100 fL"] }
+            ]
+          },
+          {
+            "kind": "table",
+            "heading": "Day 4, 05:00",
+            "fromPart": 6,
+            "columns": ["Test", "Result", "Reference range"],
+            "rows": [
+              { "cells": ["Magnesium", "1.9 mg/dL", "1.6–2.4 mg/dL"] },
+              { "cells": ["Potassium", "4.0 mEq/L", "3.5–5.0 mEq/L"] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rx",
+        "label": "Prescriptions",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": ["Prescription"],
+            "rows": [
+              { "cells": ["CIWA-Ar assessment every hour while score is 10 or higher"] },
+              { "cells": ["Lorazepam 1–4 mg IV per CIWA-Ar protocol"] },
+              { "cells": ["Thiamine 100 mg IV daily"] },
+              { "cells": ["Folic acid 1 mg orally daily"] },
+              { "cells": ["Magnesium sulfate 2 g IV over 2 hours"] },
+              { "cells": ["Dextrose 5% in 0.45% sodium chloride IV at 75 mL/hour"] },
+              { "cells": ["Oxycodone 5 mg orally every 4 hours as needed for pain"] }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "case-aki",
+    "title": "Acute kidney injury with hyperkalaemia",
+    "clinicalCategory": "Physiological Adaptation",
+    "origin": "original",
+    "scenario": "The nurse is caring for a 64-year-old client admitted from the emergency department after 3 days of vomiting and diarrhoea.",
+    "totalParts": 6,
+    "records": [
+      {
+        "id": "hp",
+        "label": "History and Physical",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "History: type 2 diabetes, hypertension, heart failure with reduced ejection fraction, chronic low back pain. Baseline creatinine 1.1 mg/dL (3 months ago).",
+              "Home medications: lisinopril 20 mg daily, spironolactone 25 mg daily, metformin 1,000 mg twice daily, atorvastatin 40 mg daily. Client has also been taking ibuprofen 400 mg three times daily for back pain for 2 weeks."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "notes",
+        "label": "Nurses' Notes",
+        "blocks": [
+          {
+            "kind": "entries",
+            "entries": [
+              {
+                "time": "Day 1, 11:00",
+                "text": "Weak and fatigued. Mucous membranes dry. Urine output 80 mL in the past 6 hours. Cardiac monitor shows sinus rhythm with tall, peaked T waves. Lungs clear. Weight 81 kg (usual 84 kg)."
+              },
+              {
+                "time": "Day 3, 08:00",
+                "fromPart": 6,
+                "text": "Urine output 0.8 mL/kg/hour over the past 24 hours. Cardiac monitor: normal sinus rhythm, T waves normal. Fine crackles in both lung bases; client reports needing to sleep upright. 2+ pitting oedema of both ankles. Weight 87 kg."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vitals",
+        "label": "Vital Signs",
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": ["Time", "Heart rate", "Blood pressure", "Respirations", "SpO₂"],
+            "rows": [
+              { "cells": ["Day 1, 11:00", "96/min", "102/60 mm Hg", "18/min", "97% room air"] },
+              { "fromPart": 6, "cells": ["Day 3, 08:00", "88/min", "142/86 mm Hg", "24/min", "90% room air"] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "labs",
+        "label": "Laboratory Results",
+        "blocks": [
+          {
+            "kind": "table",
+            "heading": "Day 1, 10:30",
+            "columns": ["Test", "Result", "Reference range"],
+            "rows": [
+              { "cells": ["Potassium", "6.6 mEq/L", "3.5–5.0 mEq/L"] },
+              { "cells": ["Creatinine", "3.4 mg/dL", "0.6–1.2 mg/dL"] },
+              { "cells": ["BUN", "62 mg/dL", "7–20 mg/dL"] },
+              { "cells": ["Bicarbonate", "17 mEq/L", "22–26 mEq/L"] },
+              { "cells": ["Sodium", "133 mEq/L", "135–145 mEq/L"] },
+              { "cells": ["Glucose", "142 mg/dL", "70–110 mg/dL"] }
+            ]
+          },
+          {
+            "kind": "table",
+            "heading": "Day 3, 06:00",
+            "fromPart": 6,
+            "columns": ["Test", "Result", "Reference range"],
+            "rows": [
+              { "cells": ["Potassium", "4.6 mEq/L", "3.5–5.0 mEq/L"] },
+              { "cells": ["Creatinine", "1.9 mg/dL", "0.6–1.2 mg/dL"] },
+              { "cells": ["Bicarbonate", "22 mEq/L", "22–26 mEq/L"] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rx",
+        "label": "Prescriptions",
+        "fromPart": 2,
+        "blocks": [
+          {
+            "kind": "table",
+            "columns": ["Prescription"],
+            "rows": [
+              { "cells": ["Calcium gluconate 1 g IV over 10 minutes"] },
+              { "cells": ["Regular insulin 10 units IV with dextrose 50% 50 mL IV"] },
+              { "cells": ["Albuterol 10 mg by nebuliser"] },
+              { "cells": ["Sodium zirconium cyclosilicate 10 g orally"] },
+              { "cells": ["0.9% sodium chloride IV at 125 mL/hour"] },
+              { "cells": ["Point-of-care glucose every hour for 6 hours"] },
+              { "cells": ["Repeat potassium in 2 hours"] }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

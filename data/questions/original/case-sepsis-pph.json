@@ -1,0 +1,812 @@
+[
+  {
+    "id": "sep-1",
+    "origin": "original",
+    "questionType": "highlight",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-sepsis",
+    "caseStudyPart": 1,
+    "questionText": "The nurse reviews the 08:00 assessment and vital signs. Click to highlight the findings that require immediate follow-up.",
+    "highlightLayout": "table",
+    "highlightTableHeadings": [
+      "Category",
+      "Findings"
+    ],
+    "highlightItems": [
+      {
+        "id": "orient",
+        "group": "Neurological",
+        "text": "Oriented to person only (usually oriented to person, place and time)"
+      },
+      {
+        "id": "sputum",
+        "group": "Respiratory",
+        "text": "Productive cough with rust-coloured sputum"
+      },
+      {
+        "id": "rr",
+        "group": "Respiratory",
+        "text": "Respiratory rate 26/min; SpO₂ 90% on room air"
+      },
+      {
+        "id": "hr",
+        "group": "Cardiovascular",
+        "text": "Heart rate 118/min"
+      },
+      {
+        "id": "bp",
+        "group": "Cardiovascular",
+        "text": "Blood pressure 94/56 mm Hg"
+      },
+      {
+        "id": "temp",
+        "group": "General",
+        "text": "Temperature 39.1 °C (102.4 °F)"
+      },
+      {
+        "id": "wt",
+        "group": "General",
+        "text": "Weight 70 kg"
+      },
+      {
+        "id": "uo",
+        "group": "Renal",
+        "text": "Voided 150 mL in 8 hours"
+      }
+    ],
+    "answerKey": {
+      "type": "highlight",
+      "itemIds": [
+        "orient",
+        "sputum",
+        "rr",
+        "hr",
+        "bp",
+        "temp",
+        "uo"
+      ]
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "New confusion compared with baseline, tachypnoea with hypoxaemia, tachycardia, relative hypotension, fever and oliguria (about 19 mL/hour, below 0.5 mL/kg/hour) together suggest sepsis with organ hypoperfusion from a pulmonary source. Rust-coloured sputum is typical of pneumococcal pneumonia, the likely source.\n\nThe weight is a baseline value used for dosing and is not abnormal.",
+    "references": [
+      "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sep-2",
+    "origin": "original",
+    "questionType": "matrix-multiple",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-sepsis",
+    "caseStudyPart": 2,
+    "questionText": "For each finding, specify whether it is consistent with pneumonia, sepsis or both.",
+    "instructions": "Each finding may have more than one answer.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      {
+        "id": "crackles",
+        "text": "Crackles in the right lower lobe"
+      },
+      {
+        "id": "sputum",
+        "text": "Rust-coloured sputum"
+      },
+      {
+        "id": "lactate",
+        "text": "Lactate 4.2 mmol/L"
+      },
+      {
+        "id": "confusion",
+        "text": "Acute confusion"
+      },
+      {
+        "id": "wbc",
+        "text": "White blood cell count 18,600/mm³"
+      },
+      {
+        "id": "creat",
+        "text": "Creatinine 1.8 mg/dL"
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "pna",
+        "label": "Pneumonia"
+      },
+      {
+        "id": "sepsis",
+        "label": "Sepsis"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-multiple",
+      "selections": {
+        "crackles": [
+          "pna"
+        ],
+        "sputum": [
+          "pna"
+        ],
+        "lactate": [
+          "sepsis"
+        ],
+        "confusion": [
+          "sepsis"
+        ],
+        "wbc": [
+          "pna",
+          "sepsis"
+        ],
+        "creat": [
+          "sepsis"
+        ]
+      }
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Localised crackles and rust-coloured sputum point to the lung infection itself. Leucocytosis reflects the infection and the systemic inflammatory response.\n\nAn elevated lactate, acute confusion and a rising creatinine are signs of organ dysfunction and tissue hypoperfusion, which define sepsis rather than uncomplicated pneumonia.",
+    "references": [
+      "Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3), 2016"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sep-3",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-sepsis",
+    "caseStudyPart": 3,
+    "questionText": "The nurse reviews the prescriptions. Which action should the nurse take before administering the first doses of the antibiotics?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Obtain the two sets of blood cultures."
+      },
+      {
+        "id": "b",
+        "text": "Wait for the repeat lactate result."
+      },
+      {
+        "id": "c",
+        "text": "Administer acetaminophen to lower the temperature."
+      },
+      {
+        "id": "d",
+        "text": "Wait until the IV fluid bolus has finished infusing."
+      }
+    ],
+    "answerKey": {
+      "type": "single",
+      "optionId": "a"
+    },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Blood cultures should be drawn before antimicrobials, provided this does not meaningfully delay them, so the causative organism can be identified. Antibiotics should then start within 1 hour of recognising sepsis or septic shock. They are not delayed for a repeat lactate or for the fluid bolus to finish; fluids and antibiotics are given together. Acetaminophen does not need to come first.",
+    "references": [
+      "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sep-4",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-sepsis",
+    "caseStudyPart": 4,
+    "questionText": "The nurse reviews the 10:00 nurses' note and vital signs. Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "Because the mean arterial pressure is {{map}} after the fluid bolus, the client's condition has progressed to {{cond}}, and the nurse should anticipate {{action}}.",
+    "dropdownFields": [
+      {
+        "id": "map",
+        "options": [
+          {
+            "id": "below",
+            "text": "below 65 mm Hg"
+          },
+          {
+            "id": "above",
+            "text": "above 65 mm Hg"
+          },
+          {
+            "id": "normal",
+            "text": "within the normal range"
+          }
+        ]
+      },
+      {
+        "id": "cond",
+        "options": [
+          {
+            "id": "shock",
+            "text": "septic shock"
+          },
+          {
+            "id": "cardio",
+            "text": "cardiogenic shock"
+          },
+          {
+            "id": "overload",
+            "text": "fluid volume overload"
+          },
+          {
+            "id": "resolved",
+            "text": "resolving sepsis"
+          }
+        ]
+      },
+      {
+        "id": "action",
+        "options": [
+          {
+            "id": "norepi",
+            "text": "starting a norepinephrine infusion"
+          },
+          {
+            "id": "furosemide",
+            "text": "giving IV furosemide"
+          },
+          {
+            "id": "metoprolol",
+            "text": "giving IV metoprolol for the tachycardia"
+          },
+          {
+            "id": "stopabx",
+            "text": "stopping the antibiotics until cultures result"
+          }
+        ]
+      }
+    ],
+    "answerKey": {
+      "type": "dropdown",
+      "values": {
+        "map": "below",
+        "cond": "shock",
+        "action": "norepi"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "A MAP of 59 mm Hg with mottled skin and oliguria despite 30 mL/kg of crystalloid meet the definition of septic shock: hypotension needing vasopressors to keep the MAP at 65 mm Hg or higher. Norepinephrine is the first-line vasopressor.\n\nDiuretics and beta-blockers would worsen perfusion. Antibiotics must continue.",
+    "references": [
+      "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sep-5",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-sepsis",
+    "caseStudyPart": 5,
+    "questionText": "The norepinephrine infusion is being started. Which actions should the nurse take? Select all that apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Administer the infusion through the central venous catheter when it is in place."
+      },
+      {
+        "id": "b",
+        "text": "Titrate the rate using continuous arterial blood pressure readings."
+      },
+      {
+        "id": "c",
+        "text": "Inspect the infusion site frequently for blanching or leakage."
+      },
+      {
+        "id": "d",
+        "text": "Infuse the antibiotic bolus through the same lumen as the norepinephrine."
+      },
+      {
+        "id": "e",
+        "text": "Know that phentolamine is the antidote to infiltrate if extravasation occurs."
+      },
+      {
+        "id": "f",
+        "text": "Stop the infusion abruptly as soon as the MAP reaches 65 mm Hg."
+      }
+    ],
+    "answerKey": {
+      "type": "multiple",
+      "optionIds": [
+        "a",
+        "b",
+        "c",
+        "e"
+      ]
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Norepinephrine is a potent vasoconstrictor. A central line reduces the risk of tissue injury, an arterial line allows precise titration, and the site is checked for extravasation. Phentolamine is infiltrated locally if extravasation occurs.\n\nGiving a bolus through the vasopressor lumen would deliver a sudden surge of drug. Vasopressors are weaned gradually to keep the target MAP, not stopped abruptly.",
+    "references": [
+      "Norepinephrine bitartrate prescribing information — administration and extravasation"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sep-6",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-sepsis",
+    "caseStudyPart": 6,
+    "questionText": "The nurse reviews the 16:00 findings. For each finding, specify whether it indicates improvement, no change or decline compared with 10:00.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      {
+        "id": "map",
+        "text": "Mean arterial pressure"
+      },
+      {
+        "id": "lactate",
+        "text": "Lactate"
+      },
+      {
+        "id": "uo",
+        "text": "Urine output"
+      },
+      {
+        "id": "neuro",
+        "text": "Orientation"
+      },
+      {
+        "id": "oxy",
+        "text": "Oxygenation and breath sounds"
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "imp",
+        "label": "Improved"
+      },
+      {
+        "id": "same",
+        "label": "No change"
+      },
+      {
+        "id": "dec",
+        "label": "Declined"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": {
+        "map": "imp",
+        "lactate": "imp",
+        "uo": "imp",
+        "neuro": "imp",
+        "oxy": "dec"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "MAP has risen from 59 to 73 mm Hg, lactate has fallen from 4.2 to 2.1 mmol/L, urine output has risen from 15 to 40 mL/hour and orientation has improved: perfusion is responding to treatment.\n\nHowever, SpO₂ has fallen to 89% on more oxygen, with new bilateral crackles. This suggests fluid accumulation or developing acute respiratory distress syndrome and needs prompt follow-up.",
+    "references": [
+      "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "pph-1",
+    "origin": "original",
+    "questionType": "highlight",
+    "clinicalCategory": "Health Promotion and Maintenance",
+    "caseStudyId": "case-pph",
+    "caseStudyPart": 1,
+    "questionText": "The nurse reviews the History and Physical. Click to highlight the factors that increase the client's risk of postpartum haemorrhage.",
+    "highlightLayout": "text",
+    "highlightItems": [
+      {
+        "id": "labour",
+        "text": "Labour lasted 18 hours."
+      },
+      {
+        "id": "oxy",
+        "text": "Labour was augmented with an oxytocin infusion."
+      },
+      {
+        "id": "weight",
+        "text": "The infant weighed 4,300 g."
+      },
+      {
+        "id": "blood",
+        "text": "Blood type O positive."
+      },
+      {
+        "id": "placenta",
+        "text": "The placenta was delivered intact."
+      },
+      {
+        "id": "bf",
+        "text": "Breastfeeding was started at 13:20."
+      },
+      {
+        "id": "asthma",
+        "text": "History of asthma."
+      },
+      {
+        "id": "hgb",
+        "text": "Prenatal haemoglobin 12.1 g/dL."
+      }
+    ],
+    "answerKey": {
+      "type": "highlight",
+      "itemIds": [
+        "labour",
+        "oxy",
+        "weight"
+      ]
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Prolonged labour, oxytocin augmentation (receptor desensitisation) and a large infant that over-distended the uterus all increase the risk of uterine atony, the leading cause of postpartum haemorrhage.\n\nAn intact placenta lowers the risk of retained tissue. Breastfeeding releases oxytocin and helps the uterus contract. Blood type, asthma and a normal prenatal haemoglobin are not risk factors, although the asthma matters for medication choice.",
+    "references": [
+      "ACOG Practice Bulletin No. 183: Postpartum Hemorrhage (2017)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "pph-2",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Health Promotion and Maintenance",
+    "caseStudyId": "case-pph",
+    "caseStudyPart": 2,
+    "questionText": "The nurse reviews the 14:15 nurses' note. Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "A fundus that is above the umbilicus and deviated to the right most likely indicates {{cause}}, which is contributing to {{problem}}.",
+    "dropdownFields": [
+      {
+        "id": "cause",
+        "options": [
+          {
+            "id": "bladder",
+            "text": "a distended bladder"
+          },
+          {
+            "id": "retained",
+            "text": "retained placental fragments"
+          },
+          {
+            "id": "inversion",
+            "text": "uterine inversion"
+          },
+          {
+            "id": "haematoma",
+            "text": "a vaginal haematoma"
+          }
+        ]
+      },
+      {
+        "id": "problem",
+        "options": [
+          {
+            "id": "atony",
+            "text": "uterine atony"
+          },
+          {
+            "id": "infection",
+            "text": "endometritis"
+          },
+          {
+            "id": "preeclampsia",
+            "text": "postpartum preeclampsia"
+          },
+          {
+            "id": "dvt",
+            "text": "deep vein thrombosis"
+          }
+        ]
+      }
+    ],
+    "answerKey": {
+      "type": "dropdown",
+      "values": {
+        "cause": "bladder",
+        "problem": "atony"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "A full bladder pushes the uterus upward and usually to the right and prevents it from contracting effectively, which leads to uterine atony and bleeding. The client has not voided since birth and the bladder is distended. The placenta was intact, and inversion would cause the fundus to be absent or felt in the vagina.",
+    "references": [
+      "ACOG Practice Bulletin No. 183: Postpartum Hemorrhage (2017)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "pph-3",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-pph",
+    "caseStudyPart": 3,
+    "questionText": "The provider prescribes medications for persistent uterine atony. For each medication, specify whether it is safe to administer to this client or whether the nurse should clarify the prescription.",
+    "matrixRowHeading": "Medication",
+    "matrixRows": [
+      {
+        "id": "oxy",
+        "text": "Oxytocin infusion at an increased rate"
+      },
+      {
+        "id": "methergine",
+        "text": "Methylergonovine 0.2 mg IM"
+      },
+      {
+        "id": "carboprost",
+        "text": "Carboprost tromethamine 250 mcg IM"
+      },
+      {
+        "id": "txa",
+        "text": "Tranexamic acid 1 g IV"
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "safe",
+        "label": "Safe to administer"
+      },
+      {
+        "id": "clarify",
+        "label": "Clarify the prescription"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": {
+        "oxy": "safe",
+        "methergine": "safe",
+        "carboprost": "clarify",
+        "txa": "safe"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Carboprost, a prostaglandin F2-alpha analogue, can cause bronchospasm and is avoided in clients with asthma, so the nurse clarifies it.\n\nMethylergonovine is contraindicated in hypertension. This client's blood pressure is 108/68 mm Hg, so it is safe. Oxytocin is first-line, and tranexamic acid is recommended early in postpartum haemorrhage.",
+    "references": [
+      "ACOG Practice Bulletin No. 183: Postpartum Hemorrhage (2017)",
+      "WHO recommendation on tranexamic acid for postpartum haemorrhage (2017)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "pph-4",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-pph",
+    "caseStudyPart": 4,
+    "questionText": "The nurse reviews the 14:50 nurses' note and vital signs. Which actions should the nurse take? Select all that apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Insert a second large-bore IV catheter."
+      },
+      {
+        "id": "b",
+        "text": "Ensure a type and crossmatch has been sent."
+      },
+      {
+        "id": "c",
+        "text": "Apply oxygen by face mask."
+      },
+      {
+        "id": "d",
+        "text": "Insert an indwelling urinary catheter to monitor hourly output."
+      },
+      {
+        "id": "e",
+        "text": "Place the client in high-Fowler's position."
+      },
+      {
+        "id": "f",
+        "text": "Encourage the client to drink large amounts of oral fluids."
+      }
+    ],
+    "answerKey": {
+      "type": "multiple",
+      "optionIds": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "A blood loss of 1,200 mL with tachycardia and hypotension indicates haemorrhagic shock. Two large-bore IVs allow rapid fluids and blood. Crossmatched blood must be ready. Oxygen supports tissue oxygenation. An indwelling catheter keeps the bladder empty (helping uterine tone) and measures perfusion through urine output.\n\nHigh-Fowler's position reduces venous return in a hypotensive client. Oral fluids are inappropriate in an unstable client who may need surgery.",
+    "references": [
+      "ACOG Practice Bulletin No. 183: Postpartum Hemorrhage (2017)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "pph-5",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-pph",
+    "caseStudyPart": 5,
+    "questionText": "The nurse reviews the 15:00 laboratory results and the new prescription. Complete the table by selecting the best choice for each clinical decision.",
+    "dropdownLayout": "table",
+    "dropdownTableHeadings": [
+      "Clinical decision",
+      "Nurse's selection"
+    ],
+    "dropdownFields": [
+      {
+        "id": "interp",
+        "label": "Interpretation of the haemoglobin result",
+        "options": [
+          {
+            "id": "acute",
+            "text": "Acute blood loss anaemia"
+          },
+          {
+            "id": "dilution",
+            "text": "Expected postpartum haemodilution"
+          },
+          {
+            "id": "iron",
+            "text": "Long-standing iron deficiency"
+          },
+          {
+            "id": "lab",
+            "text": "Probable laboratory error"
+          }
+        ]
+      },
+      {
+        "id": "verify",
+        "label": "Verification before hanging each unit",
+        "options": [
+          {
+            "id": "two",
+            "text": "Two qualified staff check client identity and unit at the bedside"
+          },
+          {
+            "id": "phone",
+            "text": "Confirm the blood type with the client verbally"
+          },
+          {
+            "id": "label",
+            "text": "Check the label at the nurses' station"
+          },
+          {
+            "id": "none",
+            "text": "No check needed in an emergency"
+          }
+        ]
+      },
+      {
+        "id": "fluid",
+        "label": "Solution to prime the blood tubing",
+        "options": [
+          {
+            "id": "ns",
+            "text": "0.9% sodium chloride"
+          },
+          {
+            "id": "d5w",
+            "text": "Dextrose 5% in water"
+          },
+          {
+            "id": "lr",
+            "text": "Lactated Ringer's with oxytocin"
+          },
+          {
+            "id": "sw",
+            "text": "Sterile water"
+          }
+        ]
+      },
+      {
+        "id": "monitor",
+        "label": "Monitoring during the first 15 minutes",
+        "options": [
+          {
+            "id": "stay",
+            "text": "Stay with the client and monitor for a reaction"
+          },
+          {
+            "id": "hour",
+            "text": "Recheck vital signs in 1 hour"
+          },
+          {
+            "id": "end",
+            "text": "Check vital signs at the end of the unit"
+          },
+          {
+            "id": "family",
+            "text": "Ask the family to report changes"
+          }
+        ]
+      }
+    ],
+    "answerKey": {
+      "type": "dropdown",
+      "values": {
+        "interp": "acute",
+        "verify": "two",
+        "fluid": "ns",
+        "monitor": "stay"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "A fall in haemoglobin from 12.1 to 7.6 g/dL after measured blood loss of 1,200 mL is acute blood loss anaemia. Two qualified people verify the client's identity and the blood product at the bedside before each unit. Only 0.9% sodium chloride is compatible with red cells: dextrose causes haemolysis, and calcium in lactated Ringer's can cause clotting. Most severe reactions occur early, so the nurse stays with the client for the first 15 minutes.",
+    "references": [
+      "Blood transfusion administration — standard medical-surgical nursing content"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "pph-6",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-pph",
+    "caseStudyPart": 6,
+    "questionText": "The nurse reviews the 17:00 nurses' note and vital signs. For each finding, specify whether it indicates that the client's condition has improved or that a new problem has developed.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      {
+        "id": "fundus",
+        "text": "Fundus firm, 1 cm below the umbilicus"
+      },
+      {
+        "id": "lochia",
+        "text": "Lochia moderate, no clots"
+      },
+      {
+        "id": "hr",
+        "text": "Heart rate 92/min"
+      },
+      {
+        "id": "bp",
+        "text": "Blood pressure 112/70 mm Hg"
+      },
+      {
+        "id": "uo",
+        "text": "Urine output 35 mL/hour"
+      },
+      {
+        "id": "itch",
+        "text": "Itching and raised red welts on the chest and arms"
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "imp",
+        "label": "Improved"
+      },
+      {
+        "id": "new",
+        "label": "New problem"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": {
+        "fundus": "imp",
+        "lochia": "imp",
+        "hr": "imp",
+        "bp": "imp",
+        "uo": "imp",
+        "itch": "new"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "A firm fundus, reduced lochia without clots, a falling heart rate, a normal blood pressure and adequate urine output show that the haemorrhage is controlled and perfusion restored.\n\nItching and urticaria beginning during the second unit indicate an allergic transfusion reaction. The nurse stops the transfusion, keeps the IV line open with 0.9% sodium chloride, assesses for respiratory involvement and notifies the provider.",
+    "references": [
+      "Transfusion reaction management — standard medical-surgical nursing content"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  }
+]

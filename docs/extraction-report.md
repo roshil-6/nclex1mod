@@ -42,7 +42,7 @@ The screenshots are pages of a **commercial, subscription question bank** (the b
 So no question text, answer, rationale or illustration from the screenshots was copied into the question bank. Instead:
 
 - The screenshots and video were used only to identify the **formats and interactions** the platform must support. All of them are implemented.
-- The bank ships with **44 original questions** written for this project on comparable clinical topics, including three 6-part case studies. Every record is labelled `"origin": "original"`.
+- The bank ships with **150 original questions** written for this project on comparable clinical topics, including nine 6-part case studies. Every record is labelled `"origin": "original"`.
 - The extraction pipeline, `data/questions/extracted/` folder, `sourceImages` field, admin screenshot viewer and import tool are all in place. If you hold rights to content, for example your own material or a licence that permits it, it can be transcribed and imported with `"origin": "extracted"` and honest verification statuses.
 
 ## Transcription audit
@@ -53,4 +53,4 @@ So no question text, answer, rationale or illustration from the screenshots was 
 | Unique source questions identified | 50 |
 | Source questions with exam-view screenshots | 48 |
 | Source questions transcribed into the bank | 0 (see above) |
-| Original questions authored | 44 (26 standalone + 3 × 6 case-study items) |
+| Original questions authored | 150 (96 standalone + 9 × 6 case-study items) |

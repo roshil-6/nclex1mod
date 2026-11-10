@@ -5,15 +5,12 @@ import userEvent from "@testing-library/user-event";
 import { QuestionView } from "@/components/exam/QuestionView";
 import { QuestionNavigator } from "@/components/navigation/QuestionNavigator";
 import { CaseStudySchema, QuestionSchema, type CaseStudy, type PublicQuestion, type Response } from "@/lib/validation/schema";
-import casesJson from "../../data/cases/cases.json";
-import vte from "../../data/questions/original/case-vte.json";
-import standaloneA from "../../data/questions/original/standalone-a.json";
-import standaloneB from "../../data/questions/original/standalone-b.json";
-import dka from "../../data/questions/original/case-dka.json";
-
-const all: PublicQuestion[] = [...vte, ...dka, ...standaloneA, ...standaloneB].map((q) => QuestionSchema.parse(q));
+const questionFiles = import.meta.glob("../../data/questions/original/*.json", { eager: true, import: "default" }) as Record<string, unknown[]>;
+const caseFiles = import.meta.glob("../../data/cases/*.json", { eager: true, import: "default" }) as Record<string, unknown[]>;
+const all: PublicQuestion[] = Object.values(questionFiles).flat().map((q) => QuestionSchema.parse(q));
+const cases: CaseStudy[] = Object.values(caseFiles).flat().map((c) => CaseStudySchema.parse(c));
 const byId = (id: string) => all.find((q) => q.id === id)!;
-const cases: CaseStudy[] = casesJson.map((c) => CaseStudySchema.parse(c));
+const caseOf = (id: string) => cases.find((c) => c.id === id)!;
 
 /** Stateful harness that mirrors how the exam runner stores the response. */
 function Harness({ q, caseStudy, onResponse }: { q: PublicQuestion; caseStudy?: CaseStudy; onResponse?: (r: Response) => void }) {
@@ -36,6 +33,8 @@ function Harness({ q, caseStudy, onResponse }: { q: PublicQuestion; caseStudy?: 
 const state = () => JSON.parse(screen.getByTestId("state").textContent || "null");
 
 describe("question components (real bank records)", () => {
+  it("loads all 150 questions", () => expect(all).toHaveLength(150));
+
   it("every question renders without crashing", () => {
     for (const q of all) {
       const c = q.caseStudyId ? cases.find((x) => x.id === q.caseStudyId) : undefined;
@@ -83,7 +82,7 @@ describe("question components (real bank records)", () => {
   });
 
   it("dropdown (sentence): each blank saves independently", async () => {
-    render(<Harness q={byId("vte-2")} caseStudy={cases[0]} />);
+    render(<Harness q={byId("vte-2")} caseStudy={caseOf("case-vte")} />);
     await userEvent.selectOptions(screen.getByLabelText("Blank 1"), "pe");
     await userEvent.selectOptions(screen.getByLabelText("Blank 3"), "refused");
     expect(state()).toEqual({ type: "dropdown", values: { c1: "pe", e2: "refused" } });
@@ -115,7 +114,7 @@ describe("question components (real bank records)", () => {
   });
 
   it("switching clinical record tabs does not reset the answer", async () => {
-    render(<Harness q={byId("vte-3")} caseStudy={cases[0]} />);
+    render(<Harness q={byId("vte-3")} caseStudy={caseOf("case-vte")} />);
     await userEvent.click(screen.getAllByRole("radio")[1]);
     const tabs = screen.getByRole("tablist", { name: "Clinical records" });
     await userEvent.click(within(tabs).getByRole("tab", { name: "Vital Signs" }));
@@ -127,14 +126,14 @@ describe("question components (real bank records)", () => {
   });
 
   it("case study shows part progress and only records released by that part", async () => {
-    const { unmount } = render(<Harness q={byId("vte-1")} caseStudy={cases[0]} />);
+    const { unmount } = render(<Harness q={byId("vte-1")} caseStudy={caseOf("case-vte")} />);
     expect(screen.getByTestId("case-progress")).toHaveTextContent("Case Study — Part 1 of 6");
     await userEvent.click(screen.getByRole("tab", { name: "Vital Signs" }));
     expect(screen.queryByText("124/min")).not.toBeInTheDocument(); // 10:30 vitals appear from part 3
     await userEvent.click(screen.getByRole("tab", { name: "Prescriptions" }));
     expect(screen.queryByText(/weight-based protocol/)).not.toBeInTheDocument(); // part 5
     unmount();
-    render(<Harness q={byId("vte-5")} caseStudy={cases[0]} />);
+    render(<Harness q={byId("vte-5")} caseStudy={caseOf("case-vte")} />);
     expect(screen.getByTestId("case-progress")).toHaveTextContent("Part 5 of 6");
     fireEvent.click(screen.getByRole("tab", { name: "Prescriptions" }));
     expect(screen.getByText(/weight-based protocol/)).toBeInTheDocument();

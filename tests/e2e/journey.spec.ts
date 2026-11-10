@@ -6,8 +6,33 @@ test("home page offers the exam modes and states availability honestly", async (
   await expect(page.getByRole("heading", { name: "Clinical Mock Exam" })).toBeVisible();
   for (const name of ["Start Mock Exam", "Quick Practice", "Case Study Practice"]) await expect(page.getByRole("link", { name })).toBeVisible();
   await page.getByRole("link", { name: "Start Mock Exam" }).click();
-  await expect(page.getByText(/Not yet available: the full mock examination requires 150 validated questions/)).toBeVisible();
-  await expect(page.getByRole("button", { name: "Begin" })).toBeDisabled();
+  await expect(page.getByTestId("available-count")).toHaveText("150");
+  await expect(page.getByText(/Not yet available/)).toHaveCount(0);
+  await expect(page.getByRole("button", { name: "Begin" })).toBeEnabled();
+});
+
+test("full mock exam: 150 unique questions, 5-hour timer, no answer reveal", async ({ page }) => {
+  await page.goto("/setup?mode=full");
+  await page.getByRole("button", { name: "Begin" }).click();
+  await expect(page).toHaveURL(/\/exam\//);
+  await expect(page.getByTestId("q-total")).toHaveText("150");
+  await expect(page.getByTestId("timer")).toHaveText(/^(05:00|04:59)$/);
+  await expect(page.getByText("Examination mode")).toBeVisible();
+  await expect(page.getByRole("button", { name: "Submit answer" })).toHaveCount(0);
+  // every question id in the stored session is unique
+  const ids = await page.evaluate(async () => {
+    const db: IDBDatabase = await new Promise((res) => {
+      const r = indexedDB.open("clinical-mock-exam");
+      r.onsuccess = () => res(r.result);
+    });
+    const all: { questionIds: string[]; mode: string }[] = await new Promise((res) => {
+      const g = db.transaction("sessions").objectStore("sessions").getAll();
+      g.onsuccess = () => res(g.result);
+    });
+    return all.find((s) => s.mode === "full")!.questionIds;
+  });
+  expect(ids).toHaveLength(150);
+  expect(new Set(ids).size).toBe(150);
 });
 
 test("complete case study: answer, navigate, flag, reload, submit, review, retake", async ({ page }) => {

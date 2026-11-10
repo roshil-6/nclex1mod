@@ -1,0 +1,461 @@
+[
+  {
+    "id": "se-gluc-signs",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Physiological Adaptation",
+    "questionText": "For each finding, specify whether it is more consistent with hypoglycaemia or hyperglycaemia.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      { "id": "tremor", "text": "Tremor" },
+      { "id": "sweat", "text": "Cool, clammy skin with sweating" },
+      { "id": "polyuria", "text": "Frequent urination" },
+      { "id": "thirst", "text": "Excessive thirst" },
+      { "id": "fruity", "text": "Fruity-smelling breath" }
+    ],
+    "matrixColumns": [
+      { "id": "hypo", "label": "Hypoglycaemia" },
+      { "id": "hyper", "label": "Hyperglycaemia" }
+    ],
+    "answerKey": { "type": "matrix-single", "selections": { "tremor": "hypo", "sweat": "hypo", "polyuria": "hyper", "thirst": "hyper", "fruity": "hyper" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "Hypoglycaemia triggers an adrenergic response: tremor, sweating and cool, clammy skin. Hyperglycaemia causes osmotic diuresis (polyuria) and thirst (polydipsia). Fruity breath reflects ketones in diabetic ketoacidosis.",
+    "references": ["American Diabetes Association Standards of Care in Diabetes"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-antidotes",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "questionText": "For each medication, specify its reversal agent (antidote).",
+    "matrixRowHeading": "Medication",
+    "matrixRows": [
+      { "id": "heparin", "text": "Unfractionated heparin" },
+      { "id": "warfarin", "text": "Warfarin" },
+      { "id": "morphine", "text": "Morphine" },
+      { "id": "midazolam", "text": "Midazolam" },
+      { "id": "acetaminophen", "text": "Acetaminophen (overdose)" }
+    ],
+    "matrixColumns": [
+      { "id": "protamine", "label": "Protamine sulfate" },
+      { "id": "vitk", "label": "Vitamin K" },
+      { "id": "naloxone", "label": "Naloxone" },
+      { "id": "flumazenil", "label": "Flumazenil" },
+      { "id": "nac", "label": "Acetylcysteine" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "heparin": "protamine", "warfarin": "vitk", "morphine": "naloxone", "midazolam": "flumazenil", "acetaminophen": "nac" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Protamine neutralises heparin. Vitamin K restores warfarin-inhibited clotting factors. Naloxone reverses opioids, flumazenil reverses benzodiazepines, and acetylcysteine replenishes glutathione to prevent liver injury after acetaminophen overdose.",
+    "references": ["Common antidotes — standard pharmacology nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-abg",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "questionText": "For each arterial blood gas result, specify the primary acid–base imbalance.",
+    "instructions": "Reference ranges: pH 7.35–7.45; PaCO₂ 35–45 mm Hg; HCO₃⁻ 22–26 mEq/L.",
+    "matrixRowHeading": "Arterial blood gas",
+    "matrixRows": [
+      { "id": "a", "text": "pH 7.30, PaCO₂ 56 mm Hg, HCO₃⁻ 25 mEq/L" },
+      { "id": "b", "text": "pH 7.51, PaCO₂ 29 mm Hg, HCO₃⁻ 24 mEq/L" },
+      { "id": "c", "text": "pH 7.28, PaCO₂ 38 mm Hg, HCO₃⁻ 16 mEq/L" },
+      { "id": "d", "text": "pH 7.52, PaCO₂ 42 mm Hg, HCO₃⁻ 34 mEq/L" }
+    ],
+    "matrixColumns": [
+      { "id": "racid", "label": "Respiratory acidosis" },
+      { "id": "ralk", "label": "Respiratory alkalosis" },
+      { "id": "macid", "label": "Metabolic acidosis" },
+      { "id": "malk", "label": "Metabolic alkalosis" }
+    ],
+    "answerKey": { "type": "matrix-single", "selections": { "a": "racid", "b": "ralk", "c": "macid", "d": "malk" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "When the pH is low and the PaCO₂ high, the problem is respiratory acidosis. A high pH with a low PaCO₂ is respiratory alkalosis. A low pH with a low HCO₃⁻ is metabolic acidosis. A high pH with a high HCO₃⁻ is metabolic alkalosis. In each case the other value is normal, so the imbalance is uncompensated.",
+    "references": ["Arterial blood gas interpretation — standard medical-surgical nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-turp",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "scenario": "A client is 1 day after a transurethral resection of the prostate and has continuous bladder irrigation through a three-way catheter.",
+    "questionText": "For each finding, specify whether it is expected or unexpected.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      { "id": "pink", "text": "Light pink urine drainage" },
+      { "id": "spasm", "text": "Intermittent bladder spasms" },
+      { "id": "clots", "text": "Bright red drainage with large clots" },
+      { "id": "less", "text": "Output 300 mL less than the volume of irrigant instilled over 2 hours, with lower abdominal pain" },
+      { "id": "taped", "text": "Catheter taped to the thigh with gentle traction" }
+    ],
+    "matrixColumns": [
+      { "id": "exp", "label": "Expected" },
+      { "id": "unexp", "label": "Unexpected" }
+    ],
+    "answerKey": { "type": "matrix-single", "selections": { "pink": "exp", "spasm": "exp", "clots": "unexp", "less": "unexp", "taped": "exp" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "Light pink drainage, bladder spasms and catheter traction to compress the prostatic fossa are expected after this surgery. Bright red drainage with clots suggests arterial bleeding. Output much lower than the irrigant instilled, with pain, suggests catheter obstruction and bladder distension.",
+    "references": ["Care after TURP — standard medical-surgical nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-triage",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Management of Care",
+    "questionText": "At a mass-casualty incident, the nurse uses START triage. For each adult victim, specify the triage category.",
+    "matrixRowHeading": "Victim",
+    "matrixRows": [
+      { "id": "walk", "text": "Walking, with a laceration on the forearm" },
+      { "id": "rr", "text": "Not walking; respiratory rate 34/min" },
+      { "id": "apnoeic", "text": "Not breathing after the airway is repositioned" },
+      { "id": "nopulse", "text": "Not walking; respiratory rate 22/min; no radial pulse" },
+      { "id": "delayed", "text": "Not walking; respiratory rate 20/min; radial pulse present; follows commands" }
+    ],
+    "matrixColumns": [
+      { "id": "immediate", "label": "Immediate (red)" },
+      { "id": "delayed", "label": "Delayed (yellow)" },
+      { "id": "minor", "label": "Minor (green)" },
+      { "id": "expectant", "label": "Deceased/expectant (black)" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "walk": "minor", "rr": "immediate", "apnoeic": "expectant", "nopulse": "immediate", "delayed": "delayed" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "In START triage, anyone able to walk is minor. A victim who does not breathe after airway repositioning is deceased or expectant. A respiratory rate above 30/min, absent radial pulse or delayed capillary refill, or inability to follow commands is immediate. Otherwise the victim is delayed.",
+    "references": ["START (Simple Triage and Rapid Treatment) algorithm"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-insulin-types",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "questionText": "For each insulin, specify its classification.",
+    "matrixRowHeading": "Insulin",
+    "matrixRows": [
+      { "id": "lispro", "text": "Insulin lispro" },
+      { "id": "regular", "text": "Regular human insulin" },
+      { "id": "nph", "text": "NPH (isophane) insulin" },
+      { "id": "glargine", "text": "Insulin glargine" }
+    ],
+    "matrixColumns": [
+      { "id": "rapid", "label": "Rapid-acting" },
+      { "id": "short", "label": "Short-acting" },
+      { "id": "inter", "label": "Intermediate-acting" },
+      { "id": "long", "label": "Long-acting" }
+    ],
+    "answerKey": { "type": "matrix-single", "selections": { "lispro": "rapid", "regular": "short", "nph": "inter", "glargine": "long" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "Lispro starts working in about 15 minutes and is given with meals. Regular insulin starts in about 30–60 minutes and is the only one listed that is given IV. NPH starts in 1–2 hours and peaks at 4–12 hours. Glargine provides basal coverage for about 24 hours without a pronounced peak.",
+    "references": ["Insulin pharmacokinetics — standard pharmacology nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-fhr",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "scenario": "The nurse is reviewing the fetal heart rate tracing of a client in active labour at term.",
+    "questionText": "For each finding, specify whether it is reassuring or non-reassuring.",
+    "matrixRowHeading": "Tracing finding",
+    "matrixRows": [
+      { "id": "baseline", "text": "Baseline 140/min" },
+      { "id": "moderate", "text": "Moderate variability (6–25/min)" },
+      { "id": "early", "text": "Early decelerations mirroring contractions" },
+      { "id": "late", "text": "Recurrent late decelerations" },
+      { "id": "absent", "text": "Absent variability" },
+      { "id": "tachy", "text": "Baseline 172/min for 30 minutes" }
+    ],
+    "matrixColumns": [
+      { "id": "reassure", "label": "Reassuring" },
+      { "id": "nonreassure", "label": "Non-reassuring" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "baseline": "reassure", "moderate": "reassure", "early": "reassure", "late": "nonreassure", "absent": "nonreassure", "tachy": "nonreassure" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "A baseline of 110–160/min, moderate variability and early decelerations (caused by head compression) are reassuring. Recurrent late decelerations, absent variability and sustained fetal tachycardia above 160/min are concerning and need intervention.",
+    "references": ["NICHD three-tier fetal heart rate interpretation system"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-defenses",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Psychosocial Integrity",
+    "questionText": "For each client statement, specify the defence mechanism being used.",
+    "matrixRowHeading": "Client statement or behaviour",
+    "matrixRows": [
+      { "id": "denial", "text": "A client with a new diagnosis of type 1 diabetes says, \"The lab must have mixed up my blood.\"" },
+      { "id": "projection", "text": "A client who dislikes a co-worker says, \"She is the one who hates me.\"" },
+      { "id": "displacement", "text": "After being criticised by a supervisor, a client goes home and yells at their partner." },
+      { "id": "rationalisation", "text": "A student who failed an exam says, \"The questions were unfair anyway.\"" }
+    ],
+    "matrixColumns": [
+      { "id": "denial", "label": "Denial" },
+      { "id": "projection", "label": "Projection" },
+      { "id": "displacement", "label": "Displacement" },
+      { "id": "rationalisation", "label": "Rationalisation" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "denial": "denial", "projection": "projection", "displacement": "displacement", "rationalisation": "rationalisation" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Denial is refusing to accept reality. Projection attributes one's own unacceptable feelings to someone else. Displacement redirects emotion to a safer target. Rationalisation offers an acceptable-sounding excuse for a failure or behaviour.",
+    "references": ["Defence mechanisms — standard mental health nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-pressure-injury",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Basic Care and Comfort",
+    "questionText": "For each wound description, specify the pressure injury stage.",
+    "matrixRowHeading": "Wound description",
+    "matrixRows": [
+      { "id": "s1", "text": "Intact skin with an area of non-blanchable redness over the sacrum" },
+      { "id": "s2", "text": "Shallow open wound with a pink, moist wound bed and no slough" },
+      { "id": "s3", "text": "Full-thickness skin loss with visible fat; no bone or tendon visible" },
+      { "id": "s4", "text": "Full-thickness tissue loss with exposed bone" }
+    ],
+    "matrixColumns": [
+      { "id": "stage1", "label": "Stage 1" },
+      { "id": "stage2", "label": "Stage 2" },
+      { "id": "stage3", "label": "Stage 3" },
+      { "id": "stage4", "label": "Stage 4" }
+    ],
+    "answerKey": { "type": "matrix-single", "selections": { "s1": "stage1", "s2": "stage2", "s3": "stage3", "s4": "stage4" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "Stage 1 is intact skin with non-blanchable erythema. Stage 2 is partial-thickness loss with a viable pink wound bed. Stage 3 is full-thickness skin loss in which fat may be visible. Stage 4 is full-thickness loss with exposed bone, tendon, muscle or cartilage.",
+    "references": ["National Pressure Injury Advisory Panel (NPIAP) staging definitions (2016)"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-icp-care",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Physiological Adaptation",
+    "scenario": "A client with a head injury is at risk of increased intracranial pressure.",
+    "questionText": "For each nursing action, specify whether it is indicated or contraindicated.",
+    "matrixRowHeading": "Nursing action",
+    "matrixRows": [
+      { "id": "hob", "text": "Keep the head of the bed at 30°" },
+      { "id": "midline", "text": "Keep the head and neck in a neutral, midline position" },
+      { "id": "cluster", "text": "Group all care activities together into one long session" },
+      { "id": "suction", "text": "Suction the airway for 30 seconds at a time" },
+      { "id": "stool", "text": "Give the prescribed stool softener" },
+      { "id": "hip", "text": "Avoid sharp flexion of the hips" }
+    ],
+    "matrixColumns": [
+      { "id": "ind", "label": "Indicated" },
+      { "id": "contra", "label": "Contraindicated" }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": { "hob": "ind", "midline": "ind", "cluster": "contra", "suction": "contra", "stool": "ind", "hip": "ind" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Head elevation and a midline neck promote venous drainage from the brain. Stool softeners prevent straining (Valsalva). Avoiding hip flexion limits rises in intra-abdominal and intrathoracic pressure.\n\nBundling many activities together raises intracranial pressure, so care is spaced with rest periods. Suctioning is limited to about 10 seconds per pass, with pre-oxygenation.",
+    "references": ["Increased intracranial pressure — standard neurological nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-hepatitis",
+    "origin": "original",
+    "questionType": "matrix-multiple",
+    "clinicalCategory": "Safety and Infection Control",
+    "questionText": "For each type of viral hepatitis, specify the main route of transmission and whether a vaccine is available in the United States.",
+    "instructions": "Select all that apply in each row.",
+    "matrixRowHeading": "Hepatitis type",
+    "matrixRows": [
+      { "id": "a", "text": "Hepatitis A" },
+      { "id": "b", "text": "Hepatitis B" },
+      { "id": "c", "text": "Hepatitis C" },
+      { "id": "e", "text": "Hepatitis E" }
+    ],
+    "matrixColumns": [
+      { "id": "fecal", "label": "Fecal–oral" },
+      { "id": "blood", "label": "Blood and body fluids" },
+      { "id": "vaccine", "label": "Vaccine available" }
+    ],
+    "answerKey": {
+      "type": "matrix-multiple",
+      "selections": { "a": ["fecal", "vaccine"], "b": ["blood", "vaccine"], "c": ["blood"], "e": ["fecal"] }
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Hepatitis A and E spread by the fecal–oral route, through contaminated food or water. Hepatitis B and C are bloodborne; hepatitis B is also spread sexually and from mother to infant. Vaccines exist for hepatitis A and B. There is no hepatitis C vaccine, and no hepatitis E vaccine is licensed in the United States.",
+    "references": ["CDC: Viral Hepatitis — overview of types A–E"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-electrolytes",
+    "origin": "original",
+    "questionType": "matrix-multiple",
+    "clinicalCategory": "Physiological Adaptation",
+    "questionText": "For each finding, specify the electrolyte imbalance or imbalances with which it is associated.",
+    "instructions": "Each finding may have more than one answer.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      { "id": "u", "text": "Prominent U waves" },
+      { "id": "peaked", "text": "Tall, peaked T waves" },
+      { "id": "trousseau", "text": "Carpal spasm when a blood pressure cuff is inflated (Trousseau's sign)" },
+      { "id": "stones", "text": "Kidney stones" },
+      { "id": "longqt", "text": "Prolonged QT interval" }
+    ],
+    "matrixColumns": [
+      { "id": "hypok", "label": "Hypokalaemia" },
+      { "id": "hyperk", "label": "Hyperkalaemia" },
+      { "id": "hypoca", "label": "Hypocalcaemia" },
+      { "id": "hyperca", "label": "Hypercalcaemia" }
+    ],
+    "answerKey": {
+      "type": "matrix-multiple",
+      "selections": { "u": ["hypok"], "peaked": ["hyperk"], "trousseau": ["hypoca"], "stones": ["hyperca"], "longqt": ["hypok", "hypoca"] }
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "U waves are typical of hypokalaemia, and peaked T waves of hyperkalaemia. Trousseau's sign reflects neuromuscular irritability from hypocalcaemia. Hypercalcaemia predisposes to kidney stones. Both hypocalcaemia and hypokalaemia prolong the QT (or QU) interval, while hypercalcaemia shortens it.",
+    "references": ["Electrolyte imbalances — standard medical-surgical nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-abx-adverse",
+    "origin": "original",
+    "questionType": "matrix-multiple",
+    "clinicalCategory": "Pharmacological Therapies",
+    "questionText": "For each antibiotic, specify the adverse effect or effects the nurse should monitor for or teach about.",
+    "instructions": "Each antibiotic may have more than one answer.",
+    "matrixRowHeading": "Antibiotic",
+    "matrixRows": [
+      { "id": "gent", "text": "Gentamicin" },
+      { "id": "vanc", "text": "Vancomycin" },
+      { "id": "doxy", "text": "Doxycycline" },
+      { "id": "cipro", "text": "Ciprofloxacin" }
+    ],
+    "matrixColumns": [
+      { "id": "oto", "label": "Ototoxicity" },
+      { "id": "nephro", "label": "Nephrotoxicity" },
+      { "id": "photo", "label": "Photosensitivity" }
+    ],
+    "answerKey": {
+      "type": "matrix-multiple",
+      "selections": { "gent": ["oto", "nephro"], "vanc": ["oto", "nephro"], "doxy": ["photo"], "cipro": ["photo"] }
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Aminoglycosides such as gentamicin, and vancomycin, can damage the kidneys and the eighth cranial nerve, so drug levels, renal function and hearing are monitored. Tetracyclines such as doxycycline and fluoroquinolones such as ciprofloxacin cause photosensitivity; clients use sun protection.",
+    "references": ["Antimicrobial adverse effects — standard pharmacology nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-stroke-sides",
+    "origin": "original",
+    "questionType": "matrix-multiple",
+    "clinicalCategory": "Physiological Adaptation",
+    "questionText": "For each deficit, specify whether it is typically associated with a stroke in the left (dominant) hemisphere, the right hemisphere, or either.",
+    "instructions": "Each deficit may have more than one answer.",
+    "matrixRowHeading": "Deficit",
+    "matrixRows": [
+      { "id": "aphasia", "text": "Aphasia" },
+      { "id": "impulsive", "text": "Impulsive behaviour and poor safety judgement" },
+      { "id": "neglect", "text": "Neglect of the left side of the body" },
+      { "id": "rhemi", "text": "Right-sided hemiplegia" },
+      { "id": "cautious", "text": "Slow, cautious behaviour" },
+      { "id": "dysphagia", "text": "Dysphagia" }
+    ],
+    "matrixColumns": [
+      { "id": "left", "label": "Left hemisphere" },
+      { "id": "right", "label": "Right hemisphere" }
+    ],
+    "answerKey": {
+      "type": "matrix-multiple",
+      "selections": { "aphasia": ["left"], "impulsive": ["right"], "neglect": ["right"], "rhemi": ["left"], "cautious": ["left"], "dysphagia": ["left", "right"] }
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Left-hemisphere strokes usually affect language and cause right-sided weakness, with slow, cautious behaviour. Right-hemisphere strokes cause left-sided neglect, impulsivity and poor judgement. Dysphagia can follow a stroke on either side.",
+    "references": ["Stroke clinical manifestations — standard neurological nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-ppe",
+    "origin": "original",
+    "questionType": "matrix-multiple",
+    "clinicalCategory": "Safety and Infection Control",
+    "questionText": "For each client, specify the personal protective equipment required on entering the room under transmission-based precautions.",
+    "instructions": "Each client may need more than one item.",
+    "matrixRowHeading": "Client",
+    "matrixRows": [
+      { "id": "varicella", "text": "Disseminated varicella (chickenpox)" },
+      { "id": "flu", "text": "Influenza" },
+      { "id": "tb", "text": "Suspected pulmonary tuberculosis" },
+      { "id": "cdiff", "text": "Clostridioides difficile diarrhoea" }
+    ],
+    "matrixColumns": [
+      { "id": "n95", "label": "N95 respirator" },
+      { "id": "mask", "label": "Surgical mask" },
+      { "id": "gown", "label": "Gown" },
+      { "id": "gloves", "label": "Gloves" }
+    ],
+    "answerKey": {
+      "type": "matrix-multiple",
+      "selections": { "varicella": ["n95", "gown", "gloves"], "flu": ["mask"], "tb": ["n95"], "cdiff": ["gown", "gloves"] }
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Varicella requires airborne plus contact precautions. Influenza requires droplet precautions (a surgical mask). Tuberculosis requires airborne precautions with a fit-tested N95. C. difficile requires contact precautions (gown and gloves). Standard-precaution gloves are added for any contact with body fluids.",
+    "references": ["CDC 2007 Guideline for Isolation Precautions, Appendix A"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "se-thyroid",
+    "origin": "original",
+    "questionType": "matrix-multiple",
+    "clinicalCategory": "Physiological Adaptation",
+    "questionText": "For each finding, specify whether it is associated with hyperthyroidism, hypothyroidism or both.",
+    "instructions": "Each finding may have more than one answer.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      { "id": "tachy", "text": "Resting heart rate 112/min" },
+      { "id": "weightloss", "text": "Weight loss despite increased appetite" },
+      { "id": "cold", "text": "Cold intolerance" },
+      { "id": "constipation", "text": "Constipation" },
+      { "id": "fatigue", "text": "Fatigue" },
+      { "id": "menses", "text": "Menstrual irregularities" }
+    ],
+    "matrixColumns": [
+      { "id": "hyper", "label": "Hyperthyroidism" },
+      { "id": "hypo", "label": "Hypothyroidism" }
+    ],
+    "answerKey": {
+      "type": "matrix-multiple",
+      "selections": { "tachy": ["hyper"], "weightloss": ["hyper"], "cold": ["hypo"], "constipation": ["hypo"], "fatigue": ["hyper", "hypo"], "menses": ["hyper", "hypo"] }
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Excess thyroid hormone speeds metabolism: tachycardia and weight loss with a good appetite. Deficiency slows it: cold intolerance and constipation. Fatigue and menstrual changes occur with both.",
+    "references": ["Thyroid disorders — standard medical-surgical nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  }
+]

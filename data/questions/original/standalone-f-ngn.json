@@ -1,0 +1,729 @@
+[
+  {
+    "id": "sf-metformin-contrast",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Pharmacological Therapies",
+    "scenario": "A client with type 2 diabetes who takes metformin has an estimated glomerular filtration rate of 38 mL/min/1.73 m² and is scheduled for a CT scan with IV iodinated contrast.",
+    "questionText": "Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "The nurse anticipates that metformin will be {{action}} because of the risk of {{risk}}.",
+    "dropdownFields": [
+      {
+        "id": "action",
+        "options": [
+          { "id": "held", "text": "held at the time of the procedure and restarted after kidney function is rechecked" },
+          { "id": "doubled", "text": "doubled on the day of the procedure" },
+          { "id": "continued", "text": "continued without change" },
+          { "id": "stopped", "text": "permanently discontinued" }
+        ]
+      },
+      {
+        "id": "risk",
+        "options": [
+          { "id": "lactic", "text": "lactic acidosis" },
+          { "id": "hypogly", "text": "severe hypoglycaemia" },
+          { "id": "allergy", "text": "contrast allergy" },
+          { "id": "dka", "text": "diabetic ketoacidosis" }
+        ]
+      }
+    ],
+    "answerKey": { "type": "dropdown", "values": { "action": "held", "risk": "lactic" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "Iodinated contrast can worsen kidney function, and metformin is cleared by the kidneys. Accumulation increases the risk of lactic acidosis. For clients with an eGFR of 30–60, metformin is typically stopped at the time of the study and restarted 48 hours later if renal function is stable.",
+    "references": ["Metformin prescribing information — iodinated contrast imaging procedures"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-newborn-glucose",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Physiological Adaptation",
+    "scenario": "A term newborn of a mother with poorly controlled gestational diabetes is jittery at 1 hour of age. The infant is alert and sucking, with a point-of-care blood glucose of 32 mg/dL.",
+    "questionText": "Complete the table by selecting the best choice for each clinical decision.",
+    "dropdownLayout": "table",
+    "dropdownTableHeadings": ["Clinical decision", "Nurse's selection"],
+    "dropdownFields": [
+      {
+        "id": "interp",
+        "label": "Interpretation",
+        "options": [
+          { "id": "hypo", "text": "Neonatal hypoglycaemia" },
+          { "id": "normal", "text": "Normal transitional glucose" },
+          { "id": "hypoca", "text": "Neonatal hypocalcaemia" },
+          { "id": "sepsis", "text": "Neonatal sepsis" }
+        ]
+      },
+      {
+        "id": "cause",
+        "label": "Most likely cause",
+        "options": [
+          { "id": "insulin", "text": "Fetal hyperinsulinism from maternal hyperglycaemia" },
+          { "id": "cold", "text": "Cold stress" },
+          { "id": "infection", "text": "Bacterial infection" },
+          { "id": "prematurity", "text": "Prematurity" }
+        ]
+      },
+      {
+        "id": "action",
+        "label": "First action",
+        "options": [
+          { "id": "feed", "text": "Feed the infant (breast milk or formula), with glucose gel per protocol" },
+          { "id": "water", "text": "Give sterile water by bottle" },
+          { "id": "wait", "text": "Recheck the glucose in 3 hours" },
+          { "id": "warmer", "text": "Place under a radiant warmer only" }
+        ]
+      },
+      {
+        "id": "recheck",
+        "label": "When to recheck glucose",
+        "options": [
+          { "id": "30", "text": "About 30 minutes after the feeding" },
+          { "id": "6h", "text": "In 6 hours" },
+          { "id": "nextday", "text": "The next morning" },
+          { "id": "none", "text": "No recheck is needed" }
+        ]
+      }
+    ],
+    "answerKey": { "type": "dropdown", "values": { "interp": "hypo", "cause": "insulin", "action": "feed", "recheck": "30" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "A glucose of 32 mg/dL with jitteriness in the first hours indicates neonatal hypoglycaemia. Maternal hyperglycaemia stimulates fetal insulin production, which persists after birth. An asymptomatic or mildly symptomatic infant who can feed is fed (often with buccal dextrose gel) and rechecked about 30 minutes later. IV dextrose is used if the infant is severely symptomatic or the glucose stays low. Water provides no glucose.",
+    "references": ["AAP Clinical Report: Postnatal Glucose Homeostasis in Late-Preterm and Term Infants (2011)"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-compartment",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "scenario": "Six hours after a long-leg cast is applied for a tibial fracture, the client reports pain of 9/10 that is not relieved by the prescribed opioid. Pain worsens when the nurse gently moves the toes. The toes are cool, with capillary refill of 4 seconds.",
+    "questionText": "Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "The nurse suspects {{cond}} and should {{action}}.",
+    "dropdownFields": [
+      {
+        "id": "cond",
+        "options": [
+          { "id": "acs", "text": "acute compartment syndrome" },
+          { "id": "dvt", "text": "deep vein thrombosis" },
+          { "id": "fat", "text": "fat embolism syndrome" },
+          { "id": "expected", "text": "expected post-fracture pain" }
+        ]
+      },
+      {
+        "id": "action",
+        "options": [
+          { "id": "notify", "text": "keep the leg at heart level and notify the provider immediately" },
+          { "id": "elevate", "text": "raise the leg on several pillows above heart level" },
+          { "id": "ice", "text": "apply ice and reassess in 2 hours" },
+          { "id": "opioid", "text": "give an additional opioid dose and reassess in 1 hour" }
+        ]
+      }
+    ],
+    "answerKey": { "type": "dropdown", "values": { "cond": "acs", "action": "notify" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "Pain out of proportion to the injury, unrelieved by opioids and worse on passive stretch, is the earliest and most reliable sign of compartment syndrome. Pallor and slow capillary refill are later signs. The limb is kept at heart level, because elevation reduces arterial inflow. The provider is notified at once, since the cast may need to be split and a fasciotomy performed.",
+    "references": ["Compartment syndrome — standard orthopaedic nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-ors",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Basic Care and Comfort",
+    "scenario": "A parent calls about an 18-month-old who has had mild diarrhoea and occasional vomiting for 1 day. The child is alert, playful and has wet diapers.",
+    "questionText": "Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "The nurse should advise the parent to give {{fluid}} in {{amount}}, and to {{diet}}.",
+    "dropdownFields": [
+      {
+        "id": "fluid",
+        "options": [
+          { "id": "ors", "text": "an oral rehydration solution" },
+          { "id": "juice", "text": "apple juice" },
+          { "id": "soda", "text": "flat cola" },
+          { "id": "water", "text": "plain water only" }
+        ]
+      },
+      {
+        "id": "amount",
+        "options": [
+          { "id": "small", "text": "small, frequent amounts (5–10 mL every few minutes)" },
+          { "id": "large", "text": "large amounts all at once" },
+          { "id": "bedtime", "text": "a single bottle at bedtime" },
+          { "id": "none", "text": "nothing by mouth for 24 hours" }
+        ]
+      },
+      {
+        "id": "diet",
+        "options": [
+          { "id": "usual", "text": "continue the child's usual age-appropriate diet" },
+          { "id": "brat", "text": "give only bananas, rice, applesauce and toast for several days" },
+          { "id": "fast", "text": "withhold all food until the diarrhoea stops" },
+          { "id": "milk", "text": "stop all milk permanently" }
+        ]
+      }
+    ],
+    "answerKey": { "type": "dropdown", "values": { "fluid": "ors", "amount": "small", "diet": "usual" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "For mild dehydration, oral rehydration solutions replace water and electrolytes in balanced amounts. Small, frequent sips are tolerated despite vomiting. Juice and soda are high in sugar and can worsen diarrhoea. Early return to a normal diet is recommended over restrictive diets or fasting.",
+    "references": ["CDC/AAP guidance on managing acute gastroenteritis in children (oral rehydration therapy)"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-parkland",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Physiological Adaptation",
+    "scenario": "A 70-kg adult has partial- and full-thickness burns over 40% of total body surface area. The burn occurred at 10:00, and fluid resuscitation is prescribed using the Parkland formula (4 mL × kg × % TBSA).",
+    "questionText": "Complete the table by selecting the correct value for each item.",
+    "dropdownLayout": "table",
+    "dropdownTableHeadings": ["Item", "Nurse's selection"],
+    "dropdownFields": [
+      {
+        "id": "total",
+        "label": "Total fluid for the first 24 hours",
+        "options": [
+          { "id": "11200", "text": "11,200 mL" },
+          { "id": "5600", "text": "5,600 mL" },
+          { "id": "2800", "text": "2,800 mL" },
+          { "id": "16800", "text": "16,800 mL" }
+        ]
+      },
+      {
+        "id": "first8",
+        "label": "Volume to give in the first 8 hours after the burn",
+        "options": [
+          { "id": "5600", "text": "5,600 mL" },
+          { "id": "3733", "text": "3,733 mL" },
+          { "id": "2800", "text": "2,800 mL" },
+          { "id": "11200", "text": "11,200 mL" }
+        ]
+      },
+      {
+        "id": "rate",
+        "label": "Hourly rate for the first 8 hours",
+        "options": [
+          { "id": "700", "text": "700 mL/hour" },
+          { "id": "467", "text": "467 mL/hour" },
+          { "id": "350", "text": "350 mL/hour" },
+          { "id": "1400", "text": "1,400 mL/hour" }
+        ]
+      },
+      {
+        "id": "fluid",
+        "label": "Fluid typically used",
+        "options": [
+          { "id": "lr", "text": "Lactated Ringer's" },
+          { "id": "d5w", "text": "Dextrose 5% in water" },
+          { "id": "albumin", "text": "25% albumin" },
+          { "id": "half", "text": "0.45% sodium chloride" }
+        ]
+      }
+    ],
+    "answerKey": { "type": "dropdown", "values": { "total": "11200", "first8": "5600", "rate": "700", "fluid": "lr" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "The total is 4 mL × 70 kg × 40 = 11,200 mL over 24 hours. Half (5,600 mL) is given in the first 8 hours from the time of the burn, which is 700 mL/hour if started promptly. The remaining half is given over the next 16 hours. Lactated Ringer's is the usual crystalloid. Rates are then titrated to urine output (about 0.5 mL/kg/hour in adults).",
+    "references": ["American Burn Association — burn resuscitation (Parkland formula)"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-inhalers",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Pharmacological Therapies",
+    "scenario": "A client with asthma is prescribed an albuterol inhaler and a fluticasone (inhaled corticosteroid) inhaler, both due in the morning.",
+    "questionText": "Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "The client should use the {{first}} inhaler first, then rinse the mouth after the {{rinse}} inhaler to prevent {{prevent}}.",
+    "dropdownFields": [
+      {
+        "id": "first",
+        "options": [
+          { "id": "albuterol", "text": "albuterol" },
+          { "id": "fluticasone", "text": "fluticasone" }
+        ]
+      },
+      {
+        "id": "rinse",
+        "options": [
+          { "id": "fluticasone", "text": "fluticasone" },
+          { "id": "albuterol", "text": "albuterol" }
+        ]
+      },
+      {
+        "id": "prevent",
+        "options": [
+          { "id": "thrush", "text": "oral candidiasis (thrush)" },
+          { "id": "tachy", "text": "tachycardia" },
+          { "id": "bronchospasm", "text": "bronchospasm" },
+          { "id": "tooth", "text": "tooth discolouration" }
+        ]
+      }
+    ],
+    "answerKey": { "type": "dropdown", "values": { "first": "albuterol", "rinse": "fluticasone", "prevent": "thrush" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "The bronchodilator opens the airways first so the corticosteroid reaches deeper into the lungs. Inhaled corticosteroids can cause oropharyngeal candidiasis and hoarseness, which rinsing and spitting after use helps prevent.",
+    "references": ["Inhaled medication administration — standard respiratory pharmacology content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-delirium",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Psychosocial Integrity",
+    "scenario": "An 81-year-old client, alert and oriented on admission 2 days ago, is now intermittently confused, picking at the bedsheets and drowsy during the day, with periods of lucidity. There is no history of dementia.",
+    "questionText": "Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "The client's findings are most consistent with {{cond}}, and the nurse should first {{action}}.",
+    "dropdownFields": [
+      {
+        "id": "cond",
+        "options": [
+          { "id": "delirium", "text": "delirium" },
+          { "id": "dementia", "text": "Alzheimer's dementia" },
+          { "id": "depression", "text": "depression" },
+          { "id": "sundowning", "text": "normal ageing" }
+        ]
+      },
+      {
+        "id": "action",
+        "options": [
+          { "id": "cause", "text": "assess for an underlying cause such as infection, hypoxia, medications or urinary retention" },
+          { "id": "restrain", "text": "apply restraints to prevent falls" },
+          { "id": "sedate", "text": "request a sedative for night-time" },
+          { "id": "family", "text": "tell the family this is permanent" }
+        ]
+      }
+    ],
+    "answerKey": { "type": "dropdown", "values": { "cond": "delirium", "action": "cause" } },
+    "scoringPolicy": "zero-one",
+    "rationale": "An acute onset, a fluctuating course, inattention and an altered level of consciousness are the hallmarks of delirium, which is usually reversible once its cause is found. Dementia develops gradually over months to years. The nurse looks for and treats precipitating causes. Restraints and sedatives often worsen delirium.",
+    "references": ["Delirium assessment (CAM) — standard gerontological nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-ethics",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Management of Care",
+    "questionText": "For each nursing action, select the ethical principle it best demonstrates.",
+    "dropdownLayout": "table",
+    "dropdownTableHeadings": ["Nursing action", "Ethical principle"],
+    "dropdownFields": [
+      {
+        "id": "refuse",
+        "label": "Respecting a competent client's decision to decline a blood transfusion",
+        "options": [
+          { "id": "autonomy", "text": "Autonomy" },
+          { "id": "beneficence", "text": "Beneficence" },
+          { "id": "justice", "text": "Justice" },
+          { "id": "veracity", "text": "Veracity" },
+          { "id": "fidelity", "text": "Fidelity" },
+          { "id": "nonmaleficence", "text": "Nonmaleficence" }
+        ]
+      },
+      {
+        "id": "honest",
+        "label": "Answering a client's question about their prognosis truthfully",
+        "options": [
+          { "id": "autonomy", "text": "Autonomy" },
+          { "id": "beneficence", "text": "Beneficence" },
+          { "id": "justice", "text": "Justice" },
+          { "id": "veracity", "text": "Veracity" },
+          { "id": "fidelity", "text": "Fidelity" },
+          { "id": "nonmaleficence", "text": "Nonmaleficence" }
+        ]
+      },
+      {
+        "id": "promise",
+        "label": "Returning in 15 minutes as promised to help the client walk",
+        "options": [
+          { "id": "autonomy", "text": "Autonomy" },
+          { "id": "beneficence", "text": "Beneficence" },
+          { "id": "justice", "text": "Justice" },
+          { "id": "veracity", "text": "Veracity" },
+          { "id": "fidelity", "text": "Fidelity" },
+          { "id": "nonmaleficence", "text": "Nonmaleficence" }
+        ]
+      },
+      {
+        "id": "allocate",
+        "label": "Assigning the last ICU bed by clinical need rather than insurance status",
+        "options": [
+          { "id": "autonomy", "text": "Autonomy" },
+          { "id": "beneficence", "text": "Beneficence" },
+          { "id": "justice", "text": "Justice" },
+          { "id": "veracity", "text": "Veracity" },
+          { "id": "fidelity", "text": "Fidelity" },
+          { "id": "nonmaleficence", "text": "Nonmaleficence" }
+        ]
+      },
+      {
+        "id": "allergy",
+        "label": "Checking allergies before giving a new medication to avoid harm",
+        "options": [
+          { "id": "autonomy", "text": "Autonomy" },
+          { "id": "beneficence", "text": "Beneficence" },
+          { "id": "justice", "text": "Justice" },
+          { "id": "veracity", "text": "Veracity" },
+          { "id": "fidelity", "text": "Fidelity" },
+          { "id": "nonmaleficence", "text": "Nonmaleficence" }
+        ]
+      }
+    ],
+    "answerKey": {
+      "type": "dropdown",
+      "values": { "refuse": "autonomy", "honest": "veracity", "promise": "fidelity", "allocate": "justice", "allergy": "nonmaleficence" }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Autonomy is respecting self-determination. Veracity is truthfulness. Fidelity is keeping commitments. Justice is fair allocation of resources. Nonmaleficence is the duty to avoid harm. Beneficence (actively doing good) is a distractor here.",
+    "references": ["ANA Code of Ethics for Nurses with Interpretive Statements (2015)"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-vanco",
+    "origin": "original",
+    "questionType": "highlight",
+    "clinicalCategory": "Pharmacological Therapies",
+    "scenario": "A client is receiving IV vancomycin every 12 hours for MRSA bacteraemia. The nurse documents the assessment at 10:00, 15 minutes into the current infusion.",
+    "questionText": "Click to highlight the findings that require immediate follow-up.",
+    "highlightLayout": "text",
+    "highlightItems": [
+      { "id": "flush", "text": "Flushing and an itchy red rash on the face, neck and upper chest." },
+      { "id": "bp", "text": "Blood pressure 92/54 mm Hg (baseline 128/76)." },
+      { "id": "trough", "text": "Trough level drawn 30 minutes before this dose was within the target range." },
+      { "id": "creat", "text": "Creatinine 2.1 mg/dL, up from 0.9 mg/dL on admission." },
+      { "id": "ringing", "text": "Reports new ringing in both ears." },
+      { "id": "site", "text": "IV site without redness or swelling." },
+      { "id": "temp", "text": "Temperature 37.3 °C (99.1 °F), down from 38.9 °C yesterday." }
+    ],
+    "answerKey": { "type": "highlight", "itemIds": ["flush", "bp", "creat", "ringing"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Flushing, rash and hypotension during a vancomycin infusion indicate vancomycin infusion reaction, usually related to the infusion rate. The infusion is stopped or slowed and the provider notified. A creatinine more than doubled signals nephrotoxicity, and tinnitus suggests ototoxicity.\n\nA therapeutic trough, a healthy IV site and a falling temperature are reassuring.",
+    "references": ["Vancomycin prescribing information — infusion reactions, nephrotoxicity and ototoxicity"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-cirrhosis",
+    "origin": "original",
+    "questionType": "highlight",
+    "clinicalCategory": "Physiological Adaptation",
+    "scenario": "The nurse is assessing a client with alcohol-related cirrhosis.",
+    "questionText": "Click to highlight the findings that require immediate follow-up.",
+    "highlightLayout": "table",
+    "highlightTableHeadings": ["Category", "Findings"],
+    "highlightItems": [
+      { "id": "confused", "group": "Neurological", "text": "New confusion and flapping tremor of the hands" },
+      { "id": "sleep", "group": "Neurological", "text": "Reports trouble sleeping" },
+      { "id": "melena", "group": "Gastrointestinal", "text": "Black, tarry stool this morning" },
+      { "id": "ascites", "group": "Gastrointestinal", "text": "Abdominal girth unchanged from yesterday" },
+      { "id": "spider", "group": "Integumentary", "text": "Spider angiomas on the chest" },
+      { "id": "palmar", "group": "Integumentary", "text": "Reddened palms" },
+      { "id": "vitals", "group": "Cardiovascular", "text": "Heart rate 122/min; blood pressure 88/50 mm Hg" }
+    ],
+    "answerKey": { "type": "highlight", "itemIds": ["confused", "melena", "vitals"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "New confusion with asterixis indicates hepatic encephalopathy. Melena with tachycardia and hypotension suggests upper gastrointestinal bleeding, possibly from varices, with hypovolaemia. These are emergencies.\n\nSpider angiomas and palmar erythema are chronic stigmata of liver disease. Stable abdominal girth and insomnia do not need immediate action.",
+    "references": ["Cirrhosis complications — standard medical-surgical nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-neonate-call",
+    "origin": "original",
+    "questionType": "highlight",
+    "clinicalCategory": "Health Promotion and Maintenance",
+    "scenario": "The parent of a 10-day-old, term, breastfed infant calls the clinic. The nurse documents the call.",
+    "questionText": "Click to highlight the findings that require immediate follow-up.",
+    "highlightLayout": "text",
+    "highlightItems": [
+      { "id": "fever", "text": "Rectal temperature 38.2 °C (100.8 °F) this morning." },
+      { "id": "lethargy", "text": "Hard to wake for feeds since last night." },
+      { "id": "diapers", "text": "Only 2 wet diapers in the past 24 hours." },
+      { "id": "cord", "text": "Umbilical cord stump is dry and dark." },
+      { "id": "sneeze", "text": "Sneezes and hiccups several times a day." },
+      { "id": "breast", "text": "Small swelling of both breasts." },
+      { "id": "stools", "text": "Yellow, seedy stools." }
+    ],
+    "answerKey": { "type": "highlight", "itemIds": ["fever", "lethargy", "diapers"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Any fever of 38.0 °C or higher in an infant under 28 days needs urgent evaluation for serious bacterial infection. Lethargy and poor feeding with few wet diapers (6 or more a day are expected by day 5) suggest illness and dehydration.\n\nA drying cord, sneezing, hiccups, breast swelling from maternal hormones and yellow seedy stools are normal.",
+    "references": ["AAP Clinical Practice Guideline: Evaluation and Management of Well-Appearing Febrile Infants 8 to 60 Days Old (2021)"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-colectomy",
+    "origin": "original",
+    "questionType": "highlight",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "scenario": "The nurse is assessing a client on postoperative day 1 after a colectomy with a new colostomy.",
+    "questionText": "Click to highlight the findings that require immediate follow-up.",
+    "highlightLayout": "table",
+    "highlightTableHeadings": ["Category", "Findings"],
+    "highlightItems": [
+      { "id": "incision", "group": "Wound", "text": "Midline incision edges approximated, no drainage" },
+      { "id": "stoma", "group": "Wound", "text": "Stoma dusky purple and dry" },
+      { "id": "bowel", "group": "Gastrointestinal", "text": "Hypoactive bowel sounds; no stool in the pouch" },
+      { "id": "uo", "group": "Renal", "text": "Urine output 20 mL/hour for the past 3 hours" },
+      { "id": "pain", "group": "Comfort", "text": "Incisional pain 4/10 with PCA use" },
+      { "id": "anxious", "group": "Psychosocial", "text": "Says, \"I'm nervous about looking at the stoma.\"" }
+    ],
+    "answerKey": { "type": "highlight", "itemIds": ["stoma", "uo"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "A healthy stoma is pink-red and moist; a dusky or purple stoma suggests ischaemia and must be reported immediately. Urine output below 0.5 mL/kg/hour (about 30 mL/hour) for several hours indicates hypovolaemia or kidney hypoperfusion.\n\nHypoactive bowel sounds and no stool are expected on day 1. Moderate controlled pain and anxiety about body image need ongoing care but are not urgent.",
+    "references": ["Ostomy care — Wound, Ostomy and Continence Nurses Society guidance"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-preop",
+    "origin": "original",
+    "questionType": "highlight",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "scenario": "The nurse is completing the preoperative checklist for a client scheduled for an elective laparoscopic cholecystectomy under general anaesthesia at 11:00. It is now 09:00.",
+    "questionText": "Click to highlight the findings that must be reported before the client goes to surgery.",
+    "highlightLayout": "text",
+    "highlightItems": [
+      { "id": "toast", "text": "Client ate toast and drank coffee with milk at 08:00." },
+      { "id": "consent", "text": "Surgical consent signed and witnessed." },
+      { "id": "k", "text": "Serum potassium 2.9 mEq/L." },
+      { "id": "dentures", "text": "Dentures removed and stored." },
+      { "id": "gluc", "text": "Blood glucose 104 mg/dL." },
+      { "id": "aspirin", "text": "Client took clopidogrel this morning, which was supposed to be stopped 5 days ago." },
+      { "id": "id", "text": "Identification band and allergy band in place." }
+    ],
+    "answerKey": { "type": "highlight", "itemIds": ["toast", "k", "aspirin"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "A light meal with milk 3 hours before anaesthesia breaks typical fasting guidance (about 6 hours for a light meal) and increases aspiration risk. Hypokalaemia increases the risk of dysrhythmias under anaesthesia. Recent antiplatelet use increases surgical bleeding. All three need the surgeon's and anaesthetist's review.\n\nThe completed consent, removed dentures, normal glucose and identification bands are expected.",
+    "references": ["ASA Practice Guidelines for Preoperative Fasting (2017, updated 2023)"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-anorexia",
+    "origin": "original",
+    "questionType": "highlight",
+    "clinicalCategory": "Psychosocial Integrity",
+    "scenario": "A 16-year-old client with anorexia nervosa was admitted 3 days ago and started a nutritional rehabilitation plan.",
+    "questionText": "Click to highlight the findings that require immediate follow-up.",
+    "highlightLayout": "table",
+    "highlightTableHeadings": ["Category", "Findings"],
+    "highlightItems": [
+      { "id": "hr", "group": "Cardiovascular", "text": "Heart rate 38/min at rest" },
+      { "id": "phos", "group": "Laboratory", "text": "Phosphorus 1.8 mg/dL (reference 2.5–4.5)" },
+      { "id": "k", "group": "Laboratory", "text": "Potassium 2.9 mEq/L" },
+      { "id": "lanugo", "group": "Integumentary", "text": "Fine downy hair on the arms and back" },
+      { "id": "amen", "group": "Reproductive", "text": "No menstrual period for 5 months" },
+      { "id": "fear", "group": "Psychosocial", "text": "States, \"I'm scared I'll get fat if I eat all of this.\"" }
+    ],
+    "answerKey": { "type": "highlight", "itemIds": ["hr", "phos", "k"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Marked bradycardia and hypokalaemia increase the risk of dysrhythmias. A falling phosphorus level after feeding is restarted signals refeeding syndrome, which can cause cardiac and respiratory failure. All three need prompt reporting and replacement.\n\nLanugo, amenorrhoea and fear of weight gain are expected features of anorexia nervosa and are addressed in ongoing treatment.",
+    "references": ["Society for Adolescent Health and Medicine — medical management of restrictive eating disorders (2022)"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-bowtie-tension",
+    "origin": "original",
+    "questionType": "bowtie",
+    "clinicalCategory": "Physiological Adaptation",
+    "scenario": "A client with a chest injury from a motor vehicle crash suddenly becomes severely short of breath. The trachea is shifted to the left, breath sounds are absent on the right, neck veins are distended, blood pressure is 78/40 mm Hg and SpO₂ is 82%.",
+    "questionText": "Complete the diagram by selecting from the choices below. Specify the condition the client is most likely experiencing, 2 actions the nurse should take and 2 parameters the nurse should monitor.",
+    "bowtie": {
+      "left": {
+        "label": "Actions to take",
+        "slots": 2,
+        "options": [
+          { "id": "decompress", "text": "Prepare for immediate needle decompression" },
+          { "id": "o2", "text": "Apply high-flow oxygen by non-rebreather mask" },
+          { "id": "ct", "text": "Send the client for a CT scan first" },
+          { "id": "supine", "text": "Lay the client flat on the affected side" },
+          { "id": "fluidlimit", "text": "Restrict IV fluids" }
+        ]
+      },
+      "center": {
+        "label": "Condition most likely experiencing",
+        "slots": 1,
+        "options": [
+          { "id": "tension", "text": "Tension pneumothorax" },
+          { "id": "pe", "text": "Pulmonary embolism" },
+          { "id": "mi", "text": "Myocardial infarction" },
+          { "id": "asthma", "text": "Asthma attack" }
+        ]
+      },
+      "right": {
+        "label": "Parameters to monitor",
+        "slots": 2,
+        "options": [
+          { "id": "resp", "text": "Respiratory status and oxygen saturation" },
+          { "id": "bp", "text": "Blood pressure and heart rate" },
+          { "id": "glucose", "text": "Blood glucose" },
+          { "id": "temp", "text": "Temperature" },
+          { "id": "bowel", "text": "Bowel sounds" }
+        ]
+      }
+    },
+    "answerKey": { "type": "bowtie", "left": ["decompress", "o2"], "center": ["tension"], "right": ["resp", "bp"] },
+    "scoringPolicy": "zero-one",
+    "rationale": "Tracheal deviation away from the affected side, absent breath sounds, distended neck veins, hypotension and hypoxaemia after chest trauma indicate tension pneumothorax, a clinical diagnosis that needs immediate decompression followed by a chest tube. Imaging would delay life-saving treatment. High-flow oxygen supports oxygenation. Respiratory and haemodynamic status are monitored closely to confirm the response.",
+    "references": ["ATLS-based management of tension pneumothorax — standard emergency nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-bowtie-dysreflexia",
+    "origin": "original",
+    "questionType": "bowtie",
+    "clinicalCategory": "Physiological Adaptation",
+    "scenario": "A client with a T4 spinal cord injury suddenly reports a pounding headache and blurred vision. The face is flushed and sweaty above the level of injury. Blood pressure is 196/110 mm Hg (baseline 102/64) and heart rate is 52/min. The indwelling catheter tubing is kinked under the client's leg.",
+    "questionText": "Complete the diagram by selecting from the choices below. Specify the condition the client is most likely experiencing, 2 actions the nurse should take and 2 parameters the nurse should monitor.",
+    "bowtie": {
+      "left": {
+        "label": "Actions to take",
+        "slots": 2,
+        "options": [
+          { "id": "sit", "text": "Sit the client upright and lower the legs" },
+          { "id": "unkink", "text": "Straighten the kinked catheter tubing to drain the bladder" },
+          { "id": "flat", "text": "Place the client flat with legs raised" },
+          { "id": "tight", "text": "Apply abdominal binder and compression stockings tightly" },
+          { "id": "wait", "text": "Recheck blood pressure in 1 hour" }
+        ]
+      },
+      "center": {
+        "label": "Condition most likely experiencing",
+        "slots": 1,
+        "options": [
+          { "id": "ad", "text": "Autonomic dysreflexia" },
+          { "id": "spinal", "text": "Spinal shock" },
+          { "id": "stroke", "text": "Haemorrhagic stroke" },
+          { "id": "migraine", "text": "Migraine" }
+        ]
+      },
+      "right": {
+        "label": "Parameters to monitor",
+        "slots": 2,
+        "options": [
+          { "id": "bp", "text": "Blood pressure every few minutes" },
+          { "id": "uo", "text": "Urine output from the catheter" },
+          { "id": "glucose", "text": "Blood glucose" },
+          { "id": "temp", "text": "Temperature" },
+          { "id": "pupils", "text": "Pupil size only" }
+        ]
+      }
+    },
+    "answerKey": { "type": "bowtie", "left": ["sit", "unkink"], "center": ["ad"], "right": ["bp", "uo"] },
+    "scoringPolicy": "zero-one",
+    "rationale": "In injuries at T6 or above, a noxious stimulus below the injury (here a blocked catheter and full bladder) triggers uncontrolled sympathetic hypertension with reflex bradycardia: autonomic dysreflexia. The nurse sits the client up to lower blood pressure, loosens constrictive items and removes the trigger. Blood pressure is monitored frequently, and urine flow confirms that the cause is resolved. Antihypertensives are given if blood pressure stays high.",
+    "references": ["Paralyzed Veterans of America Clinical Practice Guideline: Acute Management of Autonomic Dysreflexia"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-bowtie-pulmedema",
+    "origin": "original",
+    "questionType": "bowtie",
+    "clinicalCategory": "Physiological Adaptation",
+    "scenario": "A client with heart failure wakes up severely short of breath and anxious, with pink frothy sputum, crackles throughout both lung fields, respiratory rate 34/min, SpO₂ 84% and blood pressure 168/96 mm Hg.",
+    "questionText": "Complete the diagram by selecting from the choices below. Specify the condition the client is most likely experiencing, 2 actions the nurse should take and 2 parameters the nurse should monitor.",
+    "bowtie": {
+      "left": {
+        "label": "Actions to take",
+        "slots": 2,
+        "options": [
+          { "id": "position", "text": "Sit the client upright with legs dangling" },
+          { "id": "lasix", "text": "Administer IV furosemide as prescribed" },
+          { "id": "bolus", "text": "Give a 1-litre IV fluid bolus" },
+          { "id": "flat", "text": "Lay the client flat to rest" },
+          { "id": "walk", "text": "Encourage the client to walk to open the lungs" }
+        ]
+      },
+      "center": {
+        "label": "Condition most likely experiencing",
+        "slots": 1,
+        "options": [
+          { "id": "edema", "text": "Acute pulmonary oedema" },
+          { "id": "pneumonia", "text": "Pneumonia" },
+          { "id": "pe", "text": "Pulmonary embolism" },
+          { "id": "anxiety", "text": "Panic attack" }
+        ]
+      },
+      "right": {
+        "label": "Parameters to monitor",
+        "slots": 2,
+        "options": [
+          { "id": "spo2", "text": "Oxygen saturation and breath sounds" },
+          { "id": "uo", "text": "Urine output" },
+          { "id": "glucose", "text": "Blood glucose" },
+          { "id": "temp", "text": "Temperature" },
+          { "id": "bowel", "text": "Bowel sounds" }
+        ]
+      }
+    },
+    "answerKey": { "type": "bowtie", "left": ["position", "lasix"], "center": ["edema"], "right": ["spo2", "uo"] },
+    "scoringPolicy": "zero-one",
+    "rationale": "Sudden severe dyspnoea, pink frothy sputum, diffuse crackles and hypoxaemia in heart failure indicate acute pulmonary oedema. An upright position with legs down reduces venous return, and a loop diuretic removes excess fluid, along with oxygen and other prescribed therapy. Oxygenation and breath sounds show response, and urine output shows the effect of the diuretic. A fluid bolus or lying flat would worsen congestion.",
+    "references": ["2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure — acute decompensation"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sf-bowtie-nms",
+    "origin": "original",
+    "questionType": "bowtie",
+    "clinicalCategory": "Pharmacological Therapies",
+    "scenario": "Five days after starting haloperidol, a client has a temperature of 40.1 °C (104.2 °F), \"lead-pipe\" muscle rigidity, confusion, heavy sweating and blood pressure fluctuating between 160/100 and 96/58 mm Hg.",
+    "questionText": "Complete the diagram by selecting from the choices below. Specify the condition the client is most likely experiencing, 2 actions the nurse should take and 2 parameters the nurse should monitor.",
+    "bowtie": {
+      "left": {
+        "label": "Actions to take",
+        "slots": 2,
+        "options": [
+          { "id": "stop", "text": "Hold the haloperidol and notify the provider" },
+          { "id": "cool", "text": "Start active cooling measures" },
+          { "id": "more", "text": "Give an extra dose of haloperidol for the agitation" },
+          { "id": "blankets", "text": "Cover the client with warm blankets" },
+          { "id": "exercise", "text": "Encourage exercise to relieve the stiffness" }
+        ]
+      },
+      "center": {
+        "label": "Condition most likely experiencing",
+        "slots": 1,
+        "options": [
+          { "id": "nms", "text": "Neuroleptic malignant syndrome" },
+          { "id": "ss", "text": "Serotonin syndrome" },
+          { "id": "td", "text": "Tardive dyskinesia" },
+          { "id": "flu", "text": "Influenza" }
+        ]
+      },
+      "right": {
+        "label": "Parameters to monitor",
+        "slots": 2,
+        "options": [
+          { "id": "temp", "text": "Body temperature" },
+          { "id": "ck", "text": "Creatine kinase and kidney function" },
+          { "id": "glucose", "text": "Haemoglobin A1C" },
+          { "id": "lipids", "text": "Lipid panel" },
+          { "id": "vision", "text": "Visual acuity" }
+        ]
+      }
+    },
+    "answerKey": { "type": "bowtie", "left": ["stop", "cool"], "center": ["nms"], "right": ["temp", "ck"] },
+    "scoringPolicy": "zero-one",
+    "rationale": "Hyperthermia, lead-pipe rigidity, altered mental status and autonomic instability after starting an antipsychotic indicate neuroleptic malignant syndrome. Serotonin syndrome typically shows clonus and hyperreflexia rather than lead-pipe rigidity. The antipsychotic is stopped and cooling begins, with supportive care and possibly dantrolene or bromocriptine. Temperature and creatine kinase are monitored, along with kidney function, because rhabdomyolysis can cause acute kidney injury.",
+    "references": ["Neuroleptic malignant syndrome — standard psychiatric pharmacology content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  }
+]

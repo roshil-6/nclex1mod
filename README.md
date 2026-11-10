@@ -16,7 +16,7 @@ See `docs/` for the [extraction report](docs/extraction-report.md), [reference a
 
 ```
 data/cases/                   case-study shared records (tabs released by part via fromPart)
-data/questions/original/      44 original questions (scored)
+data/questions/original/      150 original questions (scored)
 data/questions/extracted/     transcribed licensed content (empty, see extraction report)
 data/questions/pending/       records awaiting verification (never scored)
 src/lib/validation/schema.ts  Zod schemas + TypeScript types for questions, cases, responses, keys
@@ -38,13 +38,13 @@ tests/unit, tests/e2e         Vitest + Testing Library, Playwright
 | 1 | Screenshots inspected | **230** (4 archives) + 17:26 reference video sampled at 30 s |
 | 2 | Unique source questions identified | **50** (one 50-question test; 48 have exam-view captures, all 50 have review captures; 5 exact duplicate images) |
 | — | Source questions transcribed | **0.** The screenshots are a commercial, subscription question bank with a named subscriber's email and IP watermark, so the content was not reproduced (see the extraction report) |
-| 3 | Complete questions in the bank | **44** original questions (26 standalone + 3 six-part case studies) |
-| 4 | Validated, scored-eligible questions | **44** (all `author-reviewed`; set `SCORED_ANSWER_STATUSES=verified` to require clinician sign-off) |
-| 5 | Questions requiring verification | **44** awaiting licensed nurse-educator sign-off; 3 flagged for specific review points |
+| 3 | Complete questions in the bank | **150** original questions (96 standalone + 9 six-part case studies) |
+| 4 | Validated, scored-eligible questions | **150** (all `author-reviewed`; set `SCORED_ANSWER_STATUSES=verified` to require clinician sign-off) |
+| 5 | Questions requiring verification | **150** awaiting licensed nurse-educator sign-off; 5 flagged for specific review points |
 | 6 | Question types implemented | single answer, multiple response, matrix single (expected/unexpected, indicated/contraindicated, improved/declined), matrix multiple, dropdown (sentence and table), highlight (text and table), bowtie; any type inside case studies |
 | 7 | Tests | Vitest **59/59** passing (scoring policies, schema, bank integrity, planning, tokens, persistence, single-shot submission, admin middleware, every component against real records). Playwright **7/7** passing (full case-study journey with reload, flags, navigator, submit, results, review and retake; timer persistence and auto-submit on expiry; practice feedback; all 44 questions interactive; admin protection; mobile Pixel 7 layout, overflow and rotation) |
 | 8 | Build | `npm run build` succeeds (bank validation + Next.js production build); client bundles contain no answer keys |
 | 9 | Deployment | **Not deployed.** The Vercel CLI is not signed in on this machine; steps are in `docs/deployment.md` |
 | 10 | Public URL | None yet |
 
-**Full 150-question mode** is implemented (5-hour timer, exam mode with no reveals) but stays locked until 150 validated questions exist. Questions are never duplicated to reach that number.
+**Full 150-question mode** is available: 150 unique questions, a 5-hour timer and exam mode with no reveals. It locks again automatically if any question is disabled or loses verification, because questions are never duplicated to reach 150.

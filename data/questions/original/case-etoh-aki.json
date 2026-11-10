@@ -1,0 +1,706 @@
+[
+  {
+    "id": "eto-1",
+    "origin": "original",
+    "questionType": "highlight",
+    "clinicalCategory": "Psychosocial Integrity",
+    "caseStudyId": "case-etoh",
+    "caseStudyPart": 1,
+    "questionText": "The nurse reviews the Day 2, 06:00 nurses' note and vital signs. Click to highlight the findings that require immediate follow-up.",
+    "highlightLayout": "text",
+    "highlightItems": [
+      {
+        "id": "tremor",
+        "text": "Fine tremor of both hands."
+      },
+      {
+        "id": "diaph",
+        "text": "Skin diaphoretic."
+      },
+      {
+        "id": "bugs",
+        "text": "States \"there are bugs crawling on the wall.\""
+      },
+      {
+        "id": "orient",
+        "text": "Not oriented to the date."
+      },
+      {
+        "id": "vitals",
+        "text": "Heart rate 112/min; blood pressure 162/98 mm Hg."
+      },
+      {
+        "id": "pain",
+        "text": "Right ankle pain 4/10."
+      },
+      {
+        "id": "toes",
+        "text": "Toes pink and warm; capillary refill less than 3 seconds."
+      },
+      {
+        "id": "splint",
+        "text": "Splint dry and intact."
+      }
+    ],
+    "answerKey": {
+      "type": "highlight",
+      "itemIds": [
+        "tremor",
+        "diaph",
+        "bugs",
+        "orient",
+        "vitals"
+      ]
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Tremor, sweating, hallucinations, disorientation, tachycardia and hypertension about 2 days after the last drink indicate significant alcohol withdrawal (CIWA-Ar 22). The client is at risk of progressing to withdrawal seizures or delirium tremens.\n\nModerate pain controlled by the prescribed analgesia, good distal circulation and an intact splint are expected after ankle surgery.",
+    "references": [
+      "ASAM Clinical Practice Guideline on Alcohol Withdrawal Management (2020)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "eto-2",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Psychosocial Integrity",
+    "caseStudyId": "case-etoh",
+    "caseStudyPart": 2,
+    "questionText": "Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "The client is most likely experiencing {{cond}}, and the low serum magnesium further increases the risk of {{risk}}.",
+    "dropdownFields": [
+      {
+        "id": "cond",
+        "options": [
+          {
+            "id": "aws",
+            "text": "alcohol withdrawal"
+          },
+          {
+            "id": "fat",
+            "text": "fat embolism syndrome"
+          },
+          {
+            "id": "opioid",
+            "text": "opioid toxicity"
+          },
+          {
+            "id": "hypogly",
+            "text": "hypoglycaemia"
+          }
+        ]
+      },
+      {
+        "id": "risk",
+        "options": [
+          {
+            "id": "seizure",
+            "text": "seizures and dysrhythmias"
+          },
+          {
+            "id": "bleeding",
+            "text": "bleeding"
+          },
+          {
+            "id": "resp",
+            "text": "respiratory depression"
+          },
+          {
+            "id": "compartment",
+            "text": "compartment syndrome"
+          }
+        ]
+      }
+    ],
+    "answerKey": {
+      "type": "dropdown",
+      "values": {
+        "cond": "aws",
+        "risk": "seizure"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "The timing (about 54 hours after the last drink) and the signs (tremor, autonomic hyperactivity, hallucinations) fit alcohol withdrawal. Hypomagnesaemia lowers the seizure threshold and predisposes to dysrhythmias.\n\nFat embolism usually causes hypoxaemia and petechiae. Opioid toxicity causes sedation and slow breathing. Glucose is 84 mg/dL.",
+    "references": [
+      "ASAM Clinical Practice Guideline on Alcohol Withdrawal Management (2020)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "eto-3",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-etoh",
+    "caseStudyPart": 3,
+    "questionText": "The client's dextrose-containing IV fluid bag needs replacing, and the morning medications are due. Which medication is most important to give before more dextrose is infused?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Thiamine"
+      },
+      {
+        "id": "b",
+        "text": "Folic acid"
+      },
+      {
+        "id": "c",
+        "text": "Lorazepam"
+      },
+      {
+        "id": "d",
+        "text": "Oxycodone"
+      }
+    ],
+    "answerKey": {
+      "type": "single",
+      "optionId": "a"
+    },
+    "scoringPolicy": "dichotomous",
+    "rationale": "People with chronic heavy alcohol use are often thiamine-deficient. Glucose metabolism uses up thiamine, so giving dextrose without thiamine can precipitate or worsen Wernicke's encephalopathy. Thiamine is given before or with glucose-containing fluids. Lorazepam is given according to the CIWA-Ar score, not to protect against glucose loading.",
+    "references": [
+      "ASAM Clinical Practice Guideline on Alcohol Withdrawal Management (2020)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "eto-4",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Safety and Infection Control",
+    "caseStudyId": "case-etoh",
+    "caseStudyPart": 4,
+    "questionText": "For each nursing action, specify whether it is indicated or contraindicated for this client.",
+    "matrixRowHeading": "Nursing action",
+    "matrixRows": [
+      {
+        "id": "ciwa",
+        "text": "Assess the CIWA-Ar score hourly and give lorazepam per protocol"
+      },
+      {
+        "id": "room",
+        "text": "Provide a quiet, well-lit room"
+      },
+      {
+        "id": "restrain",
+        "text": "Apply four-point restraints as a preventive measure"
+      },
+      {
+        "id": "seizure",
+        "text": "Implement seizure precautions"
+      },
+      {
+        "id": "mag",
+        "text": "Administer the prescribed magnesium sulfate"
+      },
+      {
+        "id": "argue",
+        "text": "Tell the client firmly that the bugs are imaginary until the client agrees"
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "ind",
+        "label": "Indicated"
+      },
+      {
+        "id": "contra",
+        "label": "Contraindicated"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": {
+        "ciwa": "ind",
+        "room": "ind",
+        "restrain": "contra",
+        "seizure": "ind",
+        "mag": "ind",
+        "argue": "contra"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Symptom-triggered benzodiazepine dosing guided by CIWA-Ar, a calm environment with enough light to reduce misperceptions, seizure precautions and magnesium replacement are all standard care.\n\nRestraints are a last resort for imminent danger, not prevention; they can increase agitation and injury. Arguing about hallucinations escalates anxiety. The nurse acknowledges the client's experience and presents reality calmly.",
+    "references": [
+      "ASAM Clinical Practice Guideline on Alcohol Withdrawal Management (2020)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "eto-5",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-etoh",
+    "caseStudyPart": 5,
+    "questionText": "The CIWA-Ar score calls for lorazepam 2 mg IV. Which actions should the nurse take? Select all that apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assess the respiratory rate and level of sedation before and after the dose."
+      },
+      {
+        "id": "b",
+        "text": "Inject the dose slowly over at least 1 minute."
+      },
+      {
+        "id": "c",
+        "text": "Keep the bed low and remind the client to call for help before getting up."
+      },
+      {
+        "id": "d",
+        "text": "Give the dose even if the respiratory rate is 9/min, because withdrawal is dangerous."
+      },
+      {
+        "id": "e",
+        "text": "Give the as-needed oxycodone at the same time to increase the calming effect."
+      },
+      {
+        "id": "f",
+        "text": "Reassess the CIWA-Ar score after the dose takes effect."
+      }
+    ],
+    "answerKey": {
+      "type": "multiple",
+      "optionIds": [
+        "a",
+        "b",
+        "c",
+        "f"
+      ]
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Benzodiazepines can depress breathing and consciousness, so respiration and sedation are checked before and after each dose. IV lorazepam is pushed slowly (no faster than 2 mg/minute). Sedation increases the risk of falls, especially with a splinted ankle. Reassessment guides further dosing.\n\nA respiratory rate of 9/min is a reason to hold and notify the provider. Combining the dose with an opioid increases the risk of respiratory depression.",
+    "references": [
+      "Lorazepam injection prescribing information — administration"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "eto-6",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-etoh",
+    "caseStudyPart": 6,
+    "questionText": "The nurse reviews the Day 4 findings. For each finding, specify whether it indicates improvement or a new problem that needs follow-up.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      {
+        "id": "ciwa",
+        "text": "CIWA-Ar score 6"
+      },
+      {
+        "id": "vitals",
+        "text": "Heart rate 88/min; blood pressure 134/82 mm Hg"
+      },
+      {
+        "id": "orient",
+        "text": "Oriented to person, place and time"
+      },
+      {
+        "id": "mag",
+        "text": "Magnesium 1.9 mg/dL"
+      },
+      {
+        "id": "eyes",
+        "text": "Double vision, unsteady gait and jerky eye movements"
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "imp",
+        "label": "Improvement"
+      },
+      {
+        "id": "new",
+        "label": "New problem"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": {
+        "ciwa": "imp",
+        "vitals": "imp",
+        "orient": "imp",
+        "mag": "imp",
+        "eyes": "new"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "A falling CIWA-Ar score, normalised vital signs, restored orientation and a corrected magnesium level show that withdrawal is resolving.\n\nNew diplopia with nystagmus and ataxia suggests Wernicke's encephalopathy from thiamine deficiency, which can occur even without confusion. It needs urgent provider notification and high-dose IV thiamine.",
+    "references": [
+      "ASAM Clinical Practice Guideline on Alcohol Withdrawal Management (2020)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "aki-1",
+    "origin": "original",
+    "questionType": "matrix-multiple",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-aki",
+    "caseStudyPart": 1,
+    "questionText": "The nurse reviews the client's home medications. For each medication, specify whether it can contribute to hyperkalaemia, to acute kidney injury in a volume-depleted client, or to both.",
+    "instructions": "Each medication may have more than one answer, or none.",
+    "matrixRowHeading": "Home medication",
+    "matrixRows": [
+      {
+        "id": "lisinopril",
+        "text": "Lisinopril"
+      },
+      {
+        "id": "spiro",
+        "text": "Spironolactone"
+      },
+      {
+        "id": "ibuprofen",
+        "text": "Ibuprofen"
+      },
+      {
+        "id": "atorva",
+        "text": "Atorvastatin"
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "k",
+        "label": "Hyperkalaemia"
+      },
+      {
+        "id": "aki",
+        "label": "Acute kidney injury"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-multiple",
+      "selections": {
+        "lisinopril": [
+          "k",
+          "aki"
+        ],
+        "spiro": [
+          "k"
+        ],
+        "ibuprofen": [
+          "k",
+          "aki"
+        ],
+        "atorva": []
+      }
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "ACE inhibitors reduce aldosterone, which raises potassium. They also dilate the efferent arteriole, which lowers filtration when the client is dehydrated. NSAIDs constrict the afferent arteriole by blocking prostaglandins and suppress renin and aldosterone, so they raise both risks. Spironolactone blocks aldosterone and is a major cause of hyperkalaemia.\n\nAtorvastatin does not cause either problem in usual circumstances.",
+    "references": [
+      "KDIGO Clinical Practice Guideline for Acute Kidney Injury (2012)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed",
+    "reviewNotes": "Spironolactone keyed to hyperkalaemia only; diuretics can also contribute to pre-renal AKI. Reviewer may consider keying both."
+  },
+  {
+    "id": "aki-2",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-aki",
+    "caseStudyPart": 2,
+    "questionText": "The nurse reviews the cardiac monitor findings, the laboratory results and the new prescriptions. Which prescription should the nurse implement first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Calcium gluconate 1 g IV"
+      },
+      {
+        "id": "b",
+        "text": "Sodium zirconium cyclosilicate 10 g orally"
+      },
+      {
+        "id": "c",
+        "text": "0.9% sodium chloride IV at 125 mL/hour"
+      },
+      {
+        "id": "d",
+        "text": "Repeat potassium in 2 hours"
+      }
+    ],
+    "answerKey": {
+      "type": "single",
+      "optionId": "a"
+    },
+    "scoringPolicy": "dichotomous",
+    "rationale": "With a potassium of 6.6 mEq/L and peaked T waves, the immediate danger is a lethal dysrhythmia. IV calcium stabilises the cardiac cell membrane within minutes. It does not lower potassium, so treatments that shift potassium into cells and remove it from the body follow.",
+    "references": [
+      "Management of hyperkalaemia — standard medical-surgical nursing content"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "aki-3",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-aki",
+    "caseStudyPart": 3,
+    "questionText": "For each treatment, specify how it works to manage hyperkalaemia.",
+    "matrixRowHeading": "Treatment",
+    "matrixRows": [
+      {
+        "id": "calcium",
+        "text": "Calcium gluconate IV"
+      },
+      {
+        "id": "insulin",
+        "text": "Regular insulin IV with dextrose"
+      },
+      {
+        "id": "albuterol",
+        "text": "Nebulised albuterol"
+      },
+      {
+        "id": "szc",
+        "text": "Sodium zirconium cyclosilicate"
+      },
+      {
+        "id": "dialysis",
+        "text": "Haemodialysis"
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "stabilise",
+        "label": "Stabilises cardiac membrane"
+      },
+      {
+        "id": "shift",
+        "label": "Shifts potassium into cells"
+      },
+      {
+        "id": "remove",
+        "label": "Removes potassium from the body"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": {
+        "calcium": "stabilise",
+        "insulin": "shift",
+        "albuterol": "shift",
+        "szc": "remove",
+        "dialysis": "remove"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Calcium protects the myocardium but does not lower potassium. Insulin and beta-2 agonists such as albuterol activate the Na⁺/K⁺-ATPase pump and move potassium into cells temporarily. Potassium binders such as sodium zirconium cyclosilicate remove potassium through the gut, and dialysis removes it from the blood.",
+    "references": [
+      "Management of hyperkalaemia — standard medical-surgical nursing content"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "aki-4",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "caseStudyId": "case-aki",
+    "caseStudyPart": 4,
+    "questionText": "The nurse has given IV regular insulin with dextrose. Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "After this treatment the nurse should monitor for {{risk}} by {{how}}, because the client's reduced kidney function {{why}}.",
+    "dropdownFields": [
+      {
+        "id": "risk",
+        "options": [
+          {
+            "id": "hypo",
+            "text": "hypoglycaemia"
+          },
+          {
+            "id": "hyper",
+            "text": "hyperglycaemia"
+          },
+          {
+            "id": "hypoca",
+            "text": "hypocalcaemia"
+          },
+          {
+            "id": "overload",
+            "text": "fluid overload"
+          }
+        ]
+      },
+      {
+        "id": "how",
+        "options": [
+          {
+            "id": "glucose",
+            "text": "checking blood glucose hourly as prescribed"
+          },
+          {
+            "id": "ketones",
+            "text": "testing urine for ketones"
+          },
+          {
+            "id": "weight",
+            "text": "weighing the client daily"
+          },
+          {
+            "id": "ecg",
+            "text": "obtaining a 12-lead ECG"
+          }
+        ]
+      },
+      {
+        "id": "why",
+        "options": [
+          {
+            "id": "clear",
+            "text": "slows insulin clearance"
+          },
+          {
+            "id": "absorb",
+            "text": "increases glucose absorption"
+          },
+          {
+            "id": "calcium",
+            "text": "lowers calcium levels"
+          },
+          {
+            "id": "none",
+            "text": "has no effect on insulin"
+          }
+        ]
+      }
+    ],
+    "answerKey": {
+      "type": "dropdown",
+      "values": {
+        "risk": "hypo",
+        "how": "glucose",
+        "why": "clear"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Hypoglycaemia is the most common adverse effect of insulin–dextrose treatment for hyperkalaemia. It often occurs 1–3 hours later, after the dextrose has been used up, and is more likely in kidney impairment because the kidneys clear insulin. Hourly glucose checks for several hours are prescribed for this reason.",
+    "references": [
+      "Management of hyperkalaemia — standard medical-surgical nursing content"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "aki-5",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-aki",
+    "caseStudyPart": 5,
+    "questionText": "The potassium is now 5.4 mEq/L. The nurse is reviewing the home medication list with the provider. Which medications should the nurse expect to be held at this time? Select all that apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lisinopril"
+      },
+      {
+        "id": "b",
+        "text": "Spironolactone"
+      },
+      {
+        "id": "c",
+        "text": "Ibuprofen"
+      },
+      {
+        "id": "d",
+        "text": "Metformin"
+      },
+      {
+        "id": "e",
+        "text": "Atorvastatin"
+      }
+    ],
+    "answerKey": {
+      "type": "multiple",
+      "optionIds": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Lisinopril, spironolactone and ibuprofen worsen hyperkalaemia, kidney function, or both, so they are held during AKI. Metformin is held when kidney function falls sharply because accumulation increases the risk of lactic acidosis. Atorvastatin does not affect potassium or kidney function and can usually continue.",
+    "references": [
+      "KDIGO Clinical Practice Guideline for Acute Kidney Injury (2012)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "aki-6",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-aki",
+    "caseStudyPart": 6,
+    "questionText": "The nurse reviews the Day 3 findings. For each finding, specify whether it indicates improvement or a new problem that needs follow-up.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      {
+        "id": "k",
+        "text": "Potassium 4.6 mEq/L; T waves normal"
+      },
+      {
+        "id": "creat",
+        "text": "Creatinine 1.9 mg/dL"
+      },
+      {
+        "id": "uo",
+        "text": "Urine output 0.8 mL/kg/hour"
+      },
+      {
+        "id": "hco3",
+        "text": "Bicarbonate 22 mEq/L"
+      },
+      {
+        "id": "fluid",
+        "text": "Crackles, orthopnoea, ankle oedema and weight 87 kg"
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "imp",
+        "label": "Improvement"
+      },
+      {
+        "id": "new",
+        "label": "New problem"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": {
+        "k": "imp",
+        "creat": "imp",
+        "uo": "imp",
+        "hco3": "imp",
+        "fluid": "new"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Potassium, creatinine, bicarbonate and urine output are all recovering.\n\nHowever, a 6 kg weight gain with crackles, orthopnoea, oedema and an SpO₂ of 90% shows fluid overload in a client with heart failure who received continuous IV fluids. The nurse reports this so the fluids can be reduced and diuresis considered.",
+    "references": [
+      "KDIGO Clinical Practice Guideline for Acute Kidney Injury (2012)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  }
+]

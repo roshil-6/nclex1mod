@@ -90,9 +90,22 @@ describe("exam planning", () => {
     expect(JSON.stringify(plan)).not.toContain("rationale");
   });
 
+  it("builds a full exam of exactly 150 unique questions with whole, ordered case studies", async () => {
+    const plan = await createPlan({ mode: "full", immediateFeedback: true });
+    expect(plan.questionIds).toHaveLength(150);
+    expect(new Set(plan.questionIds).size).toBe(150);
+    expect(plan.durationSec).toBe(5 * 60 * 60);
+    expect(plan.immediateFeedback).toBe(false);
+    for (const c of plan.cases) {
+      const pos = plan.questions.map((q, n) => (q.caseStudyId === c.id ? n : -1)).filter((n) => n >= 0);
+      expect(pos[pos.length - 1] - pos[0]).toBe(c.totalParts - 1);
+    }
+  });
+
   it("refuses the full exam when fewer than 150 validated questions exist", async () => {
-    const eligible = eligibleUnits(bank).reduce((n, u) => n + u.questionIds.length, 0);
-    if (eligible < 150) await expect(createPlan({ mode: "full" })).rejects.toBeInstanceOf(PlanError);
+    const reduced = { ...bank, questions: bank.questions.map((q, i) => (i === 0 ? { ...q, enabled: false } : q)) };
+    expect(eligibleUnits(reduced).reduce((n, u) => n + u.questionIds.length, 0)).toBeLessThan(150);
+    await expect(createPlan({ mode: "full" }, reduced)).rejects.toBeInstanceOf(PlanError);
   });
 
   it("case-study mode returns exactly one complete case", async () => {

@@ -1,0 +1,298 @@
+[
+  {
+    "id": "sd-infant-icp",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Physiological Adaptation",
+    "questionText": "Which findings in a 6-month-old infant indicate increased intracranial pressure? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "Bulging anterior fontanel" },
+      { "id": "b", "text": "High-pitched cry" },
+      { "id": "c", "text": "Eyes that deviate downward (\"setting-sun\" sign)" },
+      { "id": "d", "text": "Sunken anterior fontanel" },
+      { "id": "e", "text": "Increasing irritability and poor feeding" },
+      { "id": "f", "text": "Head circumference following the 50th percentile curve" }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "e"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Because infants' sutures are open, raised intracranial pressure shows as a bulging fontanel, a high-pitched cry, the setting-sun sign, irritability, poor feeding and increasing head circumference. A sunken fontanel indicates dehydration. Growth along a stable percentile is normal.",
+    "references": ["Increased intracranial pressure in infants — standard paediatric nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sd-fve",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Physiological Adaptation",
+    "questionText": "Which findings indicate fluid volume excess? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "Crackles in the lung bases" },
+      { "id": "b", "text": "Jugular venous distension with the head of the bed at 45°" },
+      { "id": "c", "text": "Bounding peripheral pulses" },
+      { "id": "d", "text": "Weight gain of 2 kg in 2 days" },
+      { "id": "e", "text": "Urine specific gravity 1.035" },
+      { "id": "f", "text": "Flat neck veins when lying supine" }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "d"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Excess intravascular volume causes pulmonary crackles, distended neck veins, bounding pulses and rapid weight gain (1 kg is about 1 L of fluid). A high urine specific gravity and flat neck veins when supine indicate fluid volume deficit.",
+    "references": ["Fluid volume imbalances — standard medical-surgical nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sd-tb-teaching",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Safety and Infection Control",
+    "scenario": "A client with active pulmonary tuberculosis is starting treatment that includes rifampin and isoniazid.",
+    "questionText": "Which instructions should the nurse include? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "\"Take all the medicines every day for the full course, usually at least 6 months.\"" },
+      { "id": "b", "text": "\"Your urine, sweat and tears may turn orange-red.\"" },
+      { "id": "c", "text": "\"Avoid alcohol while taking these medicines.\"" },
+      { "id": "d", "text": "\"Cover your mouth and nose when coughing and dispose of tissues in a closed bag.\"" },
+      { "id": "e", "text": "\"You can stop the medicines once the cough goes away.\"" },
+      { "id": "f", "text": "\"Soft contact lenses are safe to wear during treatment.\"" }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "d"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Completing the full course prevents relapse and drug resistance. Rifampin harmlessly colours body fluids orange-red but can permanently stain soft contact lenses. Isoniazid and rifampin are hepatotoxic, so alcohol is avoided. Respiratory hygiene limits transmission.",
+    "references": ["CDC: Treatment for TB Disease"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sd-atelectasis",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "questionText": "Which interventions help prevent postoperative atelectasis after abdominal surgery? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "Use the incentive spirometer 10 times every hour while awake." },
+      { "id": "b", "text": "Walk in the hallway as soon as permitted." },
+      { "id": "c", "text": "Splint the incision with a pillow when coughing." },
+      { "id": "d", "text": "Lie flat on the back as much as possible." },
+      { "id": "e", "text": "Limit oral fluids to reduce secretions." },
+      { "id": "f", "text": "Take prescribed analgesics so deep breathing is possible." }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "f"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Deep breathing with an incentive spirometer, early ambulation, splinted coughing and adequate pain control all promote lung expansion and clearing of secretions. Lying flat reduces lung volume. Restricting fluids thickens secretions.",
+    "references": ["Postoperative pulmonary complications — standard perioperative nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sd-maoi-diet",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Pharmacological Therapies",
+    "questionText": "A client is prescribed phenelzine, a monoamine oxidase inhibitor. Which foods should the nurse teach the client to avoid? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "Aged cheddar cheese" },
+      { "id": "b", "text": "Cured salami" },
+      { "id": "c", "text": "Soy sauce" },
+      { "id": "d", "text": "Tap (draft) beer" },
+      { "id": "e", "text": "Fresh roasted chicken" },
+      { "id": "f", "text": "Cottage cheese" }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "d"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Aged, cured, fermented and tap-brewed products are high in tyramine. MAOIs prevent tyramine breakdown, which can cause a hypertensive crisis. Fresh meats and fresh, unaged cheeses such as cottage cheese are low in tyramine.",
+    "references": ["MAOI dietary tyramine restrictions — standard psychiatric pharmacology content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sd-serotonin",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Pharmacological Therapies",
+    "scenario": "A client taking sertraline was recently prescribed tramadol for back pain.",
+    "questionText": "Which findings would indicate serotonin syndrome? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "Agitation and restlessness" },
+      { "id": "b", "text": "Temperature 39.0 °C (102.2 °F)" },
+      { "id": "c", "text": "Muscle twitching and increased reflexes" },
+      { "id": "d", "text": "Diarrhoea" },
+      { "id": "e", "text": "Heart rate 48/min" },
+      { "id": "f", "text": "Flaccid muscles with absent reflexes" }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "d"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Serotonin excess causes altered mental status (agitation), autonomic instability (hyperthermia, tachycardia, diarrhoea) and neuromuscular hyperactivity (myoclonus, hyperreflexia, clonus). Bradycardia and hyporeflexia are not features. Tramadol has serotonergic activity and adds to the SSRI's effect.",
+    "references": ["Serotonin syndrome — standard pharmacology nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sd-child-dehydration",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Physiological Adaptation",
+    "questionText": "A 2-year-old has had vomiting and diarrhoea for 2 days. Which findings indicate dehydration? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "No tears when crying" },
+      { "id": "b", "text": "Dry, sticky mucous membranes" },
+      { "id": "c", "text": "Heart rate 150/min at rest" },
+      { "id": "d", "text": "No wet diaper for 8 hours" },
+      { "id": "e", "text": "Heart rate 70/min at rest" },
+      { "id": "f", "text": "Capillary refill less than 2 seconds" }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "d"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Absent tears, dry mucous membranes, tachycardia and decreased urine output indicate dehydration in a toddler. A resting heart rate of 70/min is low for a 2-year-old and is not a compensation for fluid loss. Brisk capillary refill is normal.",
+    "references": ["Paediatric dehydration assessment — standard paediatric nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sd-cast",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "questionText": "A client has a new fibreglass cast on the forearm. Which instructions should the nurse include? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "\"Keep your arm raised above heart level for the first 24 to 48 hours.\"" },
+      { "id": "b", "text": "\"Report numbness, tingling or pain that gets worse.\"" },
+      { "id": "c", "text": "\"Do not push objects inside the cast to scratch.\"" },
+      { "id": "d", "text": "\"Keep the cast dry and cover it when bathing.\"" },
+      { "id": "e", "text": "\"Some swelling and colour change in the fingers is expected, so it doesn't need reporting.\"" },
+      { "id": "f", "text": "\"Trim any rough edges inside the cast yourself with scissors.\"" }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "d"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Elevation reduces swelling. Worsening pain, numbness or tingling may signal compartment syndrome or nerve compression. Objects inside the cast can break the skin and cause infection. Fibreglass padding should stay dry.\n\nIncreasing swelling or discoloured fingers must be reported. Cast edges are managed by the clinician, not cut by the client.",
+    "references": ["Cast care — standard orthopaedic nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sd-identification",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Safety and Infection Control",
+    "questionText": "Which actions correctly identify a client before medication administration? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "Ask the client to state their full name." },
+      { "id": "b", "text": "Ask the client to state their date of birth." },
+      { "id": "c", "text": "Compare the identifiers with the client's identification band and the medication record." },
+      { "id": "d", "text": "Confirm the client's room and bed number." },
+      { "id": "e", "text": "Ask, \"Are you Mr. Lee?\"" },
+      { "id": "f", "text": "Scan the identification band barcode when available." }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "f"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Two client-specific identifiers (such as name and date of birth), stated by the client and matched to the identification band and the medication record, plus barcode scanning where available, reduce wrong-client errors. Room numbers are not identifiers. Yes/no questions invite agreement from a confused or hard-of-hearing client.",
+    "references": ["The Joint Commission National Patient Safety Goal NPSG.01.01.01 (two identifiers)"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sd-warfarin-teach",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Pharmacological Therapies",
+    "questionText": "A client is being discharged on warfarin. Which statements by the client indicate correct understanding? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "\"I'll keep the amount of green leafy vegetables I eat about the same each week.\"" },
+      { "id": "b", "text": "\"I'll use a soft toothbrush and an electric razor.\"" },
+      { "id": "c", "text": "\"I'll report black or tarry stools.\"" },
+      { "id": "d", "text": "\"I'll take aspirin if I get a headache.\"" },
+      { "id": "e", "text": "\"I'll keep my appointments for INR blood tests.\"" },
+      { "id": "f", "text": "\"If I miss a dose, I'll take two the next day.\"" }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "e"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "A consistent vitamin K intake keeps the INR stable. Bleeding precautions, reporting signs of bleeding and regular INR monitoring are essential. Aspirin increases bleeding risk, so acetaminophen is preferred for minor pain. Doubling doses can cause dangerous anticoagulation.",
+    "references": ["Warfarin patient education — standard pharmacology nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sd-postpartum-warning",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Health Promotion and Maintenance",
+    "questionText": "The nurse is teaching a client being discharged after a vaginal birth. Which findings should the client report to the provider? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "Soaking a pad within 1 hour" },
+      { "id": "b", "text": "Temperature of 38.3 °C (101 °F)" },
+      { "id": "c", "text": "Foul-smelling vaginal discharge" },
+      { "id": "d", "text": "Pain, redness and swelling in one calf" },
+      { "id": "e", "text": "Pinkish-brown discharge on day 5" },
+      { "id": "f", "text": "Breast fullness on day 3" }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "d"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Heavy bleeding, fever, foul lochia and unilateral calf pain or swelling may indicate haemorrhage, infection or deep vein thrombosis. Lochia serosa (pinkish-brown) around days 4–10 and breast fullness as milk comes in are expected.",
+    "references": ["AWHONN POST-BIRTH warning signs"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sd-safe-sleep",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Health Promotion and Maintenance",
+    "questionText": "Which recommendations should the nurse include when teaching parents about safe infant sleep? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "Place the infant on the back for every sleep." },
+      { "id": "b", "text": "Use a firm, flat mattress with a fitted sheet." },
+      { "id": "c", "text": "Keep pillows, bumpers and loose blankets out of the crib." },
+      { "id": "d", "text": "Share a room with the infant, but not the same bed." },
+      { "id": "e", "text": "Place the infant on the stomach for daytime naps." },
+      { "id": "f", "text": "Use a wedge positioner to keep the infant on the side." }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "d"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Back sleeping for every sleep, a firm flat surface, an empty sleep space and room-sharing without bed-sharing reduce the risk of sudden infant death. Prone or side positioning and positioning devices increase risk.",
+    "references": ["AAP Policy Statement: Sleep-Related Infant Deaths (2022)"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sd-pancrelipase",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Pharmacological Therapies",
+    "questionText": "A child with cystic fibrosis is prescribed pancrelipase capsules. Which instructions should the nurse give the parents? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "\"Give the capsules at the start of every meal and snack.\"" },
+      { "id": "b", "text": "\"Capsules can be opened and the beads sprinkled on a small amount of applesauce.\"" },
+      { "id": "c", "text": "\"Do not crush or chew the beads.\"" },
+      { "id": "d", "text": "\"Mix the beads into a warm bottle of milk and let it stand before feeding.\"" },
+      { "id": "e", "text": "\"Give the capsules once a day at bedtime.\"" },
+      { "id": "f", "text": "\"Report greasy, foul-smelling stools, which may mean the dose needs adjusting.\"" }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "f"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Pancreatic enzymes must be present with food to digest fat, so they are given with every meal and snack. The beads have an acid-resistant coating that is protected by acidic soft foods such as applesauce and destroyed by crushing, chewing or mixing into milk. Steatorrhoea suggests underdosing.",
+    "references": ["Cystic Fibrosis Foundation — pancreatic enzyme replacement therapy"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sd-cushing",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Physiological Adaptation",
+    "questionText": "Which findings should the nurse expect in a client with Cushing's syndrome? Select all that apply.",
+    "options": [
+      { "id": "a", "text": "Rounded \"moon\" face" },
+      { "id": "b", "text": "Fat pad between the shoulders" },
+      { "id": "c", "text": "Elevated blood glucose" },
+      { "id": "d", "text": "Thin skin that bruises easily" },
+      { "id": "e", "text": "Hyperpigmentation of skin creases with hypotension" },
+      { "id": "f", "text": "Serum potassium 5.9 mEq/L" }
+    ],
+    "answerKey": { "type": "multiple", "optionIds": ["a", "b", "c", "d"] },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Excess cortisol causes central fat redistribution (moon face, dorsocervical fat pad), hyperglycaemia, and thin, fragile skin with easy bruising. Hyperpigmentation, hypotension and hyperkalaemia are features of adrenal insufficiency (Addison's disease). Cushing's is more often associated with hypokalaemia.",
+    "references": ["Adrenal disorders — standard medical-surgical nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  }
+]

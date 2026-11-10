@@ -1,0 +1,422 @@
+[
+  {
+    "id": "sc-insulin-mix",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "questionText": "The nurse is preparing a single injection of regular insulin and NPH insulin in the same syringe. Which insulin should be drawn into the syringe first?",
+    "options": [
+      { "id": "a", "text": "Regular insulin" },
+      { "id": "b", "text": "NPH insulin" },
+      { "id": "c", "text": "Either, as long as both vials are rolled first" },
+      { "id": "d", "text": "Neither; they must be given as separate injections" }
+    ],
+    "answerKey": { "type": "single", "optionId": "a" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Clear (regular) insulin is drawn up before cloudy (NPH) insulin so that intermediate-acting insulin cannot contaminate the regular vial and alter its action. Air is injected into the NPH vial first, then into the regular vial, before withdrawing regular and then NPH. Regular and NPH may be mixed in one syringe.",
+    "references": ["Insulin administration — standard pharmacology nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-heparin-rate",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "scenario": "A heparin infusion of 25,000 units in 250 mL of 0.45% sodium chloride is prescribed to run at 1,200 units/hour.",
+    "questionText": "At what rate should the nurse set the infusion pump?",
+    "options": [
+      { "id": "a", "text": "10 mL/hour" },
+      { "id": "b", "text": "12 mL/hour" },
+      { "id": "c", "text": "24 mL/hour" },
+      { "id": "d", "text": "120 mL/hour" }
+    ],
+    "answerKey": { "type": "single", "optionId": "b" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "The concentration is 25,000 units ÷ 250 mL = 100 units/mL. The rate is 1,200 units/hour ÷ 100 units/mL = 12 mL/hour.",
+    "references": ["Dosage calculation — standard pharmacology nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-amox-dose",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "scenario": "Amoxicillin 40 mg/kg/day orally in two divided doses is prescribed for a child who weighs 15 kg. The suspension available is 250 mg/5 mL.",
+    "questionText": "How much should the nurse give for each dose?",
+    "options": [
+      { "id": "a", "text": "3 mL" },
+      { "id": "b", "text": "6 mL" },
+      { "id": "c", "text": "12 mL" },
+      { "id": "d", "text": "2.4 mL" }
+    ],
+    "answerKey": { "type": "single", "optionId": "b" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "The daily dose is 40 mg/kg × 15 kg = 600 mg, so each dose is 600 mg ÷ 2 = 300 mg. The volume is 300 mg × 5 mL ÷ 250 mg = 6 mL.",
+    "references": ["Paediatric dosage calculation — standard pharmacology nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-kcl-push",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "questionText": "The nurse reviews new prescriptions for a client with a serum potassium of 3.0 mEq/L who has a peripheral IV. Which prescription should the nurse question?",
+    "options": [
+      { "id": "a", "text": "Potassium chloride 20 mEq orally twice daily" },
+      { "id": "b", "text": "Potassium chloride 10 mEq IV in 100 mL over 1 hour" },
+      { "id": "c", "text": "Potassium chloride 20 mEq IV push now" },
+      { "id": "d", "text": "Repeat serum potassium in 6 hours" }
+    ],
+    "answerKey": { "type": "single", "optionId": "c" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "IV potassium chloride is never given by IV push, because a bolus can cause cardiac arrest. It must be diluted and infused by pump. Through a peripheral line, 10 mEq/hour is a common maximum. Oral replacement and repeat levels are appropriate.",
+    "references": ["Institute for Safe Medication Practices — concentrated potassium chloride"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-hip-fracture",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Physiological Adaptation",
+    "questionText": "An 84-year-old client fell at home and reports severe left hip pain. Which finding should the nurse expect if the client has a fracture of the left femoral neck?",
+    "options": [
+      { "id": "a", "text": "The left leg is shortened and externally rotated." },
+      { "id": "b", "text": "The left leg is lengthened and internally rotated." },
+      { "id": "c", "text": "The left foot is pale with an absent pedal pulse." },
+      { "id": "d", "text": "Both legs are of equal length with full range of motion." }
+    ],
+    "answerKey": { "type": "single", "optionId": "a" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Muscle spasm and displacement in a proximal femoral fracture typically make the affected leg shorter and externally rotated. A pale, pulseless foot suggests vascular injury, which is not the expected finding.",
+    "references": ["Hip fracture assessment — standard orthopaedic nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-cushing-triad",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Physiological Adaptation",
+    "questionText": "A client with a traumatic brain injury is being monitored for increased intracranial pressure. Which set of findings is a late sign of increased intracranial pressure?",
+    "options": [
+      { "id": "a", "text": "Widening pulse pressure, bradycardia and irregular respirations" },
+      { "id": "b", "text": "Narrow pulse pressure, tachycardia and rapid shallow respirations" },
+      { "id": "c", "text": "Hypotension, tachycardia and warm, flushed skin" },
+      { "id": "d", "text": "Normal blood pressure with restlessness and mild headache" }
+    ],
+    "answerKey": { "type": "single", "optionId": "a" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Cushing's triad (rising systolic pressure with widening pulse pressure, bradycardia and irregular respirations) is a late sign of brain-stem compression and impending herniation. Restlessness and headache are early signs. Hypotension with tachycardia suggests shock rather than raised intracranial pressure.",
+    "references": ["Increased intracranial pressure — standard neurological nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-gbs",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Physiological Adaptation",
+    "questionText": "A client admitted with Guillain–Barré syndrome has weakness that has spread from the legs to the trunk over 24 hours. Which assessment is the nurse's priority?",
+    "options": [
+      { "id": "a", "text": "Vital capacity and respiratory effort" },
+      { "id": "b", "text": "Deep tendon reflexes in the legs" },
+      { "id": "c", "text": "Skin integrity over pressure points" },
+      { "id": "d", "text": "Level of pain in the lower back" }
+    ],
+    "answerKey": { "type": "single", "optionId": "a" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Ascending paralysis can involve the respiratory muscles. A falling vital capacity or a weak cough warns of respiratory failure needing mechanical ventilation. The other assessments matter but do not threaten the airway or breathing.",
+    "references": ["Guillain–Barré syndrome — standard neurological nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-chest-tube",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "questionText": "A client's chest tube becomes disconnected from the drainage system tubing and the ends are contaminated. Which action should the nurse take first?",
+    "options": [
+      { "id": "a", "text": "Clamp the chest tube near the insertion site and leave it clamped until the provider arrives." },
+      { "id": "b", "text": "Submerge the end of the chest tube 2–3 cm in a bottle of sterile water." },
+      { "id": "c", "text": "Remove the chest tube and apply a petroleum gauze dressing." },
+      { "id": "d", "text": "Ask the client to cough forcefully." }
+    ],
+    "answerKey": { "type": "single", "optionId": "b" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Placing the end of the tube under sterile water creates a temporary water seal that lets air escape but not re-enter the pleural space, while a new drainage system is set up. Prolonged clamping can cause a tension pneumothorax. The nurse never removes a chest tube in this situation.",
+    "references": ["Chest drainage system management — standard medical-surgical nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-mmr",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Health Promotion and Maintenance",
+    "questionText": "Four children are scheduled for the measles, mumps and rubella (MMR) vaccine today. Which child should the nurse identify as needing the vaccine postponed and the provider consulted?",
+    "options": [
+      { "id": "a", "text": "A 12-month-old with a runny nose and no fever" },
+      { "id": "b", "text": "A 4-year-old receiving chemotherapy for leukaemia" },
+      { "id": "c", "text": "A 15-month-old whose mother is pregnant" },
+      { "id": "d", "text": "A 4-year-old with a mild egg allergy" }
+    ],
+    "answerKey": { "type": "single", "optionId": "b" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "MMR is a live attenuated vaccine and is contraindicated in people with severe immunosuppression, such as during chemotherapy. Mild illness without fever, a pregnant household contact and egg allergy are not contraindications.",
+    "references": ["CDC: Contraindications and Precautions to Commonly Used Vaccines"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-milestone",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Health Promotion and Maintenance",
+    "questionText": "The nurse is assessing a 9-month-old infant at a well-child visit. Which finding requires further evaluation?",
+    "options": [
+      { "id": "a", "text": "Cannot sit without support" },
+      { "id": "b", "text": "Cries when held by the nurse" },
+      { "id": "c", "text": "Says \"mama\" without meaning" },
+      { "id": "d", "text": "Is not yet walking" }
+    ],
+    "answerKey": { "type": "single", "optionId": "a" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Most infants sit without support by about 6–8 months, so a 9-month-old who cannot is showing a possible gross motor delay. Stranger anxiety and non-specific babbling are expected at this age. Independent walking usually develops between 9 and 15 months.",
+    "references": ["CDC Developmental Milestones (Learn the Signs. Act Early.)"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-therapeutic",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Psychosocial Integrity",
+    "questionText": "A client recovering from a stroke says, \"I'm just a burden to my family now.\" Which response by the nurse is most therapeutic?",
+    "options": [
+      { "id": "a", "text": "\"Your family loves you and doesn't think that.\"" },
+      { "id": "b", "text": "\"You feel you are a burden to your family?\"" },
+      { "id": "c", "text": "\"Why would you say something like that?\"" },
+      { "id": "d", "text": "\"Let's focus on your exercises so you get stronger.\"" }
+    ],
+    "answerKey": { "type": "single", "optionId": "b" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Reflecting the client's feeling invites them to say more and shows the nurse is listening. False reassurance dismisses the feeling. \"Why\" questions can sound judgemental. Changing the subject closes the conversation.",
+    "references": ["Therapeutic communication techniques — standard mental health nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-suicide",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Psychosocial Integrity",
+    "questionText": "A client being treated for major depression, who has been withdrawn, suddenly appears calm and has given away several personal belongings. Which action should the nurse take first?",
+    "options": [
+      { "id": "a", "text": "Document that the client's mood has improved." },
+      { "id": "b", "text": "Ask the client directly whether they are thinking about suicide." },
+      { "id": "c", "text": "Encourage the client to join the group activity." },
+      { "id": "d", "text": "Increase the time between safety checks to promote independence." }
+    ],
+    "answerKey": { "type": "single", "optionId": "b" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "A sudden calm and giving away possessions can signal that the client has decided on a suicide plan. Asking directly about suicidal thoughts, plans and means does not increase risk and is essential for assessment and immediate safety measures.",
+    "references": ["Suicide risk assessment — standard mental health nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-consent",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Management of Care",
+    "questionText": "Before a scheduled surgery, a client who has signed the consent form asks the nurse, \"What are the chances this won't fix my problem?\" Which action should the nurse take?",
+    "options": [
+      { "id": "a", "text": "Explain the success rates of the procedure to the client." },
+      { "id": "b", "text": "Reassure the client that the surgeon is very experienced." },
+      { "id": "c", "text": "Notify the surgeon that the client has questions before the procedure proceeds." },
+      { "id": "d", "text": "Proceed, because the consent form has already been signed." }
+    ],
+    "answerKey": { "type": "single", "optionId": "c" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Informed consent is the provider's responsibility, including explaining risks, benefits, alternatives and expected outcomes. The client's question suggests consent may not be fully informed, so the nurse informs the surgeon before the procedure. The nurse's role is to witness the signature and confirm the client's understanding.",
+    "references": ["Informed consent — standard nursing leadership and legal content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-privacy",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Management of Care",
+    "questionText": "A caller says she is a client's sister and asks how the client's surgery went. The client has authorised information to be shared only with people who give a passcode. Which response is appropriate?",
+    "options": [
+      { "id": "a", "text": "\"The surgery went well and he is in recovery.\"" },
+      { "id": "b", "text": "\"Can you give me the client's passcode, please?\"" },
+      { "id": "c", "text": "\"I can't confirm whether that person is a patient here.\"" },
+      { "id": "d", "text": "\"Please call back later when the doctor is available.\"" }
+    ],
+    "answerKey": { "type": "single", "optionId": "b" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Following the client's stated wishes, the nurse verifies the caller with the agreed passcode before sharing any health information. Giving information without verification breaches confidentiality. Refusing to engage at all ignores the client's authorisation.",
+    "references": ["HIPAA Privacy Rule — disclosures to family members (U.S. HHS guidance)"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-fire",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Safety and Infection Control",
+    "questionText": "The nurse finds a small fire in a wastebasket in a client's room; the client is in bed beside it. Which action should the nurse take first?",
+    "options": [
+      { "id": "a", "text": "Move the client away from the fire." },
+      { "id": "b", "text": "Pull the nearest fire alarm." },
+      { "id": "c", "text": "Close the doors to the room." },
+      { "id": "d", "text": "Extinguish the fire with an extinguisher." }
+    ],
+    "answerKey": { "type": "single", "optionId": "a" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "The RACE sequence is Rescue, Alarm, Contain, Extinguish. The first priority is removing anyone in immediate danger, followed by activating the alarm, confining the fire and then extinguishing it if safe.",
+    "references": ["Fire safety (RACE/PASS) — standard nursing safety content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-restraint",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Safety and Infection Control",
+    "questionText": "A client has a prescription for soft wrist restraints. Which action by the nurse is correct?",
+    "options": [
+      { "id": "a", "text": "Tie the restraints to the side rails so they move with the rails." },
+      { "id": "b", "text": "Secure the restraints to the bed frame with a quick-release knot." },
+      { "id": "c", "text": "Fasten the restraints tightly enough that no fingers fit underneath." },
+      { "id": "d", "text": "Check the client's circulation once per shift." }
+    ],
+    "answerKey": { "type": "single", "optionId": "b" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Restraints are tied to the part of the bed frame that moves with the client, using a quick-release knot so they can be removed fast in an emergency. Lowering a side rail tied to a restraint can injure the client. Two fingers should fit under the restraint. Circulation and skin are checked frequently, at least every 2 hours, not once per shift.",
+    "references": ["Restraint safety — standard fundamentals of nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-ckd-diet",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Basic Care and Comfort",
+    "questionText": "A client with chronic kidney disease who is not yet on dialysis has been told to limit dietary potassium. Which food choice indicates a need for more teaching?",
+    "options": [
+      { "id": "a", "text": "Apple slices" },
+      { "id": "b", "text": "White rice" },
+      { "id": "c", "text": "A large banana" },
+      { "id": "d", "text": "Green beans" }
+    ],
+    "answerKey": { "type": "single", "optionId": "c" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Bananas are high in potassium. Apples, white rice and green beans are lower-potassium choices suitable for a potassium-restricted diet.",
+    "references": ["National Kidney Foundation — potassium and your CKD diet"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-tpn",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Basic Care and Comfort",
+    "questionText": "A client's parenteral nutrition bag is empty and the pharmacy says the next bag will not be ready for 2 hours. Which action should the nurse take?",
+    "options": [
+      { "id": "a", "text": "Stop the infusion and flush the line until the new bag arrives." },
+      { "id": "b", "text": "Hang 10% dextrose at the same rate as the parenteral nutrition." },
+      { "id": "c", "text": "Hang 0.9% sodium chloride at a keep-vein-open rate." },
+      { "id": "d", "text": "Run the new bag at a faster rate when it arrives to catch up." }
+    ],
+    "answerKey": { "type": "single", "optionId": "b" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Stopping parenteral nutrition abruptly can cause rebound hypoglycaemia because of the high insulin levels it stimulates. Hanging 10% dextrose at the same rate maintains glucose until the new bag arrives, if the agency protocol or provider allows. Rates are never increased to catch up, because of the risk of hyperglycaemia and fluid overload.",
+    "references": ["Parenteral nutrition administration — standard medical-surgical nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-rhogam",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "questionText": "A client who is Rh-negative and has a negative antibody screen gives birth to an Rh-positive newborn. Which action should the nurse anticipate?",
+    "options": [
+      { "id": "a", "text": "Give Rho(D) immune globulin to the client within 72 hours of birth." },
+      { "id": "b", "text": "Give Rho(D) immune globulin to the newborn." },
+      { "id": "c", "text": "No action, because the antibody screen is negative." },
+      { "id": "d", "text": "Give the rubella vaccine instead of Rho(D) immune globulin." }
+    ],
+    "answerKey": { "type": "single", "optionId": "a" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "An unsensitised Rh-negative client who gives birth to an Rh-positive infant receives Rho(D) immune globulin within 72 hours. This prevents formation of anti-D antibodies that could harm future Rh-positive pregnancies. The negative antibody screen shows the client is not yet sensitised, which is exactly when prophylaxis is needed. It is never given to the newborn.",
+    "references": ["ACOG Practice Bulletin No. 181: Prevention of Rh D Alloimmunization (2017)"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-late-decels",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "questionText": "A client in spontaneous labour who is not receiving oxytocin has recurrent late decelerations on the fetal monitor. Which action should the nurse take first?",
+    "options": [
+      { "id": "a", "text": "Turn the client onto her side." },
+      { "id": "b", "text": "Prepare for an immediate caesarean birth." },
+      { "id": "c", "text": "Document the finding and continue to monitor." },
+      { "id": "d", "text": "Encourage the client to push with the next contraction." }
+    ],
+    "answerKey": { "type": "single", "optionId": "a" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Late decelerations reflect uteroplacental insufficiency. Lateral positioning relieves compression of the vena cava and improves placental blood flow. It is the first intrauterine resuscitation measure, followed by an IV fluid bolus, treatment of hypotension and notifying the provider. Recurrent late decelerations are never simply documented.",
+    "references": ["Intrauterine resuscitation — standard maternal–newborn nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-phenytoin",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Pharmacological Therapies",
+    "questionText": "A client is starting long-term phenytoin for a seizure disorder. Which instruction should the nurse include?",
+    "options": [
+      { "id": "a", "text": "\"Brush and floss your teeth carefully and see a dentist regularly.\"" },
+      { "id": "b", "text": "\"You can stop the medicine once you have been seizure-free for a month.\"" },
+      { "id": "c", "text": "\"Take an extra dose if you feel a seizure coming on.\"" },
+      { "id": "d", "text": "\"It is safe to switch between brands whenever you like.\"" }
+    ],
+    "answerKey": { "type": "single", "optionId": "a" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "Phenytoin commonly causes gingival hyperplasia, which good oral hygiene and dental care reduce. Antiseizure medicines are not stopped abruptly, extra doses can cause toxicity, and switching brands can change blood levels.",
+    "references": ["Phenytoin prescribing information — adverse reactions"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "sc-epiglottitis",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Physiological Adaptation",
+    "questionText": "A 4-year-old child has a high fever, drooling, muffled voice and is sitting upright leaning forward. Which action should the nurse avoid?",
+    "options": [
+      { "id": "a", "text": "Allowing the child to stay on the parent's lap" },
+      { "id": "b", "text": "Examining the throat with a tongue depressor" },
+      { "id": "c", "text": "Having emergency airway equipment at the bedside" },
+      { "id": "d", "text": "Keeping the child calm and in a position of comfort" }
+    ],
+    "answerKey": { "type": "single", "optionId": "b" },
+    "scoringPolicy": "dichotomous",
+    "rationale": "These findings suggest epiglottitis. Inspecting the throat or upsetting the child can trigger laryngospasm and complete airway obstruction, so the throat is not examined unless intubation equipment and skilled staff are immediately available. The child is kept calm and upright with emergency airway equipment ready.",
+    "references": ["Epiglottitis — standard paediatric nursing content"],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  }
+]

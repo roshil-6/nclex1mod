@@ -1,0 +1,744 @@
+[
+  {
+    "id": "bro-1",
+    "origin": "original",
+    "questionType": "highlight",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-bronch",
+    "caseStudyPart": 1,
+    "questionText": "The nurse reviews the Day 1, 09:00 assessment and vital signs. Click to highlight the findings that require immediate follow-up.",
+    "highlightLayout": "table",
+    "highlightTableHeadings": [
+      "Category",
+      "Findings"
+    ],
+    "highlightItems": [
+      {
+        "id": "flaring",
+        "group": "Respiratory",
+        "text": "Nasal flaring and subcostal retractions"
+      },
+      {
+        "id": "rr",
+        "group": "Respiratory",
+        "text": "Respiratory rate 68/min"
+      },
+      {
+        "id": "spo2",
+        "group": "Respiratory",
+        "text": "SpO₂ 89% on room air"
+      },
+      {
+        "id": "secretions",
+        "group": "Respiratory",
+        "text": "Clear nasal secretions"
+      },
+      {
+        "id": "hr",
+        "group": "Cardiovascular",
+        "text": "Heart rate 172/min"
+      },
+      {
+        "id": "diaper",
+        "group": "Hydration",
+        "text": "One wet diaper in 8 hours"
+      },
+      {
+        "id": "fontanel",
+        "group": "Hydration",
+        "text": "Anterior fontanel slightly sunken"
+      },
+      {
+        "id": "consolable",
+        "group": "Neurological",
+        "text": "Alert and consolable"
+      }
+    ],
+    "answerKey": {
+      "type": "highlight",
+      "itemIds": [
+        "flaring",
+        "rr",
+        "spo2",
+        "hr",
+        "diaper",
+        "fontanel"
+      ]
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Nasal flaring, retractions, a respiratory rate above 60/min and an SpO₂ below 90% indicate respiratory distress needing intervention. Tachycardia reflects distress, fever and dehydration. Decreased wet diapers and a sunken fontanel show inadequate intake, a common problem in bronchiolitis because the infant cannot feed while working hard to breathe.\n\nClear nasal secretions are typical of RSV. Being alert and consolable is reassuring.",
+    "references": [
+      "AAP Clinical Practice Guideline: The Diagnosis, Management, and Prevention of Bronchiolitis (2014)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "bro-2",
+    "origin": "original",
+    "questionType": "matrix-multiple",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-bronch",
+    "caseStudyPart": 2,
+    "questionText": "For each finding, specify whether it indicates respiratory distress, dehydration or both.",
+    "instructions": "Each finding may have more than one answer.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      {
+        "id": "flaring",
+        "text": "Nasal flaring"
+      },
+      {
+        "id": "retractions",
+        "text": "Subcostal retractions"
+      },
+      {
+        "id": "fontanel",
+        "text": "Sunken anterior fontanel"
+      },
+      {
+        "id": "diaper",
+        "text": "One wet diaper in 8 hours"
+      },
+      {
+        "id": "hr",
+        "text": "Heart rate 172/min"
+      },
+      {
+        "id": "cap",
+        "text": "Capillary refill 3 seconds"
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "resp",
+        "label": "Respiratory distress"
+      },
+      {
+        "id": "dehyd",
+        "label": "Dehydration"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-multiple",
+      "selections": {
+        "flaring": [
+          "resp"
+        ],
+        "retractions": [
+          "resp"
+        ],
+        "fontanel": [
+          "dehyd"
+        ],
+        "diaper": [
+          "dehyd"
+        ],
+        "hr": [
+          "resp",
+          "dehyd"
+        ],
+        "cap": [
+          "dehyd"
+        ]
+      }
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Nasal flaring and retractions reflect increased work of breathing. A sunken fontanel, reduced urine output and delayed capillary refill reflect fluid deficit. Tachycardia is a compensatory response to both hypoxaemia and reduced circulating volume.",
+    "references": [
+      "AAP Clinical Practice Guideline: The Diagnosis, Management, and Prevention of Bronchiolitis (2014)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "bro-3",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-bronch",
+    "caseStudyPart": 3,
+    "questionText": "For each intervention, specify whether it is indicated or not indicated for this infant with RSV bronchiolitis.",
+    "matrixRowHeading": "Intervention",
+    "matrixRows": [
+      {
+        "id": "suction",
+        "text": "Nasal suctioning before feeds"
+      },
+      {
+        "id": "o2",
+        "text": "Supplemental oxygen to keep SpO₂ 90% or higher"
+      },
+      {
+        "id": "albuterol",
+        "text": "Scheduled albuterol nebulisers"
+      },
+      {
+        "id": "steroids",
+        "text": "Systemic corticosteroids"
+      },
+      {
+        "id": "antibiotics",
+        "text": "IV antibiotics"
+      },
+      {
+        "id": "fluids",
+        "text": "IV fluids while oral intake is inadequate"
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "ind",
+        "label": "Indicated"
+      },
+      {
+        "id": "not",
+        "label": "Not indicated"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": {
+        "suction": "ind",
+        "o2": "ind",
+        "albuterol": "not",
+        "steroids": "not",
+        "antibiotics": "not",
+        "fluids": "ind"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Bronchiolitis care is supportive. Clearing the nose helps an infant who breathes mainly through the nose to feed. Oxygen is given when SpO₂ falls below 90%. IV or nasogastric fluids are given when the infant cannot maintain hydration orally.\n\nRoutine bronchodilators and systemic corticosteroids have not been shown to improve outcomes. Antibiotics do not treat a viral infection without evidence of a bacterial infection.",
+    "references": [
+      "AAP Clinical Practice Guideline: The Diagnosis, Management, and Prevention of Bronchiolitis (2014)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "bro-4",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-bronch",
+    "caseStudyPart": 4,
+    "questionText": "IV maintenance fluids are started at the prescribed rate. Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "Based on the infant's weight, the 24-hour maintenance fluid volume is {{daily}}, so the nurse should set the infusion pump to about {{hourly}}.",
+    "dropdownFields": [
+      {
+        "id": "daily",
+        "options": [
+          {
+            "id": "620",
+            "text": "620 mL"
+          },
+          {
+            "id": "310",
+            "text": "310 mL"
+          },
+          {
+            "id": "930",
+            "text": "930 mL"
+          },
+          {
+            "id": "1240",
+            "text": "1,240 mL"
+          }
+        ]
+      },
+      {
+        "id": "hourly",
+        "options": [
+          {
+            "id": "26",
+            "text": "26 mL/hour"
+          },
+          {
+            "id": "13",
+            "text": "13 mL/hour"
+          },
+          {
+            "id": "39",
+            "text": "39 mL/hour"
+          },
+          {
+            "id": "52",
+            "text": "52 mL/hour"
+          }
+        ]
+      }
+    ],
+    "answerKey": {
+      "type": "dropdown",
+      "values": {
+        "daily": "620",
+        "hourly": "26"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "The prescription is 100 mL/kg/day. With a weight of 6.2 kg: 6.2 kg × 100 mL/kg = 620 mL per 24 hours, and 620 mL ÷ 24 hours = 25.8, about 26 mL/hour.",
+    "references": [
+      "Holliday–Segar maintenance fluid calculation — standard paediatric nursing content"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "bro-5",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-bronch",
+    "caseStudyPart": 5,
+    "questionText": "The nurse reviews the Day 1, 15:00 note and vital signs. Which findings indicate impending respiratory failure? Select all that apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Grunting with each breath"
+      },
+      {
+        "id": "b",
+        "text": "Difficult to rouse and does not cry with care"
+      },
+      {
+        "id": "c",
+        "text": "SpO₂ 86% on 2 L/min of oxygen"
+      },
+      {
+        "id": "d",
+        "text": "Copious nasal secretions"
+      },
+      {
+        "id": "e",
+        "text": "Temperature 38.0 °C (100.4 °F)"
+      },
+      {
+        "id": "f",
+        "text": "Respiratory rate 78/min with severe retractions"
+      }
+    ],
+    "answerKey": {
+      "type": "multiple",
+      "optionIds": [
+        "a",
+        "b",
+        "c",
+        "f"
+      ]
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Grunting (an attempt to keep the airways open), decreasing responsiveness, hypoxaemia despite oxygen and worsening tachypnoea with severe retractions show that the infant is tiring and close to respiratory failure. The nurse escalates care immediately, for example with a rapid response call and high-flow support.\n\nNasal secretions and a low-grade fever are expected in RSV and have not changed.",
+    "references": [
+      "AAP Clinical Practice Guideline: The Diagnosis, Management, and Prevention of Bronchiolitis (2014)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "bro-6",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Health Promotion and Maintenance",
+    "caseStudyId": "case-bronch",
+    "caseStudyPart": 6,
+    "questionText": "The infant is ready for discharge. For each statement by the parent, specify whether it indicates understanding of the teaching or a need for further teaching.",
+    "matrixRowHeading": "Parent's statement",
+    "matrixRows": [
+      {
+        "id": "saline",
+        "text": "\"I will use saline drops and suction his nose before feeds.\""
+      },
+      {
+        "id": "honey",
+        "text": "\"I can give him a little honey to soothe his cough.\""
+      },
+      {
+        "id": "smoke",
+        "text": "\"Nobody will smoke in the house or the car.\""
+      },
+      {
+        "id": "call",
+        "text": "\"I'll call if he breathes fast, his ribs pull in, or he has fewer wet diapers.\""
+      },
+      {
+        "id": "abx",
+        "text": "\"He needs antibiotics so the virus doesn't come back.\""
+      },
+      {
+        "id": "hands",
+        "text": "\"Washing our hands will help stop it spreading to his sister.\""
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "ok",
+        "label": "Indicates understanding"
+      },
+      {
+        "id": "more",
+        "label": "Needs further teaching"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": {
+        "saline": "ok",
+        "honey": "more",
+        "smoke": "ok",
+        "call": "ok",
+        "abx": "more",
+        "hands": "ok"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Nasal saline with suctioning, avoiding tobacco smoke, knowing the warning signs and hand hygiene are all correct.\n\nHoney must not be given to infants under 12 months because of the risk of botulism. Antibiotics do not treat or prevent viral bronchiolitis.",
+    "references": [
+      "AAP Clinical Practice Guideline: The Diagnosis, Management, and Prevention of Bronchiolitis (2014)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "str-1",
+    "origin": "original",
+    "questionType": "highlight",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-stroke",
+    "caseStudyPart": 1,
+    "questionText": "The nurse reviews the History and Physical, the 09:00 nurses' note and the vital signs. Click to highlight the findings that require immediate follow-up.",
+    "highlightLayout": "text",
+    "highlightItems": [
+      {
+        "id": "droop",
+        "text": "Right facial droop."
+      },
+      {
+        "id": "drift",
+        "text": "Right arm drifts downward within 5 seconds."
+      },
+      {
+        "id": "words",
+        "text": "Great difficulty finding words."
+      },
+      {
+        "id": "understands",
+        "text": "Understands speech and follows simple commands."
+      },
+      {
+        "id": "pulse",
+        "text": "Heart rate 104/min, irregular."
+      },
+      {
+        "id": "glucose",
+        "text": "Glucose 128 mg/dL."
+      },
+      {
+        "id": "spo2",
+        "text": "SpO₂ 96% on room air."
+      },
+      {
+        "id": "temp",
+        "text": "Temperature 36.8 °C (98.2 °F)."
+      }
+    ],
+    "answerKey": {
+      "type": "highlight",
+      "itemIds": [
+        "droop",
+        "drift",
+        "words",
+        "pulse"
+      ]
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "Sudden facial droop, arm drift and speech disturbance are classic stroke signs (BE-FAST). An irregular, rapid pulse indicates atrial fibrillation, a likely embolic source.\n\nIntact comprehension is reassuring, and a glucose of 128 mg/dL rules out hypoglycaemia as a stroke mimic. Oxygenation and temperature are normal.",
+    "references": [
+      "AHA/ASA Guidelines for the Early Management of Patients With Acute Ischemic Stroke (2019 update)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "str-2",
+    "origin": "original",
+    "questionType": "dropdown",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-stroke",
+    "caseStudyPart": 2,
+    "questionText": "Complete the following sentence by choosing from the lists of options.",
+    "dropdownLayout": "sentence",
+    "dropdownTemplate": "The client's findings are most consistent with an occlusion of the {{artery}}, most likely caused by {{cause}}.",
+    "dropdownFields": [
+      {
+        "id": "artery",
+        "options": [
+          {
+            "id": "lmca",
+            "text": "left middle cerebral artery"
+          },
+          {
+            "id": "rmca",
+            "text": "right middle cerebral artery"
+          },
+          {
+            "id": "basilar",
+            "text": "basilar artery"
+          },
+          {
+            "id": "raca",
+            "text": "right anterior cerebral artery"
+          }
+        ]
+      },
+      {
+        "id": "cause",
+        "options": [
+          {
+            "id": "embolus",
+            "text": "an embolus from atrial fibrillation"
+          },
+          {
+            "id": "hypo",
+            "text": "hypoglycaemia"
+          },
+          {
+            "id": "migraine",
+            "text": "a complicated migraine"
+          },
+          {
+            "id": "seizure",
+            "text": "a postictal state"
+          }
+        ]
+      }
+    ],
+    "answerKey": {
+      "type": "dropdown",
+      "values": {
+        "artery": "lmca",
+        "cause": "embolus"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Right-sided face and arm weakness with expressive (Broca's) aphasia in a right-handed person localises to the dominant left hemisphere, typically in the territory of the left middle cerebral artery. Untreated atrial fibrillation lets clots form in the left atrium and embolise to the brain. Normal glucose and no seizure activity make the mimics unlikely.",
+    "references": [
+      "AHA/ASA Guidelines for the Early Management of Patients With Acute Ischemic Stroke (2019 update)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "str-3",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Reduction of Risk Potential",
+    "caseStudyId": "case-stroke",
+    "caseStudyPart": 3,
+    "questionText": "At 09:40 the provider is considering IV alteplase. For each finding, specify whether it supports eligibility or requires action before alteplase can be given.",
+    "matrixRowHeading": "Finding",
+    "matrixRows": [
+      {
+        "id": "time",
+        "text": "Time since last known well"
+      },
+      {
+        "id": "ct",
+        "text": "CT without intracranial haemorrhage"
+      },
+      {
+        "id": "bp",
+        "text": "Blood pressure 192/114 mm Hg"
+      },
+      {
+        "id": "glucose",
+        "text": "Glucose 128 mg/dL"
+      },
+      {
+        "id": "plt",
+        "text": "Platelets 210,000/mm³; INR 1.0"
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "supports",
+        "label": "Supports eligibility"
+      },
+      {
+        "id": "action",
+        "label": "Requires action first"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": {
+        "time": "supports",
+        "ct": "supports",
+        "bp": "action",
+        "glucose": "supports",
+        "plt": "supports"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "At 09:40 the client is 1.5 hours from last known well, within the 4.5-hour window. The CT excludes haemorrhage, and glucose, platelets and INR are acceptable.\n\nBlood pressure must be below 185/110 mm Hg before alteplase is started, so the prescribed labetalol is given and the reading rechecked first.",
+    "references": [
+      "AHA/ASA Guidelines for the Early Management of Patients With Acute Ischemic Stroke (2019 update)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "str-4",
+    "origin": "original",
+    "questionType": "multiple",
+    "clinicalCategory": "Pharmacological Therapies",
+    "caseStudyId": "case-stroke",
+    "caseStudyPart": 4,
+    "questionText": "The blood pressure is now 176/98 mm Hg and alteplase is prescribed. Which actions should the nurse include in the client's care? Select all that apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perform neurological checks and measure blood pressure every 15 minutes during the infusion."
+      },
+      {
+        "id": "b",
+        "text": "Avoid IM injections and new invasive lines or catheters where possible for 24 hours."
+      },
+      {
+        "id": "c",
+        "text": "Stop the infusion and notify the provider if a severe headache or neurological decline occurs."
+      },
+      {
+        "id": "d",
+        "text": "Give aspirin 325 mg with the alteplase to prevent re-occlusion."
+      },
+      {
+        "id": "e",
+        "text": "Offer the client breakfast once the infusion has started."
+      },
+      {
+        "id": "f",
+        "text": "Keep blood pressure below 180/105 mm Hg as prescribed."
+      }
+    ],
+    "answerKey": {
+      "type": "multiple",
+      "optionIds": [
+        "a",
+        "b",
+        "c",
+        "f"
+      ]
+    },
+    "scoringPolicy": "plus-minus",
+    "rationale": "After alteplase, frequent neurological and blood pressure checks detect haemorrhage early. Blood pressure is kept below 180/105 mm Hg. Invasive procedures and IM injections are minimised because of the bleeding risk. Any severe headache, rise in blood pressure or neurological decline means the infusion must be stopped.\n\nAntiplatelets and anticoagulants are withheld for 24 hours after alteplase. The client stays NPO until a swallow screen is passed.",
+    "references": [
+      "AHA/ASA Guidelines for the Early Management of Patients With Acute Ischemic Stroke (2019 update)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "str-5",
+    "origin": "original",
+    "questionType": "single",
+    "clinicalCategory": "Physiological Adaptation",
+    "caseStudyId": "case-stroke",
+    "caseStudyPart": 5,
+    "questionText": "The nurse reviews the 10:40 nurses' note and vital signs. Which action should the nurse take first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stop the alteplase infusion."
+      },
+      {
+        "id": "b",
+        "text": "Give acetaminophen for the headache."
+      },
+      {
+        "id": "c",
+        "text": "Give the prescribed antiemetic and continue to monitor."
+      },
+      {
+        "id": "d",
+        "text": "Lower the head of the bed flat."
+      }
+    ],
+    "answerKey": {
+      "type": "single",
+      "optionId": "a"
+    },
+    "scoringPolicy": "dichotomous",
+    "rationale": "A sudden severe headache, vomiting, decreasing consciousness, a worse NIH Stroke Scale score, severe hypertension and bradycardia with irregular respirations suggest intracranial haemorrhage with rising intracranial pressure. The alteplase infusion is stopped immediately. The provider is then notified and an emergency CT and coagulation studies are expected.\n\nTreating the symptoms alone delays the critical action. Lying flat raises intracranial pressure.",
+    "references": [
+      "AHA/ASA Guidelines for the Early Management of Patients With Acute Ischemic Stroke (2019 update)"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed"
+  },
+  {
+    "id": "str-6",
+    "origin": "original",
+    "questionType": "matrix-single",
+    "clinicalCategory": "Basic Care and Comfort",
+    "caseStudyId": "case-stroke",
+    "caseStudyPart": 6,
+    "questionText": "The nurse reviews the Day 3 nurses' note. For each action at mealtime, specify whether it is indicated or contraindicated for this client.",
+    "matrixRowHeading": "Mealtime action",
+    "matrixRows": [
+      {
+        "id": "upright",
+        "text": "Sit the client fully upright for meals and for 30 minutes afterwards"
+      },
+      {
+        "id": "chin",
+        "text": "Encourage tucking the chin down when swallowing"
+      },
+      {
+        "id": "straw",
+        "text": "Offer thin liquids through a straw"
+      },
+      {
+        "id": "side",
+        "text": "Place food on the left side of the mouth"
+      },
+      {
+        "id": "pocket",
+        "text": "Check the right cheek for pocketed food after meals"
+      },
+      {
+        "id": "rush",
+        "text": "Feed quickly so the client does not tire"
+      }
+    ],
+    "matrixColumns": [
+      {
+        "id": "ind",
+        "label": "Indicated"
+      },
+      {
+        "id": "contra",
+        "label": "Contraindicated"
+      }
+    ],
+    "answerKey": {
+      "type": "matrix-single",
+      "selections": {
+        "upright": "ind",
+        "chin": "ind",
+        "straw": "contra",
+        "side": "ind",
+        "pocket": "ind",
+        "rush": "contra"
+      }
+    },
+    "scoringPolicy": "zero-one",
+    "rationale": "Upright positioning and a chin tuck help protect the airway. Food is placed on the unaffected (left) side, and the weak (right) cheek is checked for pocketed food.\n\nThin liquids and straws increase the risk of aspiration in dysphagia; thickened liquids were recommended. Rushing increases aspiration risk; small bites and an unhurried pace are safer.",
+    "references": [
+      "Post-stroke dysphagia management — standard neurological nursing content"
+    ],
+    "contentVerificationStatus": "verified",
+    "answerVerificationStatus": "author-reviewed",
+    "reviewNotes": "Chin-tuck is a common default but should follow the SLP's individual recommendations."
+  }
+]

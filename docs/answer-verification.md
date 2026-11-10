@@ -15,7 +15,7 @@ To admit only clinician-verified keys, set `SCORED_ANSWER_STATUSES=verified`. Th
 
 ## Current bank (version shown by `npm run validate`)
 
-All 44 questions are original, `contentVerificationStatus: verified`, `answerVerificationStatus: author-reviewed`.
+All 150 questions are original (96 standalone and 9 six-part case studies), `contentVerificationStatus: verified`, `answerVerificationStatus: author-reviewed`.
 
 - **Author:** the AI assistant that built this application. Each key and rationale was written from standard nursing and clinical knowledge. The `references` field names the guideline or topic the answer is based on (for example *ISPAD 2022 DKA guideline*, *CDC 2007 Isolation Precautions*, *ACOG Practice Bulletin 222*). These are pointers to the evidence base, not page-level citations.
 - **Results and review pages tell students** that author-reviewed items have not been signed off by a licensed nurse educator.
@@ -27,6 +27,8 @@ All 44 questions are original, `contentVerificationStatus: verified`, `answerVer
 | `sa-magnesium` | Oliguria is deliberately not keyed as a *sign* of magnesium toxicity (it is a risk factor). Confirm this matches the house style. |
 | `sb-hip-precautions` | Keyed for a posterior surgical approach; hip precautions vary by surgeon. |
 | `sb-copd-o2` | 88–92% target per the BTS guideline; some institutions use different targets. |
+| `aki-1` | Spironolactone keyed to hyperkalaemia only; diuretics can also contribute to pre-renal AKI. |
+| `str-6` | Chin-tuck is a common default but should follow the speech-language pathologist's individual plan. |
 
 ### Recommended review workflow
 
