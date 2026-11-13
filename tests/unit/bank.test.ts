@@ -84,6 +84,16 @@ describe("exam planning", () => {
     }
   });
 
+  it("quick practice defaults to a 50-question sitting and caps requests at 50", async () => {
+    for (let i = 0; i < 10; i++) {
+      const plan = await createPlan({ mode: "quick" });
+      expect(plan.questionIds).toHaveLength(50);
+      expect(new Set(plan.questionIds).size).toBe(50);
+    }
+    expect((await createPlan({ mode: "quick", count: 120 })).questionIds).toHaveLength(50);
+    expect((await createPlan({ mode: "custom" })).questionIds).toHaveLength(50);
+  });
+
   it("delivers no answer keys", async () => {
     const plan = await createPlan({ mode: "quick", count: 10 });
     expect(JSON.stringify(plan)).not.toContain("answerKey");

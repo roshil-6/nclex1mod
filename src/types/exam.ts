@@ -5,6 +5,8 @@ export type ExamMode = "full" | "quick" | "case" | "custom";
 
 export const FULL_EXAM_QUESTIONS = 150;
 export const FULL_EXAM_MINUTES = 300;
+/** Standard length of one practice sitting. */
+export const SITTING_QUESTIONS = 50;
 
 export interface ExamConfig {
   mode: ExamMode;

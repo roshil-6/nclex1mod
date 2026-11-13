@@ -11,6 +11,15 @@ test("home page offers the exam modes and states availability honestly", async (
   await expect(page.getByRole("button", { name: "Begin" })).toBeEnabled();
 });
 
+test("quick practice gives a 50-question sitting by default", async ({ page }) => {
+  await page.goto("/setup?mode=quick");
+  await expect(page.getByLabel("Number of questions")).toHaveValue("50");
+  await page.getByRole("button", { name: "Begin" }).click();
+  await expect(page).toHaveURL(/\/exam\//);
+  await expect(page.getByTestId("q-total")).toHaveText("50");
+  await expect(page.getByTestId("timer")).toHaveText(/^(01:40|01:39)$/);
+});
+
 test("full mock exam: 150 unique questions, 5-hour timer, no answer reveal", async ({ page }) => {
   await page.goto("/setup?mode=full");
   await page.getByRole("button", { name: "Begin" }).click();

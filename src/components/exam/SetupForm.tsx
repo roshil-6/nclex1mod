@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Panel, btnPrimary } from "@/components/ui/Shell";
 import { startExam } from "@/lib/session/start";
 import type { PoolStats } from "@/lib/question-bank/stats";
-import { FULL_EXAM_MINUTES, FULL_EXAM_QUESTIONS, type ExamConfig, type ExamMode } from "@/types/exam";
+import { FULL_EXAM_MINUTES, FULL_EXAM_QUESTIONS, SITTING_QUESTIONS, type ExamConfig, type ExamMode } from "@/types/exam";
 
 const MODES: { id: ExamMode; label: string; blurb: string }[] = [
   { id: "full", label: "Full Mock Examination", blurb: `${FULL_EXAM_QUESTIONS} questions · 5-hour countdown · examination mode` },
@@ -16,8 +16,8 @@ const MODES: { id: ExamMode; label: string; blurb: string }[] = [
 export function SetupForm({ initialMode, stats }: { initialMode: ExamMode; stats: PoolStats }) {
   const router = useRouter();
   const [mode, setMode] = useState<ExamMode>(initialMode);
-  const [count, setCount] = useState(10);
-  const [customCount, setCustomCount] = useState(Math.min(20, stats.eligibleQuestions || 1));
+  const [count, setCount] = useState(SITTING_QUESTIONS);
+  const [customCount, setCustomCount] = useState(Math.min(SITTING_QUESTIONS, stats.eligibleQuestions || 1));
   const [minutes, setMinutes] = useState(30);
   const [categories, setCategories] = useState<string[]>([]);
   const [caseId, setCaseId] = useState<string>("");
@@ -107,7 +107,7 @@ export function SetupForm({ initialMode, stats }: { initialMode: ExamMode; stats
             <div>
               <label htmlFor="quick-count" className="mb-1 block font-medium">Number of questions</label>
               <select id="quick-count" value={count} onChange={(e) => setCount(Number(e.target.value))} className="min-h-11 rounded border border-line-strong px-2">
-                {[5, 10, 15, 20].map((n) => (
+                {[10, 20, 30, SITTING_QUESTIONS].map((n) => (
                   <option key={n} value={n}>
                     {n}
                   </option>

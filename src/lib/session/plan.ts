@@ -3,6 +3,7 @@ import { signToken, sessionSecret } from "@/lib/auth/token";
 import {
   FULL_EXAM_MINUTES,
   FULL_EXAM_QUESTIONS,
+  SITTING_QUESTIONS,
   type ExamConfig,
   type ExamPlan,
   type ExamTokenClaims,
@@ -61,7 +62,7 @@ export async function createPlan(config: ExamConfig, bank: Bank = loadBank()): P
     }
     case "quick": {
       title = "Quick Practice";
-      target = Math.min(Math.max(config.count ?? 10, 1), 30);
+      target = Math.min(Math.max(config.count ?? SITTING_QUESTIONS, 1), SITTING_QUESTIONS);
       minutes = config.timeLimitMinutes ?? Math.max(10, target * 2);
       feedback = !!config.immediateFeedback;
       break;
@@ -81,7 +82,7 @@ export async function createPlan(config: ExamConfig, bank: Bank = loadBank()): P
     case "custom": {
       if (config.categories?.length) units = units.filter((u) => config.categories!.includes(u.category));
       title = "Custom Practice";
-      target = Math.min(Math.max(config.count ?? 20, 1), FULL_EXAM_QUESTIONS);
+      target = Math.min(Math.max(config.count ?? SITTING_QUESTIONS, 1), FULL_EXAM_QUESTIONS);
       minutes = Math.min(Math.max(config.timeLimitMinutes ?? 0, 0), FULL_EXAM_MINUTES);
       feedback = !!config.immediateFeedback;
       break;
